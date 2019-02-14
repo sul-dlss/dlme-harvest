@@ -1,3 +1,11 @@
+# Do not commit data to this repo!
+*.xml
+*.json
+*.html
+*.csv
+*.mods
+*.mrc
+
 *.gem
 *.rbc
 /.config
