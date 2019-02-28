@@ -6,6 +6,7 @@ import urllib.request
 
 from lxml import etree
 
+# where to write data to (relative to the dlme-harvest repo folder)
 base_output_folder = 'output'
 
 # Add key-value pairs where the key is the file name and the value is the url to the first page in the search results
