@@ -18,6 +18,7 @@
 /test/version_tmp/
 /tmp/
 /log/
+/output/
 
 # Used by dotenv library to load environment variables.
 # .env

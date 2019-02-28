@@ -49,6 +49,7 @@ DEPENDENCIES
   capistrano-bundler
   capistrano-rvm
   dlss-capistrano
+  rake
 
 BUNDLED WITH
    2.0.1
