@@ -12,13 +12,20 @@ need to be committed to Github and merged to master branch before deploying.
 
 The scripts require certain libraries to be installed on your laptop or server.
 You need `pip` (python package installed) to install these python libraries
-(pip is already setup on the server, along with python).
+(pip is already setup on the server, along with python).  You should not need to
+do this on the server (only first time setup)
 
 ```
 pip install lxml --user
+pip install sickle --user
 ```
 
 # Running Scipts on Remove Server
+
+Ensure you have a kerberos ticket:
+```
+kinit
+```
 
 ```
 ssh harvester@dlme-harvest # to get to the machine
