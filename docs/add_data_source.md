@@ -40,38 +40,36 @@ You need to update the https://github.com/sul-dlss/dlme-traject/blob/master/meta
 
 ### Example configuration
 
+```json
+[
+  {
+   "trajects": [
+     "mods_config.rb"
+   ],
+   "paths": [
+     "stanford/maps"
+   ],
+   "extension": ".mods",
+   "settings": {
+     "agg_provider": "Stanford Libraries",
+     "agg_data_provider": "Stanford Libraries",
+     "inst_id": "stanford"
+   }
+  }
+]
 ```
-# example of the settings with comments for clarity
-# data source name; required information & needs to be unique:
-stanford_mods:
-  # The directory for the data in GitHub repo ; required
-  directory: maps/records/stanford
-  # Regex for what file to pull from source GH directory ; optional
-  only: !ruby/regexp '/met_museum_records.csv/'
-  # Traject Mapping config file found in lib/traject ; required
-  traject_file: stanford_mods_config
-  # Settings for the data import source ; required
-  properties:
-    # Who delivered the data directly to DLME ; required
+
+__paths__: The directory for the data in GitHub dlme-metadata repo ; required
+__extension__: File extension of the types of files to important ; optional
+__trajects__: The Traject Mapping config file found in the GitHub dlme-traject repo ; required
+__settings__: Settings for the data import source ; required
+  __agg_provider__: Who delivered the data directly to DLME ; required
     agg_provider: Stanford University Libraries
     # Who created the data originally ; optional
     agg_data_provider: Stanford Geospatial Library
     # Prefixes the solr document ID ; optional
     inst_id: stanford_mods
-```
 
-### Example configuration without notes
-
-```
-stanford_mods:
-  directory: maps/records/stanford
-  only: !ruby/regexp '/met_museum_records.csv/'
-  traject_file: stanford_mods_config
-  properties:
-    agg_provider: Stanford University Libraries
-    agg_data_provider: Stanford Geospatial Library
-    inst_id: stanford_mods
-```
 
 ## 4. Create Your Data Mapping
 
