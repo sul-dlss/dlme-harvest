@@ -17,11 +17,11 @@ This process leverages extensions to [Traject, a configuration-based MARC to Sol
 
 ## 1. Stage Your Metadata
 
-At present, this DLME prototype loads metadata from this DLME Metadata GitHub repository: https://github.com/waynegraham/dlme-metadata. You will need to add your metadata - in the appropriate directory - via a pull request to that DLME Metadata GitHub repository for it to be loaded by our pipeline.
+At present, this DLME prototype loads metadata from this DLME Metadata GitHub repository: https://github.com/sul-dlss/dlme-metadata. You will need to add your metadata - in the appropriate directory - via a pull request to that DLME Metadata GitHub repository for it to be loaded by our pipeline.
 
 ## 2. Create a DLME GitHub Repository Branch
 
-With your metadata staged in the [DLME Metadata GitHub repository](https://github.com/waynegraham/dlme-metadata), you now need prepare a branch - to then become a pull request when you're done - on this DLME application GitHub repository. This branch will add your new data source configuration, update the loading settings to load your new metadata, add a data conversion test for your new metadata mapping, and add any other optional code for your new data conversion.
+With your metadata staged in the [DLME Metadata GitHub repository](https://github.com/sul-dlss/dlme-metadata), you now need prepare a branch - to then become a pull request when you're done - on this DLME application GitHub repository. This branch will add your new data source configuration, update the loading settings to load your new metadata, add a data conversion test for your new metadata mapping, and add any other optional code for your new data conversion.
 
 ## 3. Add Your Data Source Settings
 
@@ -29,7 +29,7 @@ You need to update the https://github.com/sul-dlss/dlme-traject/blob/master/meta
 
 1. At the end of the sources section in https://github.com/sul-dlss/dlme-traject/blob/master/metadata_mapping.json, following the existing format (see the example below).
 2. Give it a meaningful and unique data source name: `stanford_mods:` or `my_new_source:`.
-3. Indicate the directory within the [DLME metadata repository](https://github.com/waynegraham/dlme-metadata) where your metadata files are located.
+3. Indicate the directory within the [DLME metadata repository](https://github.com/sul-dlss/dlme-metadata) where your metadata files are located.
 4. If your metadata is in only 1 file within the DLME Metadata repository directory indicated, used the optional regex lookup: `only: !ruby/regexp '/egyptian-20170820.csv/'`
 5. Indicate the name of your mapping's Traject configuration file (you create this file in the next step): `traject_file: my_new_source_config`
 6. Assign any appropriate, static properties for your metadata. Example:
@@ -83,7 +83,7 @@ You do not need to add to this mapping spreadsheet, but it can help with writing
 
 The following instructions are based on the original documentation for [Traject](https://github.com/traject/traject), the tool we use and expand in our DLME data pipeline.
 
-Start by creating a new file in `lib/traject` named for the source (e.g. `my_new_source_config.rb` or `stanford_mods.rb` - whatever you put as your name for the `traject_file` field above in https://github.com/sul-dlss/dlme-traject/blob/master/metadata_mapping.json).
+Start by creating a new file in the [dlme-traject repo](https://github.com/sul-dlss/dlme-metadata) named for the source as referenced above in step 3 (e.g. `my_new_source_config.rb` or `stanford_mods.rb` - whatever you put as your name for the `traject_file` field above in https://github.com/sul-dlss/dlme-traject/blob/master/metadata_mapping.json).
 
 You then add your mapping using the Traject DSL (domain specific language), which simplifies the expected mapping for records in your metadata. Below are starting examples for mapping configuration files, with further links for examples, available DSL extensions for the formats, and other information.
 
@@ -293,33 +293,7 @@ Traject macros provide a facility for more complex data transformation. For more
 
 ## 7. Test Your Data Mapping
 
-There are a few ways to test your data mapping - one method to run the conversion locally and check the output ; another to add unit tests to the DLME codebase for automatic monitoring of the conversion output as part of the codebase' continuous integration and code coverage.
-
-Add a `my_new_source_spec.rb` file to `spec/import`.
-
-### Convert Your Data Locally
-
-Where you cloned this repository and are working on this branch, you can run Traject locally with your new mapping configuration, but to an `DebugWriter` output that shows the output of the converted data (as YAML) in your shell or stdout for your setup.
-
-At the top level of where you have this repository, with the appropriate gems installed, you can run this command in your shell:
-
-```
-bundle exec traject -c config/traject.rb -c lib/traject/my_new_source_config.rb -s source='my_source' -w DebugWriter [PATH TO YOUR METADATA FILE] source='data_source_name'
-```
-
-For example, this command runs Traject locally with the Stanford MODS configuration on our fixture or test MODS XML data and outputs to the DebugWriter:
-
-```
-bundle exec traject -c config/traject.rb -c lib/traject/mods_config.rb -w DebugWriter spec/fixtures/mods/stanford_bg149mk9437.mods  -s source='stanford_mods'
-```
-
-More information on this command:
-
-- `-c config/traject.rb` configuration sets up the local traject configuration
-- `-c lib/traject/mods_config.rb` reads the Stanford MODS mapping configuration
-- `-w DebugWriter` calls the writer that outputs the converted result to stdout
-- `spec/fixtures/mods/stanford_bg149mk9437.mods` is our MODS/XML to be converted (for checking test output, it is recommended to get a subset of your metadata records to convert against - 1 or 2 records instead of the full set, if you want to review the output)
-- `-s source='stanford_mods'` points to your mapping's settings in our https://github.com/sul-dlss/dlme-traject/blob/master/metadata_mapping.json work (described in step 3) so it can load any needed static values
+Consult the README in the [dlme-transform repo](https://github.com/sul-dlss/dlme-transform) to see how to run traject configs locally.
 
 ### Add Data Tests
 
