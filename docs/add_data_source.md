@@ -27,7 +27,7 @@ With your metadata staged in the [DLME Metadata GitHub repository](https://githu
 
 You need to update the `config/settings.yml` file for this application codebase to include information for the new data source. To do so:
 
-1. At the end of the sources section in [config/settings.yml](../config/settings.yml), following the existing format (see the example below).
+1. At the end of the sources section in https://github.com/sul-dlss/dlme-traject/blob/master/metadata_mapping.json, following the existing format (see the example below).
 2. Give it a meaningful and unique data source name: `stanford_mods:` or `my_new_source:`.
 3. Indicate the directory within the [DLME metadata repository](https://github.com/waynegraham/dlme-metadata) where your metadata files are located.
 4. If your metadata is in only 1 file within the DLME Metadata repository directory indicated, used the optional regex lookup: `only: !ruby/regexp '/egyptian-20170820.csv/'`
@@ -85,7 +85,7 @@ You do not need to add to this mapping spreadsheet, but it can help with writing
 
 The following instructions are based on the original documentation for [Traject](https://github.com/traject/traject), the tool we use and expand in our DLME data pipeline.
 
-Start by creating a new file in `lib/traject` named for the source (e.g. `my_new_source_config.rb` or `stanford_mods.rb` - whatever you put as your name for the `traject_file` field above in `config/settings.yml`).
+Start by creating a new file in `lib/traject` named for the source (e.g. `my_new_source_config.rb` or `stanford_mods.rb` - whatever you put as your name for the `traject_file` field above in https://github.com/sul-dlss/dlme-traject/blob/master/metadata_mapping.json).
 
 You then add your mapping using the Traject DSL (domain specific language), which simplifies the expected mapping for records in your metadata. Below are starting examples for mapping configuration files, with further links for examples, available DSL extensions for the formats, and other information.
 
@@ -321,7 +321,7 @@ More information on this command:
 - `-c lib/traject/mods_config.rb` reads the Stanford MODS mapping configuration
 - `-w DebugWriter` calls the writer that outputs the converted result to stdout
 - `spec/fixtures/mods/stanford_bg149mk9437.mods` is our MODS/XML to be converted (for checking test output, it is recommended to get a subset of your metadata records to convert against - 1 or 2 records instead of the full set, if you want to review the output)
-- `-s source='stanford_mods'` points to your mapping's settings in our `config/settings.yml` work (described in step 3) so it can load any needed static values
+- `-s source='stanford_mods'` points to your mapping's settings in our https://github.com/sul-dlss/dlme-traject/blob/master/metadata_mapping.json work (described in step 3) so it can load any needed static values
 
 ### Add Data Tests
 
