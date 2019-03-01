@@ -287,7 +287,7 @@ to_field 'selected_field', column('CSV Column', trim: true)
 
 ## 6. Create a Pull Request
 
-After you have added your mapping configuration, updated the settings to be able to pull your metadata, added your metadata to the DLME Metadata repository, and done any testing needed, you want to create a pull request on this DLME repository to add your data to the master branch.
+After you have added your mapping configuration, updated the settings to be able to pull your metadata, added your metadata to the [dlme-metadata repository](https://github.com/sul-dlss/dlme-metadata), and done any testing needed, you want to create a pull request on this repo to add your data to the master branch.
 
 As this DLME codebase is running continuous integration, your branch will be tested (by rubocop, rspec, coveralls). Once approved and merged into master, it automatically updates the codebase deployed to our DLME code on the production server.
 
