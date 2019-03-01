@@ -25,7 +25,7 @@ With your metadata staged in the [DLME Metadata GitHub repository](https://githu
 
 ## 3. Add Your Data Source Settings
 
-You need to update the `config/settings.yml` file for this application codebase to include information for the new data source. To do so:
+You need to update the https://github.com/sul-dlss/dlme-traject/blob/master/metadata_mapping.json file for this application codebase to include information for the new data source. To do so:
 
 1. At the end of the sources section in https://github.com/sul-dlss/dlme-traject/blob/master/metadata_mapping.json, following the existing format (see the example below).
 2. Give it a meaningful and unique data source name: `stanford_mods:` or `my_new_source:`.
