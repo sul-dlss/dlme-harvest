@@ -25,3 +25,6 @@ a subdirectory of the `output` directory to get only.
 ```
 scp -r harvester@dlme-harvest:/opt/app/harvester/output /PATH/TO/LOCAL/DIRECTORY
 ```
+
+
+* [Details on How To Add Data to DLME from a New Provider to DLME](docs/add_data_source.md)
