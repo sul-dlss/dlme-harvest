@@ -3,6 +3,9 @@ import os
 from sickle import Sickle
 from sickle.iterator import OAIResponseIterator
 
+# where to write data to (relative to the dlme-harvest repo folder)
+base_output_folder = 'output'
+
 def to_str(bytes_or_str):
     '''Takes bytes or string and returns string'''
     if isinstance(bytes_or_str, bytes):
@@ -27,14 +30,15 @@ for s in sets:
     for record in records:
         print("Set number: " + str(set_number) + " | " + "Record number " + str(record_number))
         record_number += 1
-        if not os.path.exists(os.path.dirname('{}/data/{}-{}.xml'.format(s.setSpec, s.setSpec, file_count))):
+        out_file = '{}/{}/data/{}-{}.xml'.format(base_output_folder, s.setSpec, s.setSpec, file_count)
+        directory_name = os.path.dirname(out_file)
+        if not os.path.exists(directory_name):
             try:
-                os.makedirs(os.path.dirname('{}/data/{}-{}.xml'.format(s.setSpec, s.setSpec, file_count)))
-            except OSError as exc: 
+                os.makedirs(directory_name)
+            except OSError as exc:
                 if exc.errno != errno.EEXIST:
                     raise
-        with open('{}/data/{}-{}.xml'.format(s.setSpec, s.setSpec, file_count), 'w') as f:
+        with open(out_file, 'w') as f:
         	file_count += 1
         	f.write(to_str(record.raw.encode('utf8')))
         	f.close()
-    		

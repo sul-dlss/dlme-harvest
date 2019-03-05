@@ -6,6 +6,9 @@ import urllib.request
 
 from lxml import etree
 
+# where to write data to (relative to the dlme-harvest repo folder)
+base_output_folder = 'output'
+
 # Add key-value pairs where the key is the file name and the value is the url to the first page in the search results
 BnF_data = {
     'ifea': 'https://gallica.bnf.fr/services/engine/search/sru?operation=searchRetrieve&version=1.2&startRecord=0&maximumRecords=50&page=1&collapsing=true&exactSearch=false&query=dc.source%20all%20%22Institut%20Fran%C3%A7ais%20d%E2%80%99%C3%89tudes%20Anatoliennes%22%20%20and%20%28provenance%20adj%20%22bnf.fr%22%29',
@@ -70,7 +73,7 @@ def get_next_record_position(url):
     number_of_records = get_number_of_records(url)
 
     # if next_record_position <= number_of_records:
-    return next_record_position 
+    return next_record_position
     # else:
     #     return number_of_records
 
@@ -98,7 +101,7 @@ def get_urls(url):
     next_url = url
     for i in range(number_of_pages):
         next_record_position = get_next_record_position(next_url)
-        next_url = re.sub(r'page=\d*', 'page={}'.format(page_count), next_url)  
+        next_url = re.sub(r'page=\d*', 'page={}'.format(page_count), next_url)
         next_url = re.sub(r'startRecord=\d*', 'startRecord={}'.format(next_record_position), next_url)
         urls.append(next_url)
         page_count += 1
@@ -110,6 +113,8 @@ def main():
     '''Reads in a dictionary of form 'file_name: base_url', passes base_url to get_urls, then iterates over the list of urls-one for
     each page of records–and saves the xml from each page to a file'''
     for key, value in BnF_data.items():
+        print('Working on {}'.format(key))
+
         urls = get_urls(value)
         file_count = 1
 
@@ -132,7 +137,7 @@ def main():
         for url in urls[1:]:
             site = urllib.request.urlopen(url)
             temp_contents = site.read()
-            directory_name = '{}/data/'.format(key)
+            directory_name = '{}/{}/data/'.format(base_output_folder, key)
             if not os.path.exists(directory_name):
                 os.makedirs(directory_name)
             temp_file_name = '{}{}.xml'.format(key, str(file_count))
@@ -151,24 +156,28 @@ def main():
             # Debugging delete
             print('{}: {} of {} records'.format(key, len(records), number_of_records))
 
-        out_file = '{}/data/{}.xml'.format(key, key)
+        directory_name = '{}/{}/data'.format(base_output_folder, key)
+        if not os.path.exists(directory_name):
+            os.makedirs(directory_name)
+        out_file = '{}/{}.xml'.format(directory_name, key)
+
         with open(out_file, 'w') as f:
             f.write(etree.tostring(records, encoding='unicode', pretty_print=True))
         f.close()
         os.remove(base_file_name)
 
         # Parsing into one record per file
-        tree = etree.parse(out_file) 
+        tree = etree.parse(out_file)
         records = tree.findall("srw:record", ns)
         file_count = 1
         for record in records:
-                next_file = '{}/data/{}-{}.xml'.format(key, key, file_count)
+                next_file = '{}/{}/data/{}-{}.xml'.format(base_output_folder, key, key, file_count)
                 current_file = open(next_file, 'w')
                 current_file.write(etree.tostring(record, encoding='unicode', pretty_print=True))
                 file_count += 1
                 current_file.close()
         os.remove(out_file)
-               
+
         # # Quality assurance testing
         # stats = open('{}/{}_stats.txt'.format(key, key), 'w')
         # record_count = 0
