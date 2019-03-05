@@ -16,11 +16,6 @@ def main():
     parser.add_argument("-m", "--metadata_prefix", dest="metadata_prefix",
                         help="add the metadata prefix if other than oai_dc")
     parser.add_argument(
-        "-p",
-        "--parse",
-        dest="parse",
-        help="add the -p flag to parse the resulting xml file into multiple files with one record per file")
-    parser.add_argument(
         "-s",
         "--sets",
         dest="sets",
@@ -53,7 +48,7 @@ def main():
             metadataPrefix=args.metadata_prefix,
             ignore_deleted=True)
         print("Records created.")  # status update
-        file_path = 'output/{}/data/'.format(args.institution)
+        file_path = 'output/data/'
         helper.write_records(records, file_path)
 
 if __name__ == "__main__":
