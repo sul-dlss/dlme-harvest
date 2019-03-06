@@ -13,14 +13,12 @@ def main():
         # Get a list of all sets available
         sets = sickle.ListSets()
         for s in sets:
-            if s.setSpec not in helper.get_values_if_any(
-                    helper.do_not_harvest, args.institution):
+            if s.setSpec not in helper.do_not_harvest.get(s.setSpec, []): 
                 records = sickle.ListRecords(
                     metadataPrefix=args.metadata_prefix,
                     set=s.setSpec,
                     ignore_deleted=True)
                 file_path = 'output/{}/data/'.format(s.setSpec)
-                # for record in records:
                 helper.write_records(records, file_path)
 
     else:

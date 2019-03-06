@@ -7,9 +7,6 @@ do_not_harvest = {
 }
 
 # Common helper functions
-def get_values_if_any(d, key):
-    return d.get(key, [])
-
 def to_str(bytes_or_str):
     '''Takes bytes or string and returns string'''
     if isinstance(bytes_or_str, bytes):
@@ -19,17 +16,14 @@ def to_str(bytes_or_str):
     return value  # Instance of str
 
 def write_records(records, directory):
-    record_number = 0
-    for record in records:
-        record_number += 1
-        if not os.path.exists(os.path.dirname(directory)):
-            try:
-                os.makedirs(directory)
-            except OSError as exc:
-                if exc.errno != errno.EEXIST:
-                    raise
-        with open('{}/{}.xml'.format(directory, record_number), 'w') as f:
-            # file_count += 1
+    for counter, record in enumerate(records):
+        os.makedirs(os.path.dirname(directory), exist_ok=True)
+        # if not os.path.exists(os.path.dirname(directory)):
+        #     try:
+        #         os.makedirs(directory)
+        #     except OSError as exc:
+        #         if exc.errno != errno.EEXIST:
+        #             raise
+        with open('{}/{}.xml'.format(directory, counter), 'w') as f:
             f.write(to_str(record.raw.encode('utf8')))
-            f.close()
-    print('{} records written to {}'.format(record_number, directory))
+    print('{} records written to {}'.format(counter, directory))
