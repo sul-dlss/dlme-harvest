@@ -6,6 +6,8 @@
 *.mods
 *.mrc
 
+*.pyc
+
 *.gem
 *.rbc
 /.config

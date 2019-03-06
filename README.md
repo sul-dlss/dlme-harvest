@@ -6,13 +6,13 @@ DLME Scripts for harvesting data from providers
 ## oai-harvest.py
 
 OAI-PMH collections can be harvested with `oai-harvest.py` by calling the script followed by the base url of the sources you wish to harvest, the metadata prefix, and the name of the institution.
-
-`python oai-harvest.py http://cdm21044.contentdm.oclc.org/oai/oai.php -m oai_dc`
-
+```
+python oai-harvest.py http://cdm21044.contentdm.oclc.org/oai/oai.php -m oai_dc
+```
 Files will be written to `output/data`,
 
 ### Optional flags
-* `-s` If `-s TRUE` is called, the script will grab available sets first and files will be written to `output/set_name/data`. 
+* `-s` If `-s ` is called, the script will grab available sets first and files will be written to `output/set_name/data`. 
 * `-i` If the `-i institution_name` is called, the script will look in the `do_not_harvest` dictionary in `helper.py` for the name of the institution and pass along sets to ignore if any are found.
 
 # Harvest Server 
