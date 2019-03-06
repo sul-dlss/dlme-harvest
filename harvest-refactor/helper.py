@@ -18,12 +18,6 @@ def to_str(bytes_or_str):
 def write_records(records, directory):
     for counter, record in enumerate(records):
         os.makedirs(os.path.dirname(directory), exist_ok=True)
-        # if not os.path.exists(os.path.dirname(directory)):
-        #     try:
-        #         os.makedirs(directory)
-        #     except OSError as exc:
-        #         if exc.errno != errno.EEXIST:
-        #             raise
         with open('{}/{}.xml'.format(directory, counter), 'w') as f:
             f.write(to_str(record.raw.encode('utf8')))
     print('{} records written to {}'.format(counter, directory))
