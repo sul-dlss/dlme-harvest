@@ -4,8 +4,8 @@ lock '~> 3.11.0'
 set :application, 'dlme-harvest'
 set :repo_url, 'https://github.com/sul-dlss/dlme-harvest'
 
-# Default branch is :master
-#ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
+# Default branch is :master, but can change
+ask :branch, 'master' # `git rev-parse --abbrev-ref HEAD`.chomp
 
 set :stages, %W(production)
 
