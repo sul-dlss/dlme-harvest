@@ -1,14 +1,30 @@
 # dlme-harvest
 DLME Scripts for harvesting data from providers
 
-# Deployment
+# Harvest Scripts
+
+## oai-harvest.py
+
+OAI-PMH collections can be harvested with `oai-harvest.py` by calling the script followed by the base url of the sources you wish to harvest, the metadata prefix, and the name of the institution.
+```
+python oai-harvest.py http://cdm21044.contentdm.oclc.org/oai/oai.php -m oai_dc
+```
+Files will be written to `output/data`,
+
+### Optional flags
+* `-s` If `-s ` is called, the script will grab available sets first and files will be written to `output/set_name/data`. 
+* `-i` If the `-i institution_name` is called, the script will look in the `do_not_harvest` dictionary in `helper.py` for the name of the institution and pass along sets to ignore if any are found.
+
+# Harvest Server 
+
+## Deployment
 
 To deploy the latest harvest scripts to the VM from your machine.  Note, all changes
 need to be committed to Github and merged to master branch before deploying.
 
 `cap prod deploy`
 
-# Ensure necessary python libraries are installed
+## Ensure necessary python libraries are installed
 
 The scripts require certain libraries to be installed on your laptop or server.
 You need `pip` (python package installed) to install these python libraries
@@ -20,7 +36,7 @@ pip install lxml --user
 pip install sickle --user
 ```
 
-# Running Scipts on Remove Server
+## Running Scipts on Remove Server
 
 Ensure you have a kerberos ticket:
 ```
@@ -28,8 +44,8 @@ kinit
 ```
 
 ```
-ssh harvester@dlme-harvest # to get to the machine
-cd current # to go the currently deployed code
+ssh harvester@dlme-harvest ## to get to the machine
+cd current ## to go the currently deployed code
 ```
 
 You can then run your scripts, which will place the data in an "output" subfolder.
@@ -40,10 +56,10 @@ Full screen keyboard shortcuts: http://aperiodic.net/screen/quick_reference,
 but basically:
 
 ```
-# will show any currently running background processes (could be none):
+## will show any currently running background processes (could be none):
 screen -ls
 
-# start a new screen called "bnf", helpful to give a useful name for later (note capital -S)
+## start a new screen called "bnf", helpful to give a useful name for later (note capital -S)
 screen -S bnf
 ```
 
@@ -81,7 +97,7 @@ Or else you can kill the screen process if everything is done with: `exit`.  You
 of the server, you can exit the server with `exit`.
 
 
-# Committing data directly to dlme-metadata repo
+## Committing data directly to dlme-metadata repo
 
 The dlme-metadata repo is cloned on the server, and you can move data from the output folder and
 then commit directly.
@@ -103,7 +119,7 @@ git add .
 git commit -m 'new data'
 ```
 
-# Getting data off the machine
+## Getting data off the machine
 
 This will fetch the entire `output` directory on the remote machine.  You can also specify
 a subdirectory of the `output` directory to get only.
