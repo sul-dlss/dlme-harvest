@@ -12,6 +12,12 @@ OUTPUT_DIR = 'out/'
 
 # Hits the ITEM_URL and writes the response to out/:id.json
 def harvest_item(id):
+    output_filepath = os.path.join(OUTPUT_DIR, '{}.json'.format(id))
+    if os.path.exists(output_filepath):
+        print('Skipping {}'.format(id))
+        return
+
+    print('Harvesting {}'.format(id))
     url = ITEM_URL.format(id=id)
 
     response = requests.get(url)
@@ -21,7 +27,7 @@ def harvest_item(id):
       sys.stderr.write('The request to {} failed, check cookies\n'.format(url))
       print(response.text)
       exit(1)
-    with open(os.path.join(OUTPUT_DIR, '{}.json'.format(id)), 'w') as f:
+    with open(output_filepath, 'w') as f:
         f.write(response.text)
 
 
