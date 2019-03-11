@@ -16,7 +16,7 @@ def get_item_id(line):
     url = line['url']
     match = FETCH_ID.search(url)
     if match is None:
-        print(f'No identifier found in {url}')
+        print('No identifier found in {}'.format(url))
         exit(1)
     return match.group(1)
 
@@ -25,7 +25,7 @@ def get_item_id(line):
 def fetch_json(file, offset=0):
     headers = {'Cookie': COOKIES }
     url = COLLECTION_LISTING_URL.format(per_page=str(PER_PAGE), offset=str(offset))
-    print(f'Call to {url}')
+    print('Call to {}'.format(url))
     response = requests.get(url, headers=headers)
     response.raise_for_status()
 

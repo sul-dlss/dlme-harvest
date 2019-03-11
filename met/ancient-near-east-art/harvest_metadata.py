@@ -18,10 +18,10 @@ def harvest_item(id):
 
     if response.text.startswith('<html'):
       # This API doesn't return useful status_codes
-      sys.stderr.write(f'The request to {url} failed, check cookies\n')
+      sys.stderr.write('The request to {} failed, check cookies\n'.format(url))
       print(response.text)
       exit(1)
-    with open(os.path.join(OUTPUT_DIR, f'{id}.json'), 'w') as f:
+    with open(os.path.join(OUTPUT_DIR, '{}.json'.format(id)), 'w') as f:
         f.write(response.text)
 
 
