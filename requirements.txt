@@ -43,7 +43,7 @@ pysocks=1.6.8=py37_0
 python=3.7.1=haf84260_3
 python-dateutil=2.7.3=py37_0
 readline=7.0=h1de35cc_5
-requests=2.19.1=py37_0
+requests=2.20.0=py37_0
 s3transfer=0.1.13=py37_0
 scipy=1.1.0=py37h28f7352_1
 setuptools=40.4.3=py37_0
