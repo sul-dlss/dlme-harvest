@@ -20,6 +20,11 @@ jobs:
             # fallback to using the latest cache if no exact match is found
             - v1-dependencies-
 
+      # Upgrade bundler
+      - run:
+          name: Install Bundler
+          command: gem install bundler
+
       - run:
           name: install dependencies
           command: |
