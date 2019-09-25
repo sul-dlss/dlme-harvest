@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'csv'
 require 'fileutils'
 require 'json'
@@ -6,16 +8,16 @@ require 'open-uri'
 require 'colorize'
 require 'mechanize'
 
-task default: %w(all)
+task default: %w[all]
 
-task all: %w(import:maps:all)
+task all: %w[import:maps:all]
 
 def setup
   @agent = Mechanize.new
   FileUtils.mkdir_p('./records/harvard')
   FileUtils.mkdir_p('./records/stanford')
   @pids = []
-  @include_prefix = %w(harvard stanford)
+  @include_prefix = %w[harvard stanford]
 end
 
 def cleanup
@@ -36,16 +38,15 @@ def crawl_url(url)
   end
 end
 
-
 def cache_remote(link)
   f = File.basename(URI.parse(link).path)
-  FileUtils.cd('/Users/waynegraham/projects/dlme-metadata/maps/records/stanford', :verbose => true)
+  FileUtils.cd('/Users/waynegraham/projects/dlme-metadata/maps/records/stanford', verbose: true)
 
-  unless File.file? f
+  if File.file? f
+    puts "File exits (#{link})".green
+  else
     puts "Downloading file #{link} to ".yellow
     @agent.get(link).save
-  else
-    puts "File exits (#{link})".green
   end
 end
 
@@ -54,11 +55,11 @@ namespace :import do
     setup
 
     desc 'Import all map objects'
-    task all: %w(import:maps:harvard import:maps:stanford)
+    task all: %w[import:maps:harvard import:maps:stanford]
 
     desc 'Import Harvard map objects'
     task :harvard do
-      harvard_layers   = JSON.parse(File.read('../work/edu.harvard/layers.json'))
+      harvard_layers = JSON.parse(File.read('../work/edu.harvard/layers.json'))
       search_url = 'https://earthworks.stanford.edu/catalog?f%5Bdct_provenance_s%5D%5B%5D=Harvard&f%5Blayer_geom_type_s%5D%5B%5D=Raster&per_page=100&bbox=46.400757%2042.269179%2048.729858%2044.190082'
       puts 'Crawling Harvard URLs'.green
       crawl_url search_url
@@ -67,8 +68,8 @@ namespace :import do
         puts "Locating #{pid}".green
 
         prefix = pid.split('-')[0]
-        suffix = pid.sub("#{prefix}-",'')
-        suffix.gsub!(/-/, '_') unless suffix.nil?
+        suffix = pid.sub("#{prefix}-", '')
+        suffix&.gsub!(/-/, '_')
         suffix.upcase!
         suffix.prepend('HARVARD.SDE2.')
         path = "../work/edu.harvard/#{harvard_layers[suffix]}/fgdc.xml"
@@ -78,10 +79,10 @@ namespace :import do
 
     desc 'Import Stanford Maps'
     task :stanford do
-      search_urls = %w(
+      search_urls = %w[
         https://earthworks.stanford.edu/?bbox=46.400757+42.269179+48.729858+44.190082&f%5Bdct_provenance_s%5D%5B%5D=Stanford&f%5Blayer_geom_type_s%5D%5B%5D=Raster&per_page=100
         https://earthworks.stanford.edu/catalog?f%5Bdct_provenance_s%5D%5B%5D=Stanford&f%5Blayer_geom_type_s%5D%5B%5D=Raster&per_page=100&bbox=17.314453%2021.125498%2054.580078%2053.644638
-      )
+      ]
 
       ignore_pids = CSV.read('stanford_ignore.csv')
       search_urls.each do |url|
@@ -90,13 +91,12 @@ namespace :import do
 
         @pids.each do |pid|
           prefix = pid.split('-')[0]
-          suffix = pid.sub("#{prefix}-",'')
+          suffix = pid.sub("#{prefix}-", '')
           suffix.prepend('https://purl.stanford.edu/')
           suffix += '.mods'
 
           cache_remote suffix
         end
-
       end
     end
 

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # require 'csv'
 # require 'digest'
 # require 'fileutils'
@@ -11,20 +13,19 @@ require_relative '../lib/utilities'
 
 task default: %w[all]
 
-task :all => %w[import:openn]
+task all: %w[import:openn]
 
 namespace :import do
-
   namespace :harvard do
-    task all: %w(import:harvard:process)
+    task all: %w[import:harvard:process]
 
     HARVARD_ENDPOINT = 'http://vcoai.lib.harvard.edu/vcoai/vc?verb=ListRecords&set=ihp&metadataPrefix=mods'
 
-    desc "Download Harvard collection"
+    desc 'Download Harvard collection'
     task :download do
       xml = Nokogiri::XML(open(HARVARD_ENDPOINT))
       FileUtils.mkdir_p('./records/harvard')
-      File.open('records/harvard/dlme.xml', 'w') {|file| file.write(xml)}
+      File.open('records/harvard/dlme.xml', 'w') { |file| file.write(xml) }
     end
 
     desc 'Split Harvard records in to individual MODS files'
@@ -36,7 +37,7 @@ namespace :import do
         file_name += '.mods'
         title = mods.xpath('metadata/mods/titleInfo/title').first.text
 
-        File.open("records/harvard/#{file_name}", "w") do |f|
+        File.open("records/harvard/#{file_name}", 'w') do |f|
           puts "Adding #{title} - #{file_name}".green
           mods_doc = mods.xpath('metadata/mods')
           f.write(mods_doc.to_xml)
@@ -73,11 +74,10 @@ namespace :import do
 
           begin
             json_file = JSON.parse(File.read(json))
-          rescue
+          rescue StandardError
             puts "\tError parsing #{json}".red
             errors << json
           end
-
         end
       end
 
@@ -89,12 +89,12 @@ namespace :import do
         FileUtils.rm(file)
       end
 
-      puts "Make sure you run the import scripts again to redownload missing files".colorize(color: :white, background: :red).underline
+      puts 'Make sure you run the import scripts again to redownload missing files'.colorize(color: :white, background: :red).underline
     end
 
     def process_ark_file(file)
       prefix = 'https://plum.princeton.edu/iiif/lookup/'
-      path =  "records/princeton/#{File.basename(file, '.txt')}"
+      path = "records/princeton/#{File.basename(file, '.txt')}"
       FileUtils.mkdir_p(path)
 
       file = CSV.read(file)
@@ -104,18 +104,18 @@ namespace :import do
       file.each do |row|
         ark = row.first
         resource = "#{prefix}#{ark}"
-        file = /[^\/]+$/.match(ark).to_s
+        file = %r{[^/]+$}.match(ark).to_s
 
         counter += 1
         percentage = (counter / total.to_f) * 100
 
-        unless File.exist?("#{path}/#{file}.json")
-          puts "Fetching #{file} (#{sprintf('%.02f', percentage)}%)".green
+        if File.exist?("#{path}/#{file}.json")
+          puts "Skipping #{file} (#{format('%.02f', percentage)}%)".yellow
+        else
+          puts "Fetching #{file} (#{format('%.02f', percentage)}%)".green
           open("#{path}/#{file}.json", 'w') do |file|
             file << open(resource).read
           end
-        else
-          puts "Skipping #{file} (#{sprintf('%.02f', percentage)}%)".yellow
         end
       end
     end
@@ -138,7 +138,7 @@ namespace :import do
     output_path = 'records/penn/schoenberg'
     FileUtils.mkdir_p output_path
 
-    ids = %W(189 196 235 286 293 294 295 296 299 311 312 322 37 38 387 388 398 399 40 400 403 404 405 407 408 409 410 412 414 417 425 426 427 434 435 436 441 444 447 45 455 456 459 460 464 467 469 486 489 49 495)
+    ids = %w[189 196 235 286 293 294 295 296 299 311 312 322 37 38 387 388 398 399 40 400 403 404 405 407 408 409 410 412 414 417 425 426 427 434 435 436 441 444 447 45 455 456 459 460 464 467 469 486 489 49 495]
 
     ids.each do |id|
       url = "http://openn.library.upenn.edu/Data/0001/ljs#{id}/data/ljs#{id}_TEI.xml"
@@ -150,13 +150,9 @@ namespace :import do
     end
   end
 
-  desc "Import Syriac Palimpset Folio"
+  desc 'Import Syriac Palimpset Folio'
   task :galen do
     # Description: http://openn.library.upenn.edu/Data/0014/GalenSyriacPalimpsest/0_ReadMe.txt
     # Folio Index: http://openn.library.upenn.edu/Data/0014/GalenSyriacPalimpsest/Documents/Internal/FolioIndex.html
-
   end
-
-
-
 end

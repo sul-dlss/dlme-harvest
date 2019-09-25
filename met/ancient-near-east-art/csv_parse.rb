@@ -1,27 +1,29 @@
+# frozen_string_literal: true
+
 require 'csv'
 require 'mysql2'
 
-client = Mysql2::Client.new(:host => "127.0.0.1", :username => "root", :database => 'met_museum', :password =>"root", :port => '8889')
+client = Mysql2::Client.new(host: '127.0.0.1', username: 'root', database: 'met_museum', password: 'root', port: '8889')
 rs = client.query("SELECT * FROM objects WHERE `Department` = 'Ancient Near Eastern Art'")
 headers = results.fields
 
-CSV.open('met_museum_records.csv', "wb") do |csv|
-  rs.each() do |row|
-     if rowCount == 0
-       header = row.keys()
-       csv << header
-     end
-    csvRow = Array.new()
-    row.each() do |key, value|
-      csvRow.push( value)
+CSV.open('met_museum_records.csv', 'wb') do |csv|
+  rs.each do |row|
+    if rowCount == 0
+      header = row.keys
+      csv << header
     end
-     csv << csvRow
-    rowCount = rowCount + 1
+    csvRow = []
+    row.each do |_key, value|
+      csvRow.push(value)
+    end
+    csv << csvRow
+    rowCount += 1
   end
 end
 
 # results.each(:as => :array) do |row|
-  # puts row
+# puts row
 # end
 #
 #
@@ -36,7 +38,6 @@ end
 # client.query(query) do |row|
 #   puts row.inspect
 # end
-
 
 # CSV.read('met_museum_records.csv').each do |row|
 # # CSV.read('met_museum_records.csv',:encoding => 'windows-1251:utf-8').each do |row|

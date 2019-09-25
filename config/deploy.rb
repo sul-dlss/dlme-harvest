@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # config valid for current version and patch releases of Capistrano
 lock '~> 3.11.0'
 
@@ -7,7 +9,7 @@ set :repo_url, 'https://github.com/sul-dlss/dlme-harvest'
 # Default branch is :master, but can change
 ask :branch, 'master' # `git rev-parse --abbrev-ref HEAD`.chomp
 
-set :stages, %W(production)
+set :stages, %w[production]
 
 set :deploy_to, '/opt/app/harvester'
 

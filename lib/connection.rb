@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'net/http'
 require 'uri'
 require 'ostruct'
@@ -5,12 +7,12 @@ require 'json'
 
 class Connection
   # @see http://danknox.github.io/2013/01/27/using-rubys-native-nethttp-library/
-  ENDPOINT = 'https://api.sketchfab.com'.freeze
+  ENDPOINT = 'https://api.sketchfab.com'
 
   VERB_MAP = {
-    get:    Net::HTTP::Get,
-    post:   Net::HTTP::Post,
-    put:    Net::HTTP::Put,
+    get: Net::HTTP::Get,
+    post: Net::HTTP::Post,
+    put: Net::HTTP::Put,
     delete: Net::HTTP::Delete
   }.freeze
 
