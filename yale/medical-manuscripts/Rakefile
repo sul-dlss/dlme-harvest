@@ -1,9 +1,9 @@
+# frozen_string_literal: true
+
 require 'csv'
 
 namespace :import do
-
   namespace :yale do
-
     data_sets = [
       './Arabic_and_Persian_Medical_Books_and_Manuscripts_P32_Yale_17_8_20.csv'
     ]
@@ -29,7 +29,7 @@ namespace :import do
     end
 
     def longest_hash_key(hash)
-      key = hash.max_by{ |k, v| k.length }
+      key = hash.max_by { |k, _v| k.length }
       key[0].length
     end
 
@@ -47,10 +47,9 @@ namespace :import do
     end
 
     task :header_stats do
-      @headers = Hash[@data.headers.map {|key, value| [key, 0]}]
+      @headers = Hash[@data.headers.map { |key, _value| [key, 0] }]
       @total_records = @data.length.to_f
       key_width = longest_hash_key(@headers)
-
 
       @data.each do |row|
         row.each do |cell|
@@ -58,12 +57,10 @@ namespace :import do
         end
       end
 
-      @headers.each do |key,value|
+      @headers.each do |key, value|
         puts "#{pad_key(key, key_width)}|#{bar(value)}| #{'%3s' % value}/#{@total_records.to_i} | #{calculate_percentage(value)}%"
       end
-
     end
-
   end
 
   task :test do
