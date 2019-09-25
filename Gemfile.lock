@@ -65,7 +65,7 @@ DEPENDENCIES
   capistrano-rvm
   dlss-capistrano
   rake
-  rubocop
+  rubocop (~> 0.74.0)
 
 BUNDLED WITH
    2.0.1
