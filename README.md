@@ -1,3 +1,5 @@
+[![CircleCI](https://circleci.com/gh/sul-dlss/dlme-harvest.svg?style=svg)](https://circleci.com/gh/sul-dlss/dlme-harvest)
+
 # dlme-harvest
 DLME Scripts for harvesting data from providers
 
