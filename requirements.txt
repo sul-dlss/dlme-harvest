@@ -51,7 +51,7 @@ six=1.11.0=py37_1
 smart_open=1.6.0=py37_0
 sqlite=3.25.2=ha441bb4_0
 tk=8.6.8=ha441bb4_0
-urllib3>=1.24.2=py37_0
+urllib3>=1.24.3=py37_0
 wheel=0.32.0=py37_0
 xz=5.2.4=h1de35cc_4
 zlib=1.2.11=hf3cbc9b_2
