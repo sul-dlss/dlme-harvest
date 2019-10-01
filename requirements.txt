@@ -32,7 +32,7 @@ mkl=2019.0=118
 mkl_fft=1.0.6=py37hb8a8100_0
 mkl_random=1.0.1=py37h5d10147_1
 ncurses=6.1=h0a44026_0
-nltk=3.4=py37_1
+nltk>=3.4.5=py37_1
 numpy=1.15.2=py37h6a91979_1
 numpy-base=1.15.2=py37h8a80b8c_1
 openssl=1.1.1b=h1de35cc_0
@@ -51,7 +51,7 @@ six=1.11.0=py37_1
 smart_open=1.6.0=py37_0
 sqlite=3.25.2=ha441bb4_0
 tk=8.6.8=ha441bb4_0
-urllib3=1.23=py37_0
+urllib3>=1.24.3=py37_0
 wheel=0.32.0=py37_0
 xz=5.2.4=h1de35cc_4
 zlib=1.2.11=hf3cbc9b_2
