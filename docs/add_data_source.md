@@ -25,9 +25,9 @@ With your metadata staged in the [DLME Metadata GitHub repository](https://githu
 
 ## 3. Add Your Data Source Settings
 
-You need to update the https://github.com/sul-dlss/dlme-traject/blob/master/metadata_mapping.json file for this application codebase to include information for the new data source. To do so:
+You need to update the https://github.com/sul-dlss/dlme-transform/blob/master/config/metadata_mapping.json file for this application codebase to include information for the new data source. To do so:
 
-1. At the end of the sources section in https://github.com/sul-dlss/dlme-traject/blob/master/metadata_mapping.json, following the existing format (see the example below).
+1. At the end of the sources section in https://github.com/sul-dlss/dlme-tranform/blob/master/config/metadata_mapping.json, following the existing format (see the example below).
 2. Give it a meaningful and unique data source name: `stanford_mods:` or `my_new_source:`.
 3. Indicate the directory within the [DLME metadata repository](https://github.com/sul-dlss/dlme-metadata) where your metadata files are located.
 4. If your metadata is in only 1 file within the DLME Metadata repository directory indicated, used the optional regex lookup: `only: !ruby/regexp '/egyptian-20170820.csv/'`
@@ -61,7 +61,7 @@ You need to update the https://github.com/sul-dlss/dlme-traject/blob/master/meta
 
 __paths__: The directory for the data in GitHub dlme-metadata repo ; required
 __extension__: File extension of the types of files to important ; optional
-__trajects__: The Traject Mapping config file found in the GitHub dlme-traject repo ; required
+__trajects__: The Traject Mapping config file found in the GitHub dlme-transform repo ; required
 __settings__: Settings for the data import source ; required
   __agg_provider__: Who delivered the data directly to DLME ; required
     agg_provider: Stanford University Libraries
@@ -83,7 +83,7 @@ You do not need to add to this mapping spreadsheet, but it can help with writing
 
 The following instructions are based on the original documentation for [Traject](https://github.com/traject/traject), the tool we use and expand in our DLME data pipeline.
 
-Start by creating a new file in the [dlme-traject repo](https://github.com/sul-dlss/dlme-metadata) named for the source as referenced above in step 3 (e.g. `my_new_source_config.rb` or `stanford_mods.rb` - whatever you put as your name for the `traject_file` field above in https://github.com/sul-dlss/dlme-traject/blob/master/metadata_mapping.json).
+Start by creating a new file in the [dlme-transform repo](https://github.com/sul-dlss/dlme-transform/tree/master/traject_configs) named for the source as referenced above in step 3 (e.g. `my_new_source_config.rb` or `stanford_mods.rb` - whatever you put as your name for the `traject_file` field above in https://github.com/sul-dlss/dlme-transform/blob/master/config/metadata_mapping.json).
 
 You then add your mapping using the Traject DSL (domain specific language), which simplifies the expected mapping for records in your metadata. Below are starting examples for mapping configuration files, with further links for examples, available DSL extensions for the formats, and other information.
 
