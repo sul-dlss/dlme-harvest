@@ -19,5 +19,5 @@ def write_records(records, directory):
     for counter, record in enumerate(records):
         os.makedirs(os.path.dirname(directory), exist_ok=True)
         with open('{}/{}.xml'.format(directory, counter), 'w') as f:
-            f.write(to_str(record.raw.encode('utf8')))
+            f.write(to_str(record)) #.raw.encode('utf8')
     print('{} records written to {}'.format(counter, directory))
