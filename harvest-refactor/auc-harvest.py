@@ -1,0 +1,24 @@
+#!/usr/bin/python
+import os
+from sickle import Sickle
+from sickle.iterator import OAIResponseIterator
+
+def main():
+    # Sets that have not been preioritized or permission has not been granted
+    do_not_harvest = ['p15795coll3', 'p15795coll7', 'p15795coll17', 'p15795coll18', 'p15795coll20',
+                      'p15795coll22', 'p15795coll25']
+
+    sickle = Sickle("http://cdm15795.contentdm.oclc.org/oai/oai.php")
+    sets = sickle.ListSets()
+    for s in sets:
+        if s.setSpec not in do_not_harvest:
+            directory = "output/auc/{}/data/".format(s.setSpec)
+            os.makedirs(os.path.dirname(directory), exist_ok=True)
+
+            records = sickle.ListRecords(metadataPrefix='oai_dc', set=s.setSpec, ignore_deleted=True)
+            for counter, record in enumerate(records, start=1):
+                with open('{}{}-{}.xml'.format(directory, s.setSpec, counter), 'w') as f:
+                    f.write(record.raw)
+
+if __name__ == "__main__":
+    main()

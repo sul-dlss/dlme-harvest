@@ -86,6 +86,34 @@ class Record:
                 return True
         return False
 
+    def get_xpath(self):
+        """Get all the values for a given nested element/field."""
+        out = []
+        metadata = self.elem
+        if metadata is not None:
+            if len(metadata):
+                if metadata.xpath(self.args.xpath, namespaces=namespaces):
+                    for value in metadata.xpath(self.args.xpath, namespaces=namespaces):
+                        if value.text:
+                            out.append(value.text.encode("utf-8").strip())
+                if len(out) == 0:
+                    out = None
+                self.elements = out
+                return self.elements
+
+    def has_xpath(self):
+        """Return True/False if a given nested field is present & non-empty."""
+        out = []
+        present = False
+        metadata = self.elem.find("%smetadata/%smods" % (OAI_NS, MODS_NS))
+        if len(metadata):
+            if metadata.xpath(self.args.xpath, namespaces=namespaces):
+                for value in metadata.xpath(self.args.xpath, namespaces=namespaces):
+                    if value.text:
+                        present = True
+                        return present
+
+
 
 def collect_stats(stats_aggregate, stats):
     """Method for generating the default field usage report."""
@@ -256,6 +284,8 @@ def main():
                         default=False, help="Dump data to tab-delimited format")
     parser.add_argument("-b", "--batch", action="store_true", dest="batch",
                         default=False, help="if the file passed is dir")
+    parser.add_argument("-x", "--xpath", dest="xpath",
+                        help="get value of xpath on mods:mods record")
     parser.add_argument("file", help="put the datafile you want analyzed here")
 
     args = parser.parse_args()
