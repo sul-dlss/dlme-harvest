@@ -13,7 +13,7 @@ def main():
         # Get a list of all sets available
         sets = sickle.ListSets()
         for s in sets:
-            if s.setSpec not in helper.do_not_harvest.get(args.institution, []): 
+            if s.setSpec not in helper.do_not_harvest.get(args.institution, []):
                 records = sickle.ListRecords(
                     metadataPrefix=args.metadata_prefix,
                     set=s.setSpec,
