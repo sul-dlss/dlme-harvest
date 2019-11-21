@@ -42,6 +42,7 @@ def main():
                 print("Bad response: {}".format(manifest['@id']))
                 forbidden += 1
                 bad_responses.append(manifest['@id'])
+
         # Try bad responses a second time
         # for url in bad_responses:
         #     try:
@@ -54,7 +55,6 @@ def main():
         #     except:
         #         print("Second attempt to harvest {} failed".format(url))
     print(bad_responses)
-        print("{} of {} records were harvested from the '{}' collection.".format((count-forbidden), count, key))
-
+    print("{} of {} records were harvested from the '{}' collection.".format((count-forbidden), count, key))
 if __name__ == "__main__":
     main()
