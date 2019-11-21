@@ -13,14 +13,23 @@ def cluster_fields(records):
     out_field_values = []
     for record in records:
         if args.field_one in record:
-            in_field_values.append(record[args.field_one][0])
+            try:
+                in_field_values.append(record[args.field_one][0])
+            except:
+                for i in record[args.field_one].items():
+                    print(i[1])
+                    in_field_values.append(i)
         if args.field_two in record:
             out_field_values.append(record[args.field_two][0])
     # Count each value in list
     print("-------------------------------")
     print("Clusters:")
-    in_clusters = Counter(in_field_values).most_common() # Count and convert to sorted list of lists
-    out_clusters = Counter(out_field_values).most_common() # Count and convert to sorted list of lists
+    try:
+        in_clusters = Counter(in_field_values).most_common() # Count and convert to sorted list of lists
+        out_clusters = Counter(out_field_values).most_common() # Count and convert to sorted list of lists
+    except:
+        in_clusters = in_field_values
+        out_clusters = out_field_values
     return in_clusters, out_clusters
     # for item in clusters:
     #     print("{}: {}".format(item[0], item[1]))
@@ -73,37 +82,60 @@ def inspect(records):
     for record_count, record in enumerate(records, start=1):
         if args.field_one in record:
             field_count += 1
+
     print("{} of {} records have the {} value".format(field_count, record_count, args.field_one))
+
+    directory = '/Users/jtim/Dropbox/DLSS/DLME/dlme-harvest/harvest-refactor/analysis-scripts/output'
+    if not os.path.exists(directory):
+        os.makedirs(directory)
+    with open('{}/{}-{}.txt'.format(directory, args.stage, args.field_one), 'w') as f:
+        for item in in_clusters:
+            f.write("{}: (count: {})\n\n".format(item[0], item[1]))
+        f.write("{} of {} records have the {} value".format(field_count, record_count, args.field_one))
 
 
 # Compare incoming field value to post processing field value
 def compare(records):
-    # in_clusters, out_clusters = cluster_fields(records)
+    in_clusters, out_clusters = cluster_fields(records)
+    values = []
     record_has_field_one_count = 0
     record_has_field_two_count = 0
     records_changed = 0
-    for record_count, record in enumerate(records, start=1):
-        if args.field_one in record:
-            record_has_field_one_count += 1
-            field_one = record[args.field_one]
-            if args.field_two in record:
-                record_has_field_two_count += 1
-                field_two = record[args.field_two]
-                if field_one == field_two:
-                    pass
-                else:
-                    records_changed += 1
-                    print("{} => {}".format(field_one, field_two))
-    # if len(in_clusters) == len(out_clusters):
-    #     for in_item, out_item in zip(in_clusters, in_clusters):
-    #         print("{}: {} => {}".format(in_item[1], in_item[0], out_item[0]))
-    # else:
-    #     print("Error: the number of incoming values does not match the numnber of outgoing values.")
-    print("------------------------------------")
-    print("Summary:")
-    print("{} of {} records have the {} field.".format(record_has_field_one_count, record_count, args.field_one))
-    print("{} of {} records have the {} field.".format(record_has_field_two_count, record_count, args.field_two))
-    print("{} of {} records transformed.".format(records_changed, record_count))
+    directory = '/Users/jtim/Dropbox/DLSS/DLME/dlme-harvest/harvest-refactor/analysis-scripts/output'
+    if not os.path.exists(directory):
+        os.makedirs(directory)
+    with open('{}/{}-{}-and-{}.txt'.format(directory, args.stage, args.field_one, args.field_two), 'w') as f:
+        for record_count, record in enumerate(records, start=1):
+            if args.field_one in record:
+                record_has_field_one_count += 1
+                field_one = record[args.field_one]
+                if args.field_two in record:
+                    record_has_field_two_count += 1
+                    field_two = record[args.field_two]
+                    if field_one == field_two:
+                        pass
+                    else:
+                        records_changed += 1
+                        print("{} => {}".format(field_one, field_two))
+                        values.append("{} ========> {}".format(field_one, field_two))
+        for i in set(values):
+            print(i)
+            f.write("{}\n\n".format(i))
+        if len(in_clusters) == len(out_clusters):
+            for in_item, out_item in zip(in_clusters, in_clusters):
+                print("{}: {} => {}".format(in_item[1], in_item[0], out_item[0]))
+        else:
+            print("Warning: the number of incoming values {} does not match the numnber of outgoing values {}.".format(len(in_clusters), len(out_clusters)))
+        print("------------------------------------")
+        print("Summary:")
+        print("{} of {} records have the {} field.".format(record_has_field_one_count, record_count, args.field_one))
+        print("{} of {} records have the {} field.".format(record_has_field_two_count, record_count, args.field_two))
+        print("{} of {} records transformed.".format(records_changed, record_count))
+        f.write("------------------------------------\n")
+        f.write("Summary:\n")
+        f.write("{} of {} records have the {} field.\n".format(record_has_field_one_count, record_count, args.field_one))
+        f.write("{} of {} records have the {} field.\n".format(record_has_field_two_count, record_count, args.field_two))
+        f.write("{} of {} records transformed.\n".format(records_changed, record_count))
 
 # Use FIELD_MAP and args.field to determine which validation function to call
 def validate(records):
