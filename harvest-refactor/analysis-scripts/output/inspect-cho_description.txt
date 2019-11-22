@@ -1,0 +1,43 @@
+en: (count: ['Interior shot of Desert Development Center with staff member.'])
+
+en: (count: ['Shows bottom floor of hostel'])
+
+en: (count: ['Black and white photographer showing students in Ewart Hall'])
+
+en: (count: ['Ceiling and wall details of Ewart Hall'])
+
+en: (count: ['Label text reads: "The University\'s oldest and newest buildings. In 1919 AUC opened in the former palace, at right. In 1966 the new Science Building at rear was dedicated at an international science conference."'])
+
+en: (count: ['Interior shot of a door with a mashribaya'])
+
+en: (count: ['Kasr El Dobara Evangelical Church and the Mogamma are in the background.'])
+
+en: (count: ['Students socializing on the steps outside the Main Library, located in the Greek Campus.'])
+
+en: (count: ['Construction of Ewart Hall began in 1927 and was completed in March 1928, after an anonymous donor donated $100,000 in 1925 for an auditorium.'])
+
+en: (count: ['Lefthand most entryway, labeled "The American"'])
+
+en: (count: ['Exterior shot of the AUC Desert Development Center'])
+
+en: (count: ['Column of Ewart Hall, showing the Arab-influenced architecture'])
+
+en: (count: ['Ceiling and wall details of Ewart Hall'])
+
+en: (count: ['Construction of Ewart Hall began in 1927 and was completed in March 1928, after an anonymous donor donated $100,000 in 1925 for an auditorium.'])
+
+en: (count: ['Construction of Ewart Hall began in 1927 and was completed in March 1928, after an anonymous donor donated $100,000 in 1925 for an auditorium.'])
+
+en: (count: ['Interior doorway of Ewart Hall'])
+
+en: (count: ['Arched entrance to Ewart Hall from Sheik Rihan Street'])
+
+en: (count: ['Righthand most entryway, labeled "In Cairo"'])
+
+en: (count: ['Black and white photographer showing students in Ewart Hall'])
+
+en: (count: ['Shot of entrance from Sheik Rihan Street, including police officers, a student reading, and a bicycle.'])
+
+en: (count: ['Two students stand outside of Oriental Hall in the 1920s-30s (exact date unknown)'])
+
+21 of 228 records have the cho_description value

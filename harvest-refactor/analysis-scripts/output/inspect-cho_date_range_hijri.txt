@@ -1,0 +1,29 @@
+1338: (count: 66)
+
+1400: (count: 55)
+
+1410: (count: 20)
+
+1379: (count: 14)
+
+1421: (count: 10)
+
+1358: (count: 9)
+
+1369: (count: 7)
+
+1389: (count: 3)
+
+1345: (count: 3)
+
+1346: (count: 3)
+
+1327: (count: 2)
+
+1341: (count: 1)
+
+1372: (count: 1)
+
+1370: (count: 1)
+
+195 of 228 records have the cho_date_range_hijri value

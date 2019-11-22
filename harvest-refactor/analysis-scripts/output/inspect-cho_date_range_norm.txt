@@ -1,0 +1,29 @@
+1920: (count: 66)
+
+1980: (count: 55)
+
+1990: (count: 20)
+
+1960: (count: 14)
+
+2001: (count: 10)
+
+1940: (count: 9)
+
+1950: (count: 7)
+
+1970: (count: 3)
+
+1927: (count: 3)
+
+1928: (count: 3)
+
+1910: (count: 2)
+
+1923: (count: 1)
+
+1953: (count: 1)
+
+1951: (count: 1)
+
+195 of 228 records have the cho_date_range_norm value
