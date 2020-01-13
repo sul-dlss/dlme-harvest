@@ -35,7 +35,7 @@ def main():
     number_of_records = int(tree[0][1].text)
     limit = 250
     iterations = math.ceil(number_of_records / limit)
-    digital_record_count = 11846
+    digital_record_count = 10166
     start_record = digital_record_count + 1 # the starting record for each batch
     for i in range(iterations):
         print("Harvesting batch {} of {}".format(i+1, iterations))
@@ -50,7 +50,7 @@ def main():
                 record_in_context = urllib.request.urlopen(record_url).read().decode("utf8")
                 pattern_matches = re.findall(r"onclick=\"copyManifestToClipBoard([^)]*)", record_in_context)
                 iiif_manifest_url = pattern_matches[0].replace('onclick="copyManifestToClipBoard(', '').strip('(').strip("'")
-                iiif_elem = etree.Element("iiif_manifest_url")
+                iiif_elem = etree.Element("{http://www.loc.gov/mods/v3}url")
                 record.insert(0, iiif_elem)
                 iiif_elem.text = iiif_manifest_url
                 iiif_elem.tail = "\n"
