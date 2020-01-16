@@ -1,7 +1,5 @@
 import errno
 import os
-from sickle.models import Record
-from sickle.models import Header
 from sickle import Sickle
 from sickle.iterator import OAIResponseIterator
 
@@ -37,4 +35,3 @@ for record in records:
     with open(out_file, 'w') as f:
     	file_count += 1
     	f.write(to_str(record.raw.encode('utf8')))
-    	f.close()
