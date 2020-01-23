@@ -24,11 +24,14 @@ directory = "output/qnl/data/"
 os.makedirs(os.path.dirname(directory), exist_ok=True)
 
 for count, record in enumerate(records, start=1):
-    try:
-        print("Record number " + str(count))
-        out_file = 'output/qnl/data/qnl-{}.xml'.format(count)
-        directory_name = os.path.dirname(out_file)
-        with open(out_file, 'w') as f:
-        	f.write(record.raw)
-    except:
-        pass
+    if record == 'NoneType':
+        print("None type found")
+    else:
+        try:
+            print("Record number " + str(count))
+            out_file = 'output/qnl/data/qnl-{}.xml'.format(count)
+            directory_name = os.path.dirname(out_file)
+            with open(out_file, 'w') as f:
+            	f.write(record.raw)
+        except:
+            pass
