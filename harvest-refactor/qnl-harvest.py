@@ -10,7 +10,7 @@ sickle = Sickle('https://api.qdl.qa/oaipmh')
 print("Sickle instance created.") # status update
 
 records = sickle.ListRecords(metadataPrefix='mods', ignore_deleted=True)
-print("{} records created.".format(records.len())) # status update
+print("Records created.") # status update
 
 directory = "output/qnl/data/"
 os.makedirs(os.path.dirname(directory), exist_ok=True)
