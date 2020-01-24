@@ -16,8 +16,10 @@ directory = "output/qnl/data/"
 os.makedirs(os.path.dirname(directory), exist_ok=True)
 
 for count, record in enumerate(records, start=1):
-    if record is None:
-        print("None type found {}".format(count))
+    if count == 18108:
+        pass
+    # if record is None:
+    #     print("None type found {}".format(count))
     else:
         try:
             print("Record number " + str(count))

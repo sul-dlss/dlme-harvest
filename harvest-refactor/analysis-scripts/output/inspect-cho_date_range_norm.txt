@@ -1,0 +1,15 @@
+2012: (count: 185)
+
+2011: (count: 98)
+
+2013: (count: 90)
+
+2016: (count: 40)
+
+2014: (count: 36)
+
+2015: (count: 8)
+
+2017: (count: 4)
+
+461 of 461 records have the cho_date_range_norm value

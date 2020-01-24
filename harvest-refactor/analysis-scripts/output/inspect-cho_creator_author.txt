@@ -1,0 +1,97 @@
+Firdawsi: (count: 928)
+
+Nizami: (count: 558)
+
+: (count: 444)
+
+Sa'di: (count: 254)
+
+Jami: (count: 239)
+
+'Asafi, Muhammad: (count: 207)
+
+Abu al-Fazl ibn Mubarak: (count: 150)
+
+Hafiz: (count: 132)
+
+Amir Khusraw Dihlavi: (count: 129)
+
+Bidpai: (count: 123)
+
+Rashid al-Din: (count: 64)
+
+'Alishir Nava'i: (count: 49)
+
+Firdawsi Firdawsi: (count: 42)
+
+Khvaju Kirmani, Mahmud ibn 'Ali: (count: 39)
+
+al-Qazwini: (count: 35)
+
+attributed to Mawlana Mahmud Arifi: (count: 24)
+
+Firdausi: (count: 22)
+
+'Attar, Farid al-Din: (count: 22)
+
+Abu Mansur Ahmad ibn Ali Asadi Tusi: (count: 20)
+
+Abu Djafar Muhammad b. Djarir b. Yazid al-Tabari: (count: 20)
+
+Amir Shahi: (count: 15)
+
+Ziya' al-Din Nakhshabi: (count: 14)
+
+Hafiz-i Abru: (count: 13)
+
+Ibn Husâm, Muhammad: (count: 13)
+
+Sharaf al-Din Ali Yazdi: (count: 13)
+
+al-Hariri: (count: 13)
+
+Jafar al-Sadik: (count: 13)
+
+Jami : (count: 11)
+
+al-Jazari: (count: 10)
+
+'Awfi, Abû Ishâq ibn Muhammad: (count: 10)
+
+Dioscorides Pedanius of Anazarbos: (count: 10)
+
+Pseudo-Galen: (count: 8)
+
+'Assar, Shams al-Din Muhammad: (count: 7)
+
+al-Din, Maulana Muhammad b. Husam: (count: 5)
+
+Alisher Navoii: (count: 4)
+
+Husayn Bayqara, Sultan of Korasan: (count: 4)
+
+Ishaq b. Ibrahîm b. Mansûr b. Khalaf al-NaysâbûrȊ: (count: 3)
+
+Khvând Mîr, Ghiyâs al-Dîn ibn Humâm al-Dîn: (count: 3)
+
+Valmiki: (count: 2)
+
+Babur: (count: 2)
+
+Fattāḥī: (count: 2)
+
+al-Biruni Abu 'l-Rayhan Muhammad b. Ahmad: (count: 2)
+
+Ibn Bakhtishu', 'Ubayd Allah ibn Jibra'il: (count: 2)
+
+Isma'il I: (count: 2)
+
+al-Isfahani: (count: 2)
+
+Hatifi: (count: 2)
+
+Muhammad ibn Badr al-Din Jajarmi: (count: 1)
+
+'Abbas I, Shah of Iran: (count: 1)
+
+3688 of 11845 records have the cho_creator_author value

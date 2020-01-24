@@ -1,0 +1,1845 @@
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+en: (count: ['Text'])
+
+ar-Arab: (count: ['نص'])
+
+461 of 461 records have the cho_edm_type value
