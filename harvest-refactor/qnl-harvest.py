@@ -6,19 +6,11 @@ from sickle.iterator import OAIResponseIterator
 # where to write data to (relative to the dlme-harvest repo folder)
 base_output_folder = 'output'
 
-# def to_str(bytes_or_str):
-#     '''Takes bytes or string and returns string'''
-#     if isinstance(bytes_or_str, bytes):
-#         value = bytes_or_str.decode('utf-8')
-#     else:
-#         value = bytes_or_str
-#     return value  # Instance of str
-
 sickle = Sickle('https://api.qdl.qa/oaipmh')
 print("Sickle instance created.") # status update
 
 records = sickle.ListRecords(metadataPrefix='mods', ignore_deleted=True)
-print("Records created.") # status update
+print("{} records created.".format(records.len())) # status update
 
 directory = "output/qnl/data/"
 os.makedirs(os.path.dirname(directory), exist_ok=True)
