@@ -1,59 +1,54 @@
-import io, json, os, re, urllib.request, math
+import io, json, os, re, urllib.request, math, time
 
 # Url to the collection manifest
-url = 'https://api.lib.harvard.edu/v2/items.json?q=%E2%80%9CStuart%20Cary%20Welch%20Islamic%20and%20South%20Asian%20Photograph%20Collection.%E2%80%9D'
+collections = {
+               #'persian': 'https://www.loc.gov/collections/persian-language-rare-materials/?fo=json',
+               #'abdul-hamid-ii-books': 'https://www.loc.gov/collections/abdul-hamid-ii-books/?fo=json',
+               # 'el-taher': 'https://www.loc.gov/collections/eltaher-collection/?fo=json',
+               'abdul-hamid-ii-photos': 'https://www.loc.gov/collections/abdul-hamid-ii/?fo=json',
+               'st-catherines-monastery': 'https://www.loc.gov/collections/manuscripts-in-st-catherines-monastery-mount-sinai/?fo=json',
+               'greek-and-armenian-patriarchates': 'https://www.loc.gov/collections/greek-and-armenian-patriarchates-of-jerusalem/?fo=json'}
 
 def main():
-    collection_response = urllib.request.urlopen(url)
-    collection_data = json.load(collection_response)
-    number_found = collection_data['pagination']['numFound']
-    limit = 250 # the number of records returned in each batch
-    iterations = math.ceil(number_found / limit)
-    digital_record_count = 11755
-    start = digital_record_count + 1 # the starting record for each batch
-    for i in range(iterations):
-        print("Harvesting batch {} of {}".format(i+1, iterations))
-        batch_url = "{}&limit=250&start={}".format(url, start)
-        batch_response = urllib.request.urlopen(batch_url)
-        batch_data = json.load(batch_response)
-        start += limit
-        # Get record manifests and harvest data for each record
-        for record in batch_data['items']['mods']:
-            try:
-                record_url = record['location']['url']['#text']
-                record_in_context = urllib.request.urlopen(record_url).read().decode("utf8")
-                pattern_matches = re.findall(r"onclick=\"copyManifestToClipBoard([^)]*)", record_in_context)
-                iiif_manifest_url = pattern_matches[0].replace('onclick="copyManifestToClipBoard(', '').strip('(').strip("'")
-                iiif_manifest = {'iiif_manifest': iiif_manifest_url}
-                record.update(iiif_manifest)
-                filename = 'output/harvard/scw/data/scw-{}.json'.format(digital_record_count)
-                os.makedirs(os.path.dirname(filename), exist_ok=True)
-                with io.open(filename, 'w') as out_file:
-                    json.dump(record, out_file, ensure_ascii=False)
-                digital_record_count += 1
-            except:
-                try:
-                    for i in record['location']:
-                        try:
-                            record_url = i['url']['#text']
-                            record_in_context = urllib.request.urlopen(record_url).read().decode("utf8")
-                            pattern_matches = re.findall(r'onclick="copyManifestToClipBoard([^)]*)', record_in_context)
-                            iiif_manifest_url = pattern_matches[0].replace('onclick="copyManifestToClipBoard(', '').strip('(').strip("'")
-                            iiif_manifest = {'iiif_manifest': iiif_manifest_url}
-                            record.update(iiif_manifest)
-                            filename = 'output/harvard/scw/data/scw-{}.json'.format(digital_record_count)
-                            os.makedirs(os.path.dirname(filename), exist_ok=True)
-                            with io.open(filename, 'w') as out_file:
-                                json.dump(record, out_file, ensure_ascii=False)
-                            digital_record_count += 1
-                        except:
-                            filename = 'output/harvard/scw/data/scw-{}.json'.format(digital_record_count)
-                            os.makedirs(os.path.dirname(filename), exist_ok=True)
-                            with io.open(filename, 'w') as out_file:
-                                json.dump(record, out_file, ensure_ascii=False)
-                            digital_record_count += 1
-                except:
-                    print("here")
-    print("Harvested {} records".format(digital_record_count))
+    total = 0
+    for key, value in collections.items():
+        try:
+            record_count = 1
+            # http connection
+            user_agent = 'Mozilla/5.0 (Windows NT 6.1; Win64; x64)'
+            values = {'name': 'Jacob Hill',
+                      'location': 'Chapel Hill',
+                      'language': 'Python' }
+            headers = {'User-Agent': user_agent}
+            data = urllib.parse.urlencode(values)
+            data = data.encode('ascii')
+            request = urllib.request.Request(value, data, headers)
+            response = urllib.request.urlopen(request)
+            collection_data = json.load(response)
+
+            collection_pages = []
+
+            for i in range(1000):
+                collection_pages.append("{}&sp={}".format(value, i+1))
+
+            for page in collection_pages:
+                print('Harvesting {}'.format(page))
+                request = urllib.request.Request(page, data, headers)
+                response = urllib.request.urlopen(request)
+
+                for item in collection_data['results']:
+                    filename = 'output/loc/{}/data/{}-{}.json'.format(key, key, record_count)
+                    os.makedirs(os.path.dirname(filename), exist_ok=True)
+                    with io.open(filename, 'w') as out_file:
+                        json.dump(item, out_file, ensure_ascii=False)
+                    record_count += 1
+                time.sleep(3)
+        except:
+            total += record_count
+            print('{} collection finished.'.format(key))
+            pass
+
+    print('Harvested {} records'.format(total))
+    
 if __name__ == "__main__":
     main()
