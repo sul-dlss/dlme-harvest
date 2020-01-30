@@ -2,12 +2,13 @@ import io, json, os, re, urllib.request, math, time
 
 # Url to the collection manifest
 collections = {
-               #'persian': 'https://www.loc.gov/collections/persian-language-rare-materials/?fo=json',
-               #'abdul-hamid-ii-books': 'https://www.loc.gov/collections/abdul-hamid-ii-books/?fo=json',
-               # 'el-taher': 'https://www.loc.gov/collections/eltaher-collection/?fo=json',
-               'abdul-hamid-ii-photos': 'https://www.loc.gov/collections/abdul-hamid-ii/?fo=json',
-               'st-catherines-monastery': 'https://www.loc.gov/collections/manuscripts-in-st-catherines-monastery-mount-sinai/?fo=json',
-               'greek-and-armenian-patriarchates': 'https://www.loc.gov/collections/greek-and-armenian-patriarchates-of-jerusalem/?fo=json'}
+               'persian': 'https://www.loc.gov/collections/persian-language-rare-materials/?c=100&fo=json',
+               'abdul-hamid-ii-books': 'https://www.loc.gov/collections/abdul-hamid-ii-books/?c=100&fo=json',
+               'el-taher': 'https://www.loc.gov/collections/eltaher-collection/?c=100&fo=json',
+               'abdul-hamid-ii-photos': 'https://www.loc.gov/collections/abdul-hamid-ii/?c=100&fo=json',
+               'st-catherines-monastery': 'https://www.loc.gov/collections/manuscripts-in-st-catherines-monastery-mount-sinai/?c=100&fo=json',
+               'greek-and-armenian-patriarchates': 'https://www.loc.gov/collections/greek-and-armenian-patriarchates-of-jerusalem/?c=100&fo=json'
+               }
 
 def main():
     total = 0
@@ -27,14 +28,14 @@ def main():
             collection_data = json.load(response)
 
             collection_pages = []
-
-            for i in range(1000):
-                collection_pages.append("{}&sp={}".format(value, i+1))
+            for i in range(math.ceil(collection_data['pagination']['of'] / 100)):
+                collection_pages.append('{}&sp={}'.format(value, i+1))
 
             for page in collection_pages:
                 print('Harvesting {}'.format(page))
                 request = urllib.request.Request(page, data, headers)
                 response = urllib.request.urlopen(request)
+                collection_data = json.load(response)
 
                 for item in collection_data['results']:
                     filename = 'output/loc/{}/data/{}-{}.json'.format(key, key, record_count)
@@ -43,11 +44,9 @@ def main():
                         json.dump(item, out_file, ensure_ascii=False)
                     record_count += 1
                 time.sleep(3)
+
         except:
-            total += record_count
-            print('{} collection finished.'.format(key))
             pass
 
-    print('Harvested {} records'.format(total))
 if __name__ == "__main__":
     main()
