@@ -49,5 +49,6 @@ def main():
             pass
 
     print('Harvested {} records'.format(total))
+    
 if __name__ == "__main__":
     main()
