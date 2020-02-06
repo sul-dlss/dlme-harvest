@@ -9,7 +9,7 @@ base_output_folder = 'output'
 sickle = Sickle('https://api.qdl.qa/oaipmh')
 print("Sickle instance created.") # status update
 
-records = sickle.ListRecords(metadataPrefix='mods', ignore_deleted=True, resumptionToken=5603)
+records = sickle.ListRecords(metadataPrefix='mods', ignore_deleted=True, resumptionToken='5603')
 print("Records created.") # status update
 
 directory = "output/qnl/data/"
