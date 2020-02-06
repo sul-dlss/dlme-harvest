@@ -15,6 +15,7 @@ print("Records created.") # status update
 directory = "output/qnl/data/"
 os.makedirs(os.path.dirname(directory), exist_ok=True)
 
+# Change start to the resumption token plus 1
 for count, record in enumerate(records, start=5604):
     try:
         print("Record number " + str(count))
