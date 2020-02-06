@@ -6,7 +6,7 @@ from sickle.iterator import OAIResponseIterator
 sickle = Sickle('https://api.qdl.qa/oaipmh')
 print("Sickle instance created.") # status update
 
-records = sickle.ListRecords(resumptionToken='set%3Dposters%26metadataPrefix%3Doai_dc%26startDoc%3D13896')
+records = sickle.ListRecords(resumptionToken='13896mods')
 print("Records created.") # status update
 
 directory = "output/qnl/data/"
