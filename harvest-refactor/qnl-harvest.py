@@ -9,13 +9,13 @@ base_output_folder = 'output'
 sickle = Sickle('https://api.qdl.qa/oaipmh')
 print("Sickle instance created.") # status update
 
-records = sickle.ListRecords(metadataPrefix='mods', ignore_deleted=True)
+records = sickle.ListRecords(metadataPrefix='mods', ignore_deleted=True, resumptionToken=5603)
 print("Records created.") # status update
 
 directory = "output/qnl/data/"
 os.makedirs(os.path.dirname(directory), exist_ok=True)
 
-for count, record in enumerate(records, start=1):
+for count, record in enumerate(records, start=5604):
     try:
         print("Record number " + str(count))
         out_file = 'output/qnl/data/qnl-{}.xml'.format(count)
