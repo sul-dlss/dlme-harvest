@@ -3,20 +3,17 @@ import os
 from sickle import Sickle
 from sickle.iterator import OAIResponseIterator
 
-# where to write data to (relative to the dlme-harvest repo folder)
-base_output_folder = 'output'
-
 sickle = Sickle('https://api.qdl.qa/oaipmh')
 print("Sickle instance created.") # status update
 
-records = sickle.ListRecords(metadataPrefix='mods', ignore_deleted=True, resumptionToken='13754mods_no_ocr')
+records = sickle.ListRecords(resumptionToken='set%3Dposters%26metadataPrefix%3Doai_dc%26startDoc%3D13896')
 print("Records created.") # status update
 
 directory = "output/qnl/data/"
 os.makedirs(os.path.dirname(directory), exist_ok=True)
 
 # Change start to the resumption token plus 1
-for count, record in enumerate(records, start=13755):
+for count, record in enumerate(records, start=13897):
     try:
         print("Record number " + str(count))
         out_file = 'output/qnl/data/qnl-{}.xml'.format(count)
