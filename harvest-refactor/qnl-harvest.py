@@ -7,14 +7,14 @@ sickle = Sickle('https://api.qdl.qa/oaipmh')
 print("Sickle instance created.") # status update
 
 # Set the resumption token to 0 to start or any number to continue from
-records = sickle.ListRecords(resumptionToken='13896mods')
+records = sickle.ListRecords(resumptionToken='18108mods')
 print("Records created.") # status update
 
 directory = "output/qnl/data/"
 os.makedirs(os.path.dirname(directory), exist_ok=True)
 
 # Change start to the resumption token plus 1
-for count, record in enumerate(records, start=13897):
+for count, record in enumerate(records, start=18109):
     try:
         print("Record number " + str(count))
         out_file = 'output/qnl/data/qnl-{}.xml'.format(count)
