@@ -1,20 +1,19 @@
-import errno
-import os
+import errno, os
 from sickle import Sickle
-from sickle.iterator import OAIResponseIterator
 
 sickle = Sickle('https://api.qdl.qa/oaipmh')
 print("Sickle instance created.") # status update
 
-# Set the resumption token to 0 to start or any number to continue from
-records = sickle.ListRecords(resumptionToken='34156mods')
+# Set the resumption token to 0 to start or any number to continue from.
+# Use mods_no_ocr as the ocr is unneeded and some records are too long.
+records = sickle.ListRecords(resumptionToken='0mods_no_ocr')
 print("Records created.") # status update
 
 directory = "output/qnl/data/"
 os.makedirs(os.path.dirname(directory), exist_ok=True)
 
 # Change start to the resumption token plus 1
-for count, record in enumerate(records, start=34157):
+for count, record in enumerate(records, start=1):
     try:
         print("Record number " + str(count))
         out_file = 'output/qnl/data/qnl-{}.xml'.format(count)
