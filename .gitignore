@@ -12,15 +12,16 @@
 *.rbc
 /.config
 /coverage/
+/harvest-refactor/analysis-scripts/output/
 /InstalledFiles
+/log/
+/output/
 /pkg/
 /spec/reports/
 /spec/examples.txt
 /test/tmp/
 /test/version_tmp/
 /tmp/
-/log/
-/output/
 
 # Used by dotenv library to load environment variables.
 # .env

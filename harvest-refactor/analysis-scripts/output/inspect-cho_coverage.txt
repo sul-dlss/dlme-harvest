@@ -1,3 +1,0 @@
-en: (count: ['India'])
-
-1 of 1 records have the cho_coverage value
