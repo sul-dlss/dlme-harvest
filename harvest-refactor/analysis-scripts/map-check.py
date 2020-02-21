@@ -1,5 +1,5 @@
 #!/usr/bin/python
-import glob, ndjson, os
+import glob, json, ndjson, os
 from argparse import ArgumentParser
 from collections import Counter
 
@@ -167,6 +167,14 @@ def main():
         data = ndjson.load(f)
         func = FUNCTION_MAP[args.stage] # Map argument ot function dispatcher
         func(data)
+        # Get character by position, comment out above
+        # data = f.readlines()
+        # try:
+        #     for count, line in enumerate(data):
+        #         json_object = json.loads(line)
+        #         # print("Is valid json? true")
+        # except ValueError as e:
+        #     print("Line {} is not valid json: {}".format(count, line))
 
 
 if __name__ == "__main__":
