@@ -5,13 +5,13 @@ from sickle.iterator import OAIResponseIterator
 
 def main():
     # Sets that have not been preioritized or permission has not been granted
-    do_not_harvest = ['p15795coll3', 'p15795coll7', 'p15795coll17', 'p15795coll18', 'p15795coll20',
+    do_not_harvest = ['p15795coll3', 'p15795coll17', 'p15795coll18', 'p15795coll20',
                       'p15795coll22', 'p15795coll25']
 
     sickle = Sickle("http://cdm15795.contentdm.oclc.org/oai/oai.php")
 
     # Harvest specific listed sets
-    specific_sets = ['sphinx']
+    specific_sets = ['p15795coll7']
     for s in specific_sets:
         directory = "output/auc/{}/data/".format(s)
         os.makedirs(os.path.dirname(directory), exist_ok=True)
