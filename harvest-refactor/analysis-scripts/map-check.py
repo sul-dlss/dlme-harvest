@@ -161,11 +161,11 @@ FUNCTION_MAP = {'inspect': inspect,
 
 def main():
     # Get all ndjson files from output and sort from oldest to newest
-    files = sorted(glob.glob('/Users/jtim/Dropbox/DLSS/DLME/dlme-transform/output/*.ndjson'), key=os.path.getmtime)
+    files = sorted(glob.glob('/Users/jtim/Dropbox/DLSS/DLME/dlme-transform/tmp/output/*.ndjson'), key=os.path.getmtime)
     # Get the path to the newest file
     with open(files[-1], 'r') as f:
         data = ndjson.load(f)
-        func = FUNCTION_MAP[args.stage] # Map argument ot function dispatcher
+        func = FUNCTION_MAP[args.stage] # Map argument to function dispatcher
         func(data)
         # Get character by position, comment out above
         # data = f.readlines()
@@ -189,6 +189,7 @@ if __name__ == "__main__":
         help="Which stage are you on [inspect, compare, or validate]? ")
     parser.add_argument(
         "field_one",
+        nargs='?',
         help="Which field do you want to compare?")
     parser.add_argument(
         "field_two",
