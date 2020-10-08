@@ -2,12 +2,12 @@ import io, json, os, re, urllib.request, math, time
 
 # Url to the collection manifest
 collections = {
-               'persian': 'https://www.loc.gov/collections/persian-language-rare-materials/?c=100&fo=json',
-               'abdul-hamid-ii-books': 'https://www.loc.gov/collections/abdul-hamid-ii-books/?c=100&fo=json',
-               'el-taher': 'https://www.loc.gov/collections/eltaher-collection/?c=100&fo=json',
-               'abdul-hamid-ii-photos': 'https://www.loc.gov/collections/abdul-hamid-ii/?c=100&fo=json',
-               'st-catherines-monastery': 'https://www.loc.gov/collections/manuscripts-in-st-catherines-monastery-mount-sinai/?c=100&fo=json',
-               'greek-and-armenian-patriarchates': 'https://www.loc.gov/collections/greek-and-armenian-patriarchates-of-jerusalem/?c=100&fo=json'
+               # 'persian': 'https://www.loc.gov/collections/persian-language-rare-materials/?c=100&fo=json'
+               # 'abdul-hamid-ii-books': 'https://www.loc.gov/collections/abdul-hamid-ii-books/?c=100&fo=json'
+               # 'el-taher': 'https://www.loc.gov/collections/eltaher-collection/?c=100&fo=json'
+               # 'abdul-hamid-ii-photos': 'https://www.loc.gov/collections/abdul-hamid-ii/?c=100&fo=json'
+               'st-catherines-monastery': 'https://www.loc.gov/collections/manuscripts-in-st-catherines-monastery-mount-sinai/?c=100&fo=json'
+               # 'greek-and-armenian-patriarchates': 'https://www.loc.gov/collections/greek-and-armenian-patriarchates-of-jerusalem/?c=100&fo=json'
                }
 
 def main():
