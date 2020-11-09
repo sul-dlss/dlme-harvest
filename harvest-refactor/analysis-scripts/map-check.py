@@ -184,7 +184,7 @@ def get_values(records):
                 print(record[args.field_one])
                 out_file.write('{}\n'.format(record[args.field_one]))
             else:
-                print('\n Value not in {}\n'.format(record['dlme_source_file']))
+                pass
 
 def find_untransformed(records):
     with open('out_file.txt', 'w') as out_file:

@@ -1,22 +1,24 @@
 import io, json, os, re, urllib.request
 
 # Urls to the collection level iiif manifests for the Armenian, Hebrew, and Arabic mss collections
-collection_urls = {'Hebrew': 'https://iiif.bodleian.ox.ac.uk/iiif/collection/hebrew', 'Armenian': 'https://iiif.bodleian.ox.ac.uk/iiif/collection/armenian',
-                   'Arabic': 'https://iiif.bodleian.ox.ac.uk/iiif/collection/arabic'}
+collection_urls = {
+# 'Arabic': 'https://iiif.bodleian.ox.ac.uk/iiif/collection/arabic-origin',
+#                    'Hebrew': 'https://iiif.bodleian.ox.ac.uk/iiif/collection/hebrew-origin',
+#                    'Persian': 'https://iiif.bodleian.ox.ac.uk/iiif/collection/persian-origin',
+#                    'Turkish': 'https://iiif.bodleian.ox.ac.uk/iiif/collection/turkish-origin',
+                   'Exploring Egypt': 'https://iiif.bodleian.ox.ac.uk/iiif/collection/exploring-egypt'}
 
 def get_record_data(record_manifest_url):
     # Return the available fields in the record manifest
     data = {}
     manifest_response = urllib.request.urlopen(record_manifest_url).read()
     record_data = json.loads(manifest_response)
+    data['rendering'] = record_data['rendering']['@id']
     data['thumbnail'] = record_data['thumbnail']['@id']
     if 'description' in record_data:
-        data['description'] = record_data['description']
+        data['description_top'] = record_data['description']
     for i in record_data['metadata']:
-        if i['label'].lower() == 'homepage':
-            data['homepage'] = i['value'].lower().replace('<span><a href=\"', '').replace('\">view on digital bodleian</a></span>', '')
-        else:
-            data[i['label'].lower().replace(" ", "_")] = i['value']
+        data[i['label'].lower().replace(" ", "_")] = i['value']
     return data
 
 def main():
