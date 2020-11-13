@@ -3,6 +3,12 @@
 # dlme-harvest
 DLME Scripts for harvesting data from providers
 
+# Analysis Scripts
+
+The directory  `analysis-scripts` contains scripts for analyzing incoming metadata transormation outputs. The `input-fields.py` file can be called with a file path (or list of paths) as an argument.
+`python input-fields.py *.xml`
+It prints a list of unique fields in the input file(s), that contain values, to the terminal. It can be useful for determining which fields are present in the incoming metadata to ensure that all available fields are mapped.
+
 # Harvest Scripts
 
 Both python 2 and python 3 are installed on the server.  Use `python` to run python 2 scripts and use
