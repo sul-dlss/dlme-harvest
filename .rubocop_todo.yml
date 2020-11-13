@@ -9,21 +9,21 @@
 # Offense count: 1
 Lint/ParenthesesAsGroupedExpression:
   Exclude:
-    - 'met/ancient-near-east-art/mysql-export-csv.rb'
+    - 'old-ignore/met/ancient-near-east-art/mysql-export-csv.rb'
 
 # Offense count: 1
 Lint/ShadowingOuterLocalVariable:
   Exclude:
-    - 'princeton/islamic-manuscripts/Rakefile'
+    - 'old-ignore/princeton/islamic-manuscripts/Rakefile'
 
 # Offense count: 11
 Lint/UselessAssignment:
   Exclude:
-    - 'maps/Rakefile'
-    - 'maps/map_pids.rb'
-    - 'met/ancient-near-east-art/Rakefile'
-    - 'met/ancient-near-east-art/csv_parse.rb'
-    - 'princeton/islamic-manuscripts/Rakefile'
+    - 'old-ignore/maps/Rakefile'
+    - 'old-ignore/maps/map_pids.rb'
+    - 'old-ignore/met/ancient-near-east-art/Rakefile'
+    - 'old-ignore/met/ancient-near-east-art/csv_parse.rb'
+    - 'old-ignore/princeton/islamic-manuscripts/Rakefile'
 
 # Offense count: 1
 Metrics/AbcSize:
@@ -45,34 +45,34 @@ Metrics/MethodLength:
 # SupportedStylesForLeadingUnderscores: disallowed, required, optional
 Naming/MemoizedInstanceVariableName:
   Exclude:
-    - 'yale/medical-manuscripts/Rakefile'
+    - 'old-ignore/yale/medical-manuscripts/Rakefile'
 
 # Offense count: 1
 # Configuration parameters: EnforcedStyle.
 # SupportedStyles: snake_case, camelCase
 Naming/MethodName:
   Exclude:
-    - 'maps/Rakefile'
+    - 'old-ignore/maps/Rakefile'
 
 # Offense count: 6
 # Configuration parameters: EnforcedStyle.
 # SupportedStyles: snake_case, camelCase
 Naming/VariableName:
   Exclude:
-    - 'met/ancient-near-east-art/csv_parse.rb'
-    - 'met/ancient-near-east-art/mysql-export-csv.rb'
+    - 'old-ignore/met/ancient-near-east-art/csv_parse.rb'
+    - 'old-ignore/met/ancient-near-east-art/mysql-export-csv.rb'
 
 # Offense count: 4
 Security/Open:
   Exclude:
-    - 'princeton/islamic-manuscripts/Rakefile'
+    - 'old-ignore/princeton/islamic-manuscripts/Rakefile'
 
 # Offense count: 1
 Style/Documentation:
   Exclude:
-    - 'spec/**/*'
-    - 'test/**/*'
-    - 'lib/connection.rb'
+    - 'old-ignore/spec/**/*'
+    - 'old-ignore/test/**/*'
+    - 'old-ignore/lib/connection.rb'
 
 # Offense count: 4
 # Cop supports --auto-correct.
@@ -80,7 +80,7 @@ Style/Documentation:
 # SupportedStyles: format, sprintf, percent
 Style/FormatString:
   Exclude:
-    - 'yale/medical-manuscripts/Rakefile'
+    - 'old-ignore/yale/medical-manuscripts/Rakefile'
 
 # Offense count: 2
 # Cop supports --auto-correct.
@@ -88,9 +88,9 @@ Style/FormatString:
 # SupportedStyles: predicate, comparison
 Style/NumericPredicate:
   Exclude:
-    - 'spec/**/*'
-    - 'met/ancient-near-east-art/csv_parse.rb'
-    - 'met/ancient-near-east-art/mysql-export-csv.rb'
+    - 'old-ignore/spec/**/*'
+    - 'old-ignore/met/ancient-near-east-art/csv_parse.rb'
+    - 'old-ignore/met/ancient-near-east-art/mysql-export-csv.rb'
 
 # Offense count: 31
 # Cop supports --auto-correct.
