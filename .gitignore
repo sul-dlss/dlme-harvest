@@ -11,11 +11,10 @@
 *.gem
 *.rbc
 /.config
+/analysis-scripts/output/
 /coverage/
-/harvest-refactor/analysis-scripts/output/
-/InstalledFiles
+/harvest-scripts/output//InstalledFiles
 /log/
-/output/
 /pkg/
 /spec/reports/
 /spec/examples.txt
