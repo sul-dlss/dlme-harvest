@@ -30,59 +30,69 @@ def cluster_fields(records):
         out_clusters = out_field_values
     return in_clusters, out_clusters
 
-########## Core Functions for each Stage ##########
-
-# Inspect incoming values
-def inspect(records, blank_lines, invalid_json):
-    # in_clusters = cluster_fields([records])[0]
-    # for item in in_clusters:
-    #     print("{}: {}".format(item[0], item[1]))
+# Field report showing frequesncy of each field in records
+def field_report(records):
+    data_provider = records[0]['agg_data_provider']['en'][0]
+    width = 50
     field_count = 0
+    title = ' DLME Data Mapping Report for {} '.format(data_provider)
+    header_padding = '*'*int((((width-len(title)+15)/2)))
     for record_count, record in enumerate(records, start=1):
         if args.field_one in record:
             field_count += 1
 
+    print("{}{}{}".format(header_padding, title, header_padding))
     print("\n")
-    print("***************************** Field Mapping Summary Report *****************************")
-    print("\n")
-    print("{} of {} records have the {} value".format(field_count, record_count, args.field_one))
-    print('---------------------------------------------------------------------------------------')
 
-    print("\n")
-    print("There were {} blank lines in the intermediate representation.".format(len(blank_lines)))
-    print("The blank lines were: {}".format(blank_lines))
-    print('---------------------------------------------------------------------------------------')
-    # if len(blank_lines) > 0:
-    #     for line in blank_lines:
-    #         print("Blank line number: {}".format(line))
-    print("\n")
-    print("There were {} invalid json objects in the intermediate representation.".format(len(invalid_json)))
-    print('---------------------------------------------------------------------------------------')
-    if len(invalid_json) > 0:
-        print("Lines with invalid json: {}".format(invalid_json))
-    print("\n")
     # merge all records into single counter object and print field report
-    print('Coverage of fields in IR')
-    print('---------------------------------------------------------------------------------------')
+    print('All fields in DLME intermediate record\n')
+    print('-' * (width+15) + '\n')
     field_report = Counter()
     for record in records:
         for item in record:
             field_report.update({item : 1})
+        if 'agg_dc_rights' in record['agg_is_shown_at']:
+            field_report.update({'agg_is_shown_at.agg_dc_rights' : 1})
+        if 'agg_edm_rights' in record['agg_is_shown_at']:
+            field_report.update({'agg_is_shown_at.agg_edm_rights' : 1})
+        if 'wr_dc_rights' in record['agg_is_shown_at']:
+            field_report.update({'agg_is_shown_at.wr_dc_rights' : 1})
+        if 'wr_edm_rights' in record['agg_is_shown_at']:
+            field_report.update({'agg_is_shown_at.wr_edm_rights' : 1})
+        if 'wr_id' in record['agg_is_shown_at']:
+            field_report.update({'agg_is_shown_at.wr_id' : 1})
+        if 'wr_id' in record['agg_preview']:
+            field_report.update({'agg_preview.wr_id' : 1})
+        if 'wr_is_referenced_by' in record['agg_is_shown_at']:
+            field_report.update({'agg_is_shown_at.wr_is_referenced_by' : 1})
+
     for item, count in field_report.items():
         print(item + ': ', end ="")
-        padding = 80 - len(item)
+        padding = width - len(item) - len(str(count))
         for i in range(padding):
             print('-', end ="")
-        print(count)
+        print("{} of {} ({}%)".format(count, len(records), round(count/len(records)*100)))
+    print('\n')
 
-    directory = "/Users/jtim/Dropbox/DLSS/DLME/dlme-helper/analysis-scripts/output"
-    if not os.path.exists(directory):
-        os.makedirs(directory)
-    with open("{}/{}-{}.txt".format(directory, args.function, args.field_one), "w") as f:
-        # for item in in_clusters:
-        #     f.write("{}: (count: {})\n\n".format(item[0], item[1]))
-        f.write("{} of {} records have the {} value".format(field_count, record_count, args.field_one))
+    return width, len(records), field_report
 
+########## Core Functions for each Stage ##########
+
+# Inspect incoming values
+def inspect(records, blank_lines, invalid_json):
+    print("\n")
+    print("There were {} blank lines in the intermediate representation.".format(len(blank_lines)))
+    print("The blank lines were: {}".format(blank_lines))
+    print('---------------------------------------------------------------------------------------')
+    print("\n")
+    print("There were {} invalid json objects in the intermediate representation.".format(len(invalid_json)))
+    print('---------------------------------------------------------------------------------------')
+
+    if len(invalid_json) > 0:
+        print("Lines with invalid json: {}".format(invalid_json))
+    print("\n")
+
+    field_report(records)
 
 # Compare incoming field value to post processing field value
 def compare(records):
@@ -126,6 +136,42 @@ def compare(records):
         f.write("{} of {} records have the {} field.\n".format(record_has_field_one_count, record_count, args.field_one))
         f.write("{} of {} records have the {} field.\n".format(record_has_field_two_count, record_count, args.field_two))
         f.write("{} of {} records transformed.\n".format(records_changed, record_count))
+
+def report(records):
+
+    width, record_count, field_counts, = field_report(records)
+
+    record_count = len(records)
+
+    print('DLME resource report\n')
+    print('-' * (width+15) + '\n')
+    print('- {} of {} records had urls to thumbnail images.'.format(field_counts['agg_preview.wr_id'], record_count))
+    print('- {} of {} records had urls to resources.'.format(field_counts['agg_is_shown_at.wr_id'], record_count))
+    print('- {} of {} records had iiif manifests.'.format(field_counts['agg_is_shown_at.wr_is_referenced_by'], record_count))
+    print('\n')
+
+    print('DLME rights report\n')
+    print('-' * (width+15) + '\n')
+    print('- {} of {} records had a clearly expressed copyright status for the cultural heritage object.'.format(field_counts['cho_dc_rights'], record_count))
+    print('- {} of {} records had a clearly expressed copyright status for the web resource.'.format((field_counts['agg_is_shown_at.wr_edm_rights'] + field_counts['agg_is_shown_at.wr_dc_rights']), record_count))
+    print('- {} of {} records had clearly expressed aggregation rights.'.format((field_counts['agg_is_shown_at.agg_dc_rights'] + field_counts['agg_is_shown_at.agg_edm_rights']), record_count))
+    print('\n')
+
+    print('DLME coverage report\n')
+    print('-' * (width+15) + '\n')
+    problem_field_count = 0
+    coverage_threshold = 100
+    for item, count in field_counts.items():
+        if round(count/len(records)*100) < coverage_threshold:
+            problem_field_count += 1
+            print('- {} did not meet recommended coverage. {} of {} records included this field.'.format(item, count, record_count))
+    if problem_field_count == 0:
+        print('At least {}% of all fields were covered in the records.'.format(coverage_threshold))
+
+    print('\n')
+    print('''If you believe a mistake may have been made while mapping the above fields, please consult the crosswalk provided with this mapping report to ensure that the correct input field was mapped and report any issues to the DLME Data Manager, Jacob Hill (jtim@stanford.edu).''')
+
+
 
 ########## Functions for Debugging Transformations ##########
 
@@ -220,7 +266,8 @@ FUNCTION_MAP = {"inspect": inspect,
                 "validate_script": validate_script,
                 "validate_type": validate_type,
                 "get_values": get_values,
-                "validate_url": validate_url}
+                "validate_url": validate_url,
+                "report": report}
 
 
 ########## Main Loop ##########
