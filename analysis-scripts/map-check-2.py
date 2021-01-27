@@ -1,5 +1,5 @@
 #!/usr/bin/python
-import csv, glob, json, ndjson, os, validators
+import csv, glob, json, ndjson, os, urllib.request, validators
 from argparse import ArgumentParser
 from collections import Counter
 
@@ -243,19 +243,42 @@ def find_untransformed(records):
             out_file.write('{}\n'.format(list(set(transformed) - set(untransformed))))
 
 
-# validate url
-def validate_url(records):
-    bad_url_counts = Counter()
+# validate urls
+def validate_urls(records):
+    invalid_url_counts = Counter()
     for record in records:
         if args.field_one in record:
             valid=validators.url(record[args.field_one]['wr_id'])
             if valid==True:
                 pass
             else:
-                bad_url_counts.update({'Bad urls' : 1})
+                invalid_url_counts.update({'Invalid urls' : 1})
                 print("id: {} \n url: {} \n".format(record['id'], record[args.field_one]['wr_id']))
 
+    print("There were {} invalid urls.".format(invalid_url_counts['Invalid urls']))
+
+# validate urls
+def resolve_urls(records):
+    unresolvable_url_counts = Counter()
+    unresolvabel_urls = {}
+    for count, record in enumerate(records, start=1):
+        if args.field_one in record:
+            try:
+                print("Checking {} of {}".format(count, len(records)))
+                status_code = urllib.request.urlopen(record[args.field_one]['wr_id']).getcode()
+                if status_code==200:
+                    pass
+                else:
+                    unresolvable_url_counts.update({'Unresolvable urls' : 1})
+                    print("id: {} \n url: {} \n".format(record['id'], record[args.field_one]['wr_id']))
+                    unresolvabel_urls[record['id']] = record[args.field_one]['wr_id']
+            except:
+                print('Url timeout')
+
     print("There were {} bad urls.".format(bad_url_counts['Bad urls']))
+    for k,v in unresolvabel_urls.items():
+        print(k, v)
+
 ########## Function Maps ##########
 
 # Function dispatcher to map stage arguments to function names
@@ -266,8 +289,9 @@ FUNCTION_MAP = {"inspect": inspect,
                 "validate_script": validate_script,
                 "validate_type": validate_type,
                 "get_values": get_values,
-                "validate_url": validate_url,
-                "report": report}
+                "validate_urls": validate_urls,
+                "report": report,
+                "resolve_urls": resolve_urls,}
 
 
 ########## Main Loop ##########
