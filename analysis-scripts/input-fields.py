@@ -37,23 +37,23 @@ def main():
 
         # xml files
         elif file.endswith('.xml'):
-                tree = etree.parse("{}{}".format(args.file[0], file))
-                root = tree.getroot()
-                events = ('start', 'end')
-                for event, element in etree.iterparse("{}{}".format(args.file[0], file)):
-                # context = etree.iterparse("{}{}".format(args.file[0], file), events=events)
-                # for action, elem in context:
-                    if element.text:
-                        xml_elements_with_values.append(element.tag)
+            tree = etree.parse("{}{}".format(args.file[0], file))
+            root = tree.getroot()
+            events = ('start', 'end')
+            for event, element in etree.iterparse("{}{}".format(args.file[0], file)):
+            # context = etree.iterparse("{}{}".format(args.file[0], file), events=events)
+            # for action, elem in context:
+                if element.text:
+                    xml_elements_with_values.append(element.tag)
 
-        # Print results
-        # if args.file[0].endswith('.csv'):
-    print(set(csv_col_names_with_values))
-        # elif args.file[0].endswith('.json'):
-    print(set(json_keys_with_values))
-        # else:
-    for elem in set(xml_elements_with_values):
-        print(elem)
+    # Print results
+    if args.file[0].endswith('.csv'):
+        print(set(csv_col_names_with_values))
+    elif args.file[0].endswith('.json'):
+        print(set(json_keys_with_values))
+    else:
+        for elem in set(xml_elements_with_values):
+            print(elem)
 
 if __name__ == '__main__':
     # CLI client options.
