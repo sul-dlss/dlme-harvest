@@ -11,14 +11,14 @@ def main():
     sickle = Sickle("http://cdm15795.contentdm.oclc.org/oai/oai.php")
 
     # Harvest specific listed sets
-    specific_sets = ['p15795coll7']
-    for s in specific_sets:
-        directory = "output/auc/{}/data/".format(s)
+    specific_sets = {'kraus-meyerhof': 'p15795coll1', 'auc-historical-videos': 'p15795coll23'}
+    for n,s in specific_sets.items():
+        directory = "output/auc/{}/data/".format(n)
         os.makedirs(os.path.dirname(directory), exist_ok=True)
 
         records = sickle.ListRecords(metadataPrefix='oai_dc', set=s, ignore_deleted=True)
         for counter, record in enumerate(records, start=1):
-            with open('{}{}-{}.xml'.format(directory, s, counter), 'w') as f:
+            with open('{}{}-{}.xml'.format(directory, n, counter), 'w') as f:
                 f.write(record.raw)
 
     # Or, harvest everything not in do_not_harvest
