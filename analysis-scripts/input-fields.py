@@ -61,6 +61,6 @@ if __name__ == '__main__':
     parser.add_argument(
         'file',
         nargs='+',
-        help='Which file do you want to parse?')
+        help='Which files do you want to parse?')
     args = parser.parse_args()
     main()
