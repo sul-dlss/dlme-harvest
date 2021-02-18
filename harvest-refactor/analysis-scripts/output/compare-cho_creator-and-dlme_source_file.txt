@@ -1,0 +1,7 @@
+{'und-Latn': ['Ibn al-Mutafanninah, Muḥammad ibn ʻAlī, 1103 or 1104-1181 or 1182 (creator)']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-80.xml
+
+------------------------------------
+Summary:
+1 of 1 records have the cho_creator field.
+1 of 1 records have the dlme_source_file field.
+1 of 1 records transformed.

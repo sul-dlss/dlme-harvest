@@ -36,9 +36,9 @@ def main():
     number_of_records = int(tree[0][1].text)
     print(str(number_of_records) + " records found.")
     limit = 100
-    start_record = 9400 # the starting record is zero or 1 less than the digital_record_count
+    start_record = 0 # the starting record is zero or 1 less than the digital_record_count
     iterations = math.ceil((number_of_records - start_record) / limit)
-    digital_record_count = 9401 # the number for the file name
+    digital_record_count = 1 # the number for the file name
     for i in range(iterations):
         print("Harvesting batch {} of {}".format(i+1, iterations))
         batch_url = "{}&limit={}&start={}".format(url, limit, start_record)
