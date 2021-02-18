@@ -1,0 +1,1631 @@
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-167.xml
+
+{'en': ['Map'], 'ar-Arab': ['خريطة']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-806.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-713.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-29.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-561.xml
+
+{'en': ['Manuscript'], 'ar-Arab': ['مخطوط']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-285.xml
+
+{'en': ['Manuscript'], 'ar-Arab': ['مخطوط']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-471.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-111.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-65.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-121.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-178.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-75.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-50.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-161.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-159.xml
+
+{'en': ['Manuscript'], 'ar-Arab': ['مخطوط']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-426.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-384.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-484.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-105.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-13.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-202.xml
+
+{'en': ['Manuscript'], 'ar-Arab': ['مخطوط']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-405.xml
+
+{'en': ['Map'], 'ar-Arab': ['خريطة']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-771.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-269.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-674.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-70.xml
+
+{'en': ['Dictionary'], 'ar-Arab': ['قاموس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-77.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-701.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-47.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-533.xml
+
+{'en': ['Manuscript'], 'ar-Arab': ['مخطوط']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-543.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-721.xml
+
+{'en': ['Map'], 'ar-Arab': ['خريطة']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-788.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-355.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-88.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-192.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-611.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-632.xml
+
+{'en': ['Manuscript'], 'ar-Arab': ['مخطوط']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-252.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-520.xml
+
+{'en': ['Manuscript'], 'ar-Arab': ['مخطوط']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-259.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-45.xml
+
+{'en': ['Manuscript'], 'ar-Arab': ['مخطوط']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-312.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-315.xml
+
+{'en': ['Manuscript'], 'ar-Arab': ['مخطوط']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-262.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-418.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-442.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-456.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-738.xml
+
+{'en': ['Map'], 'ar-Arab': ['خريطة']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-789.xml
+
+{'en': ['Manuscript'], 'ar-Arab': ['مخطوط']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-546.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-17.xml
+
+{'en': ['Map'], 'ar-Arab': ['خريطة']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-779.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-683.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-707.xml
+
+{'en': ['Manuscript'], 'ar-Arab': ['مخطوط']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-596.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-455.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-212.xml
+
+{'en': ['Manuscript'], 'ar-Arab': ['مخطوط']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-678.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-294.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-424.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-100.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-34.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-583.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-283.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-573.xml
+
+{'en': ['Manuscript'], 'ar-Arab': ['مخطوط']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-643.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-41.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-714.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-332.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-388.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-509.xml
+
+{'en': ['Manuscript'], 'ar-Arab': ['مخطوط']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-556.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-506.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-296.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-652.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-280.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-522.xml
+
+{'en': ['Manuscript'], 'ar-Arab': ['مخطوط']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-663.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-31.xml
+
+{'en': ['Map'], 'ar-Arab': ['خريطة']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-791.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-324.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-107.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-588.xml
+
+{'en': ['Manuscript'], 'ar-Arab': ['مخطوط']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-205.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-271.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-639.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-256.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-143.xml
+
+{'en': ['Manuscript'], 'ar-Arab': ['مخطوط']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-605.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-499.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-381.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-460.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-581.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-662.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-356.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-694.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-102.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-666.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-530.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-435.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-321.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-103.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-14.xml
+
+{'en': ['Manuscript'], 'ar-Arab': ['مخطوط']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-577.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-21.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-710.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-51.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-16.xml
+
+{'en': ['Map'], 'ar-Arab': ['خريطة']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-766.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-646.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-369.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-385.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-138.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-42.xml
+
+{'en': ['Reference']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-48.xml
+
+{'en': ['Dictionary'], 'ar-Arab': ['قاموس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-671.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-732.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-154.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-811.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-11.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-687.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-207.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-649.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-96.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-351.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-295.xml
+
+{'en': ['Manuscript'], 'ar-Arab': ['مخطوط']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-255.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-700.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-323.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-336.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-462.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-60.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-614.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-620.xml
+
+{'en': ['Manuscript'], 'ar-Arab': ['مخطوط']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-211.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-186.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-502.xml
+
+{'en': ['Manuscript'], 'ar-Arab': ['مخطوط']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-578.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-599.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-727.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-172.xml
+
+{'en': ['Manuscript'], 'ar-Arab': ['مخطوط']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-626.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-116.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-234.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-427.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-9.xml
+
+{'en': ['Manuscript'], 'ar-Arab': ['مخطوط']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-398.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-339.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-508.xml
+
+{'en': ['Manuscript'], 'ar-Arab': ['مخطوط']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-392.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-15.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-146.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-265.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-56.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-245.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-668.xml
+
+{'en': ['Manuscript'], 'ar-Arab': ['مخطوط']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-307.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-327.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-367.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-813.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-625.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-291.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-314.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-597.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-507.xml
+
+{'en': ['Manuscript'], 'ar-Arab': ['مخطوط']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-394.xml
+
+{'en': ['Map'], 'ar-Arab': ['خريطة']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-781.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-375.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-353.xml
+
+{'en': ['Manuscript'], 'ar-Arab': ['مخطوط']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-404.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-79.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-273.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-420.xml
+
+{'en': ['Manuscript'], 'ar-Arab': ['مخطوط']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-644.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-142.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-30.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-1.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-22.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-526.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-289.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-251.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-344.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-86.xml
+
+{'en': ['Dictionary'], 'ar-Arab': ['قاموس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-101.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-241.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-545.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-160.xml
+
+{'en': ['Manuscript'], 'ar-Arab': ['مخطوط']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-557.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-563.xml
+
+{'en': ['Manuscript'], 'ar-Arab': ['مخطوط']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-288.xml
+
+{'en': ['Manuscript'], 'ar-Arab': ['مخطوط']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-257.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-365.xml
+
+{'en': ['Manuscript'], 'ar-Arab': ['مخطوط']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-541.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-74.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-602.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-371.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-320.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-446.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-349.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-326.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-752.xml
+
+{'en': ['Map'], 'ar-Arab': ['خريطة']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-796.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-189.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-183.xml
+
+{'en': ['Manuscript'], 'ar-Arab': ['مخطوط']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-213.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-305.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-525.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-311.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-470.xml
+
+{'en': ['Map'], 'ar-Arab': ['خريطة']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-800.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-276.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-250.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-612.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-610.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-586.xml
+
+{'en': ['Manuscript'], 'ar-Arab': ['مخطوط']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-230.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-810.xml
+
+{'en': ['Map'], 'ar-Arab': ['خريطة']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-798.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-247.xml
+
+{'en': ['Map'], 'ar-Arab': ['خريطة']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-755.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-278.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-10.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-170.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-89.xml
+
+{'en': ['Manuscript'], 'ar-Arab': ['مخطوط']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-570.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-493.xml
+
+{'en': ['Map'], 'ar-Arab': ['خريطة']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-742.xml
+
+{'en': ['Map'], 'ar-Arab': ['خريطة']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-774.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-491.xml
+
+{'en': ['Map'], 'ar-Arab': ['خريطة']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-776.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-647.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-715.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-316.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-409.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-514.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-712.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-729.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-515.xml
+
+{'en': ['Manuscript'], 'ar-Arab': ['مخطوط']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-206.xml
+
+{'en': ['Manuscript'], 'ar-Arab': ['مخطوط']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-399.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-380.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-169.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-686.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-122.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-616.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-414.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-475.xml
+
+{'en': ['Manuscript'], 'ar-Arab': ['مخطوط']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-397.xml
+
+{'en': ['Manuscript'], 'ar-Arab': ['مخطوط']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-425.xml
+
+{'en': ['Dictionary'], 'ar-Arab': ['قاموس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-87.xml
+
+{'en': ['Map'], 'ar-Arab': ['خريطة']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-783.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-69.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-731.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-547.xml
+
+{'en': ['Map'], 'ar-Arab': ['خريطة']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-780.xml
+
+{'en': ['Map'], 'ar-Arab': ['خريطة']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-741.xml
+
+{'en': ['Manuscript'], 'ar-Arab': ['مخطوط']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-631.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-410.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-325.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-117.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-637.xml
+
+{'en': ['Manuscript'], 'ar-Arab': ['مخطوط']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-287.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-335.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-735.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-274.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-490.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-32.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-181.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-505.xml
+
+{'en': ['Dictionary'], 'ar-Arab': ['قاموس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-661.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-238.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-37.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-523.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-341.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-538.xml
+
+{'en': ['Manuscript'], 'ar-Arab': ['مخطوط']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-569.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-360.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-630.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-46.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-589.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-233.xml
+
+{'en': ['Manuscript'], 'ar-Arab': ['مخطوط']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-641.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-512.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-176.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-240.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-736.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-76.xml
+
+{'en': ['Map'], 'ar-Arab': ['خريطة']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-801.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-345.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-322.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-49.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-348.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-613.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-35.xml
+
+{'en': ['Manuscript'], 'ar-Arab': ['مخطوط']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-225.xml
+
+{'en': ['Manuscript'], 'ar-Arab': ['مخطوط']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-284.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-54.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-200.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-699.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-40.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-496.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-175.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-221.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-362.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-448.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-717.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-52.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-519.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-63.xml
+
+{'en': ['Manuscript'], 'ar-Arab': ['مخطوط']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-227.xml
+
+{'en': ['Manuscript'], 'ar-Arab': ['مخطوط']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-654.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-642.xml
+
+{'en': ['Manuscript'], 'ar-Arab': ['مخطوط']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-277.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-726.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-352.xml
+
+{'en': ['Map'], 'ar-Arab': ['خريطة']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-459.xml
+
+{'en': ['Manuscript'], 'ar-Arab': ['مخطوط']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-518.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-733.xml
+
+{'en': ['Map'], 'ar-Arab': ['خريطة']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-768.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-468.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-544.xml
+
+{'en': ['Map'], 'ar-Arab': ['خريطة']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-795.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-333.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-163.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-542.xml
+
+{'en': ['Map'], 'ar-Arab': ['خريطة']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-803.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-140.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-681.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-126.xml
+
+{'en': ['Manuscript'], 'ar-Arab': ['مخطوط']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-568.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-91.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-693.xml
+
+{'en': ['Dictionary'], 'ar-Arab': ['قاموس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-118.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-691.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-504.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-527.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-445.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-106.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-454.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-155.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-108.xml
+
+{'en': ['Manuscript'], 'ar-Arab': ['مخطوط']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-653.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-696.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-147.xml
+
+{'en': ['Manuscript'], 'ar-Arab': ['مخطوط']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-223.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-436.xml
+
+{'en': ['Map'], 'ar-Arab': ['خريطة']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-797.xml
+
+{'en': ['Manuscript'], 'ar-Arab': ['مخطوط']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-524.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-466.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-168.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-267.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-97.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-361.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-552.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-177.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-72.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-19.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-162.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-702.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-343.xml
+
+{'en': ['Map'], 'ar-Arab': ['خريطة']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-772.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-364.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-680.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-492.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-718.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-236.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-739.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-685.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-438.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-682.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-25.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-711.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-452.xml
+
+{'en': ['Manuscript'], 'ar-Arab': ['مخطوط']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-222.xml
+
+{'en': ['Manuscript'], 'ar-Arab': ['مخطوط']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-593.xml
+
+{'en': ['Manuscript'], 'ar-Arab': ['مخطوط']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-224.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-621.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-124.xml
+
+{'en': ['Map'], 'ar-Arab': ['خريطة']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-778.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-357.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-645.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-751.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-406.xml
+
+{'en': ['Map'], 'ar-Arab': ['خريطة']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-804.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-363.xml
+
+{'en': ['Manuscript'], 'ar-Arab': ['مخطوط']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-629.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-441.xml
+
+{'en': ['Map'], 'ar-Arab': ['خريطة']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-799.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-27.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-204.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-494.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-389.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-574.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-368.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-450.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-720.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-430.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-244.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-601.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-180.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-81.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-208.xml
+
+{'en': ['Manuscript'], 'ar-Arab': ['مخطوط']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-648.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-136.xml
+
+{'en': ['Map'], 'ar-Arab': ['خريطة']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-748.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-216.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-695.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-703.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-483.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-210.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-501.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-443.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-433.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-194.xml
+
+{'en': ['Manuscript'], 'ar-Arab': ['مخطوط']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-590.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-378.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-558.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-511.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-249.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-254.xml
+
+{'en': ['Manuscript'], 'ar-Arab': ['مخطوط']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-413.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-90.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-594.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-636.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-152.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-584.xml
+
+{'en': ['Map'], 'ar-Arab': ['خريطة']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-785.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-135.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-422.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-401.xml
+
+{'en': ['Map'], 'ar-Arab': ['خريطة']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-762.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-128.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-498.xml
+
+{'en': ['Manuscript'], 'ar-Arab': ['مخطوط']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-635.xml
+
+{'en': ['Map'], 'ar-Arab': ['خريطة']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-453.xml
+
+{'en': ['Manuscript'], 'ar-Arab': ['مخطوط']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-560.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-609.xml
+
+{'en': ['Periodical'], 'ar-Arab': ['مجلة دورية']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-458.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-310.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-412.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-706.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-64.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-416.xml
+
+{'en': ['Manuscript'], 'ar-Arab': ['مخطوط']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-226.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-465.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-716.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-521.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-3.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-331.xml
+
+{'en': ['Manuscript'], 'ar-Arab': ['مخطوط']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-395.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-421.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-402.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-66.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-57.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-104.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-472.xml
+
+{'en': ['Manuscript'], 'ar-Arab': ['مخطوط']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-516.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-80.xml
+
+{'en': ['Manuscript'], 'ar-Arab': ['مخطوط']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-228.xml
+
+{'en': ['Manuscript'], 'ar-Arab': ['مخطوط']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-298.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-188.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-217.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-2.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-463.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-187.xml
+
+{'en': ['Dictionary'], 'ar-Arab': ['قاموس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-199.xml
+
+{'en': ['Manuscript'], 'ar-Arab': ['مخطوط']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-258.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-346.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-370.xml
+
+{'en': ['Map'], 'ar-Arab': ['خريطة']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-758.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-71.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-722.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-166.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-619.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-235.xml
+
+{'en': ['Manuscript'], 'ar-Arab': ['مخطوط']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-396.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-555.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-358.xml
+
+{'en': ['Map'], 'ar-Arab': ['خريطة']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-802.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-582.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-579.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-659.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-608.xml
+
+{'en': ['Map'], 'ar-Arab': ['خريطة']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-786.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-36.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-4.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-20.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-350.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-340.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-141.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-304.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-679.xml
+
+{'en': ['Map'], 'ar-Arab': ['خريطة']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-760.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-451.xml
+
+{'en': ['Map'], 'ar-Arab': ['خريطة']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-746.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-728.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-562.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-23.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-73.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-585.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-28.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-740.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-139.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-407.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-292.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-684.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-580.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-263.xml
+
+{'en': ['Manuscript'], 'ar-Arab': ['مخطوط']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-393.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-529.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-753.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-532.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-26.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-145.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-120.xml
+
+{'en': ['Manuscript'], 'ar-Arab': ['مخطوط']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-308.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-92.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-480.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-486.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-551.xml
+
+{'en': ['Map'], 'ar-Arab': ['خريطة']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-114.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-473.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-7.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-464.xml
+
+{'en': ['Map'], 'ar-Arab': ['خريطة']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-775.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-548.xml
+
+{'en': ['Map'], 'ar-Arab': ['خريطة']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-767.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-290.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-158.xml
+
+{'en': ['Manuscript'], 'ar-Arab': ['مخطوط']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-232.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-94.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-193.xml
+
+{'en': ['Manuscript'], 'ar-Arab': ['مخطوط']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-391.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-697.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-372.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-664.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-366.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-165.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-24.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-531.xml
+
+{'en': ['Dictionary'], 'ar-Arab': ['قاموس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-203.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-677.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-174.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-376.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-164.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-572.xml
+
+{'en': ['Map'], 'ar-Arab': ['خريطة']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-749.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-513.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-171.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-386.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-440.xml
+
+{'en': ['Manuscript'], 'ar-Arab': ['مخطوط']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-587.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-329.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-428.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-62.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-600.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-479.xml
+
+{'en': ['Map'], 'ar-Arab': ['خريطة']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-787.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-182.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-415.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-157.xml
+
+{'en': ['Map'], 'ar-Arab': ['خريطة']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-764.xml
+
+{'en': ['Map'], 'ar-Arab': ['خريطة']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-790.xml
+
+{'en': ['Map'], 'ar-Arab': ['خريطة']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-765.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-595.xml
+
+{'en': ['Manuscript'], 'ar-Arab': ['مخطوط']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-495.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-417.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-575.xml
+
+{'en': ['Dictionary'], 'ar-Arab': ['قاموس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-598.xml
+
+{'en': ['Map'], 'ar-Arab': ['خريطة']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-807.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-282.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-670.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-231.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-281.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-144.xml
+
+{'en': ['Manuscript'], 'ar-Arab': ['مخطوط']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-279.xml
+
+{'en': ['Map'], 'ar-Arab': ['خريطة']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-745.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-510.xml
+
+{'en': ['Manuscript'], 'ar-Arab': ['مخطوط']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-650.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-319.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-33.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-476.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-8.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-689.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-125.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-408.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-110.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-487.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-190.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-185.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-239.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-477.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-690.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-657.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-149.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-517.xml
+
+{'en': ['Map'], 'ar-Arab': ['خريطة']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-757.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-485.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-658.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-301.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-537.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-354.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-44.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-127.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-489.xml
+
+{'en': ['Map'], 'ar-Arab': ['خريطة']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-777.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-191.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-209.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-129.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-58.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-734.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-550.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-377.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-43.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-592.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-383.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-709.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-503.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-467.xml
+
+{'en': ['Map'], 'ar-Arab': ['خريطة']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-784.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-275.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-469.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-39.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-300.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-173.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-528.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-261.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-708.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-55.xml
+
+{'en': ['Manuscript'], 'ar-Arab': ['مخطوط']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-535.xml
+
+{'en': ['Manuscript'], 'ar-Arab': ['مخطوط']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-286.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-151.xml
+
+{'en': ['Dictionary'], 'ar-Arab': ['قاموس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-130.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-85.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-606.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-655.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-59.xml
+
+{'en': ['Map'], 'ar-Arab': ['خريطة']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-792.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-624.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-197.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-61.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-481.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-93.xml
+
+{'en': ['Dictionary'], 'ar-Arab': ['قاموس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-119.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-565.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-68.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-53.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-564.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-99.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-266.xml
+
+{'en': ['Manuscript'], 'ar-Arab': ['مخطوط']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-219.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-83.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-698.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-723.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-622.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-638.xml
+
+{'en': ['Manuscript'], 'ar-Arab': ['مخطوط']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-553.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-268.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-132.xml
+
+{'en': ['Map'], 'ar-Arab': ['خريطة']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-747.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-576.xml
+
+{'en': ['Map'], 'ar-Arab': ['خريطة']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-744.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-338.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-719.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-482.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-554.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-137.xml
+
+{'en': ['Map'], 'ar-Arab': ['خريطة']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-750.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-447.xml
+
+{'en': ['Manuscript'], 'ar-Arab': ['مخطوط']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-403.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-123.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-337.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-591.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-215.xml
+
+{'en': ['Manuscript'], 'ar-Arab': ['مخطوط']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-229.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-6.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-184.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-627.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-667.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-640.xml
+
+{'en': ['Manuscript'], 'ar-Arab': ['مخطوط']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-237.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-692.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-604.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-724.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-98.xml
+
+{'en': ['Dictionary'], 'ar-Arab': ['قاموس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-153.xml
+
+{'en': ['Map'], 'ar-Arab': ['خريطة']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-773.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-150.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-306.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-672.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-334.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-812.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-390.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-84.xml
+
+{'en': ['Map'], 'ar-Arab': ['خريطة']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-115.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-246.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-536.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-243.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-725.xml
+
+{'en': ['Map'], 'ar-Arab': ['خريطة']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-761.xml
+
+{'en': ['Map'], 'ar-Arab': ['خريطة']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-113.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-461.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-500.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-429.xml
+
+{'en': ['Manuscript'], 'ar-Arab': ['مخطوط']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-497.xml
+
+{'en': ['Map'], 'ar-Arab': ['خريطة']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-794.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-603.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-656.xml
+
+{'en': ['Map'], 'ar-Arab': ['خريطة']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-782.xml
+
+{'en': ['Manuscript'], 'ar-Arab': ['مخطوط']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-220.xml
+
+{'en': ['Manuscript'], 'ar-Arab': ['مخطوط']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-474.xml
+
+{'en': ['Manuscript'], 'ar-Arab': ['مخطوط']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-571.xml
+
+{'en': ['Manuscript'], 'ar-Arab': ['مخطوط']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-559.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-539.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-179.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-347.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-379.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-133.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-444.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-317.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-633.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-309.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-18.xml
+
+{'en': ['Map'], 'ar-Arab': ['خريطة']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-756.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-293.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-423.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-38.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-673.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-148.xml
+
+{'en': ['Map'], 'ar-Arab': ['خريطة']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-808.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-618.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-457.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-302.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-330.xml
+
+{'en': ['Manuscript'], 'ar-Arab': ['مخطوط']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-567.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-313.xml
+
+{'en': ['Dictionary'], 'ar-Arab': ['قاموس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-134.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-374.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-272.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-297.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-431.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-676.xml
+
+{'en': ['Manuscript'], 'ar-Arab': ['مخطوط']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-299.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-242.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-704.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-78.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-437.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-432.xml
+
+{'en': ['Manuscript'], 'ar-Arab': ['مخطوط']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-439.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-705.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-737.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-660.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-730.xml
+
+{'en': ['Map'], 'ar-Arab': ['خريطة']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-769.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-540.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-156.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-651.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-665.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-198.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-382.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-623.xml
+
+{'en': ['Map'], 'ar-Arab': ['خريطة']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-793.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-373.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-342.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-387.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-5.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-82.xml
+
+{'en': ['Manuscript'], 'ar-Arab': ['مخطوط']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-248.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-218.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-534.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-809.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-201.xml
+
+{'en': ['Manuscript'], 'ar-Arab': ['مخطوط']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-400.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-253.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-566.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-675.xml
+
+{'en': ['Periodical'], 'ar-Arab': ['مجلة دورية']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-131.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-688.xml
+
+{'en': ['Manuscript'], 'ar-Arab': ['مخطوط']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-270.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-303.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-549.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-419.xml
+
+{'en': ['Manuscript'], 'ar-Arab': ['مخطوط']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-260.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-615.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-478.xml
+
+{'en': ['Map'], 'ar-Arab': ['خريطة']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-743.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-318.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-607.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-634.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-411.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-669.xml
+
+{'en': ['Manuscript'], 'ar-Arab': ['مخطوط']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-359.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-617.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-196.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-67.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-628.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-488.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-195.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-95.xml
+
+{'en': ['Map'], 'ar-Arab': ['خريطة']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-763.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-12.xml
+
+{'en': ['Map'], 'ar-Arab': ['خريطة']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-805.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-328.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-264.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-214.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-434.xml
+
+{'en': ['Book'], 'ar-Arab': ['كتاب']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-754.xml
+
+{'en': ['Manuscript'], 'ar-Arab': ['مخطوط']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-449.xml
+
+{'en': ['Map'], 'ar-Arab': ['خريطة']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-770.xml
+
+{'en': ['Map'], 'ar-Arab': ['خريطة']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-759.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-112.xml
+
+{'en': ['Bibliography'], 'ar-Arab': ['فهرس']} ========> data/harvard/islamic-heritage-project/data/harvard-ihp-109.xml
+
+------------------------------------
+Summary:
+813 of 813 records have the cho_has_type field.
+813 of 813 records have the dlme_source_file field.
+813 of 813 records transformed.
