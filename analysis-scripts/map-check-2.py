@@ -1,7 +1,9 @@
 #!/usr/bin/python
-import csv, glob, json, ndjson, os, urllib.request, validators
+import csv, glob, json, math, ndjson, os, requests, urllib.request, validators
 from argparse import ArgumentParser
 from collections import Counter
+from PIL import Image
+from random import sample
 
 ########## Inspection Helper Functions ##########
 
@@ -19,7 +21,7 @@ def cluster_fields(records):
                     in_field_values.append(i)
         if args.field_two in record:
             out_field_values.append(record[args.field_two][0])
-    # Count each value in list
+    # count each value in list
     print("-------------------------------")
     print("Clusters:")
     try:
@@ -30,7 +32,7 @@ def cluster_fields(records):
         out_clusters = out_field_values
     return in_clusters, out_clusters
 
-# Field report showing frequesncy of each field in records
+# field report showing frequesncy of each field in records
 def field_report(records):
     data_provider = records[0]['agg_data_provider']['en'][0]
     width = 50
@@ -78,7 +80,7 @@ def field_report(records):
 
 ########## Core Functions for each Stage ##########
 
-# Inspect incoming values
+# inspect incoming values
 def inspect(records, blank_lines, invalid_json):
     print("\n")
     print("There were {} blank lines in the intermediate representation.".format(len(blank_lines)))
@@ -94,7 +96,7 @@ def inspect(records, blank_lines, invalid_json):
 
     field_report(records)
 
-# Compare incoming field value to post processing field value
+# compare incoming field value to post processing field value
 def compare(records):
     in_clusters, out_clusters = cluster_fields(records)
     values = []
@@ -171,12 +173,10 @@ def report(records):
     print('\n')
     print('''If you believe a mistake may have been made while mapping the above fields, please consult the crosswalk provided with this mapping report to ensure that the correct input field was mapped and report any issues to the DLME Data Manager, Jacob Hill (jtim@stanford.edu).''')
 
-
-
 ########## Functions for Debugging Transformations ##########
 
 
-# Use FIELD_MAP and args.field to determine which validation function to call
+# use FIELD_MAP and args.field to determine which validation function to call
 def records_missing_field(records):
     for record in records:
         if args.field_one in record:
@@ -184,7 +184,7 @@ def records_missing_field(records):
         else:
             print(record['dlme_source_file'])
 
-# In progree function for validating script
+# in progress function for validating script
 def validate_script(records):
     fields = []
     switcher = {
@@ -217,6 +217,33 @@ def validate_type(records):
             else:
                 type_counts.update({'other type' : 1})
     print(type_counts)
+
+# check a sample of thumbnails and report on quality
+def thumbnail_report(records):
+    thumbnail_urls = []
+    image_sizes = []
+    passed = 0
+    failed = 0
+    rec_size = 150
+    for record in records:
+        thumbnail_urls.append(record['agg_preview']['wr_id'])
+    if len(thumbnail_urls) > 10000:
+        s = sample(thumbnail_urls,(math.floor(len(thumbnail_urls)/100)))
+    elif len(thumbnail_urls) > 5000:
+        s = sample(thumbnail_urls,(math.floor(len(thumbnail_urls)/75)))
+    else:
+        s = sample(thumbnail_urls,(math.floor(len(thumbnail_urls)/500)))
+    for url in s:
+        image = Image.open(requests.get(url, stream=True).raw)
+        image_sizes.append(image.size)
+    for i in image_sizes:
+        if i[0] >= rec_size and i[1] >= rec_size:
+            passed+=1
+        else:
+            failed+=1
+    print('DLME thumnail image quality report\n')
+    print('-' * 70 + '\n')
+    print("{}% of thumbnail images met the minimum recommended width of {}x{}.".format((passed/len(image_sizes))*100, rec_size, rec_size))
 
 
 # print record value
@@ -284,6 +311,7 @@ def resolve_urls(records):
 # Function dispatcher to map stage arguments to function names
 FUNCTION_MAP = {"inspect": inspect,
                 "compare": compare,
+                "crosswalk": crosswalk,
                 "find_untransformed": find_untransformed,
                 "records_missing_field": records_missing_field,
                 "validate_script": validate_script,
@@ -291,7 +319,8 @@ FUNCTION_MAP = {"inspect": inspect,
                 "get_values": get_values,
                 "validate_urls": validate_urls,
                 "report": report,
-                "resolve_urls": resolve_urls,}
+                "resolve_urls": resolve_urls,
+                "thumbnail_report": thumbnail_report}
 
 
 ########## Main Loop ##########
