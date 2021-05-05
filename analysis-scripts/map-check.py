@@ -1,7 +1,9 @@
 #!/usr/bin/python
-import csv, glob, json, ndjson, os, validators
+import csv, glob, json, math, ndjson, os, requests, urllib.request, validators
 from argparse import ArgumentParser
 from collections import Counter
+from PIL import Image
+from random import sample
 
 ########## Inspection Helper Functions ##########
 
@@ -19,7 +21,7 @@ def cluster_fields(records):
                     in_field_values.append(i)
         if args.field_two in record:
             out_field_values.append(record[args.field_two][0])
-    # Count each value in list
+    # count each value in list
     print("-------------------------------")
     print("Clusters:")
     try:
@@ -30,61 +32,71 @@ def cluster_fields(records):
         out_clusters = out_field_values
     return in_clusters, out_clusters
 
-########## Core Functions for each Stage ##########
-
-# Inspect incoming values
-def inspect(records, blank_lines, invalid_json):
-    # in_clusters = cluster_fields([records])[0]
-    # for item in in_clusters:
-    #     print("{}: {}".format(item[0], item[1]))
+# field report showing frequesncy of each field in records
+def field_report(records):
+    data_provider = records[0]['agg_data_provider']['en'][0]
+    width = 50
     field_count = 0
+    title = ' DLME Data Mapping Report for {} '.format(data_provider)
+    header_padding = '*'*int((((width-len(title)+15)/2)))
     for record_count, record in enumerate(records, start=1):
         if args.field_one in record:
             field_count += 1
 
+    print("{}{}{}".format(header_padding, title, header_padding))
     print("\n")
-    print("***************************** Field Mapping Summary Report *****************************")
-    print("\n")
-    print("{} of {} records have the {} value".format(field_count, record_count, args.field_one))
-    print('---------------------------------------------------------------------------------------')
 
-    print("\n")
-    print("There were {} blank lines in the intermediate representation.".format(len(blank_lines)))
-    print("The blank lines were: {}".format(blank_lines))
-    print('---------------------------------------------------------------------------------------')
-    # if len(blank_lines) > 0:
-    #     for line in blank_lines:
-    #         print("Blank line number: {}".format(line))
-    print("\n")
-    print("There were {} invalid json objects in the intermediate representation.".format(len(invalid_json)))
-    print('---------------------------------------------------------------------------------------')
-    if len(invalid_json) > 0:
-        print("Lines with invalid json: {}".format(invalid_json))
-    print("\n")
     # merge all records into single counter object and print field report
-    print('Coverage of fields in IR')
-    print('---------------------------------------------------------------------------------------')
+    print('All fields in DLME intermediate record\n')
+    print('-' * (width+15) + '\n')
     field_report = Counter()
     for record in records:
         for item in record:
             field_report.update({item : 1})
+        if 'agg_dc_rights' in record['agg_is_shown_at']:
+            field_report.update({'agg_is_shown_at.agg_dc_rights' : 1})
+        if 'agg_edm_rights' in record['agg_is_shown_at']:
+            field_report.update({'agg_is_shown_at.agg_edm_rights' : 1})
+        if 'wr_dc_rights' in record['agg_is_shown_at']:
+            field_report.update({'agg_is_shown_at.wr_dc_rights' : 1})
+        if 'wr_edm_rights' in record['agg_is_shown_at']:
+            field_report.update({'agg_is_shown_at.wr_edm_rights' : 1})
+        if 'wr_id' in record['agg_is_shown_at']:
+            field_report.update({'agg_is_shown_at.wr_id' : 1})
+        if 'wr_id' in record['agg_preview']:
+            field_report.update({'agg_preview.wr_id' : 1})
+        if 'wr_is_referenced_by' in record['agg_is_shown_at']:
+            field_report.update({'agg_is_shown_at.wr_is_referenced_by' : 1})
+
     for item, count in field_report.items():
         print(item + ': ', end ="")
-        padding = 80 - len(item)
+        padding = width - len(item) - len(str(count))
         for i in range(padding):
             print('-', end ="")
-        print(count)
+        print("{} of {} ({}%)".format(count, len(records), round(count/len(records)*100)))
+    print('\n')
 
-    directory = "/Users/jtim/Dropbox/DLSS/DLME/dlme-helper/analysis-scripts/output"
-    if not os.path.exists(directory):
-        os.makedirs(directory)
-    with open("{}/{}-{}.txt".format(directory, args.function, args.field_one), "w") as f:
-        # for item in in_clusters:
-        #     f.write("{}: (count: {})\n\n".format(item[0], item[1]))
-        f.write("{} of {} records have the {} value".format(field_count, record_count, args.field_one))
+    return width, len(records), field_report
 
+########## Core Functions for each Stage ##########
 
-# Compare incoming field value to post processing field value
+# inspect incoming values
+def inspect(records, blank_lines, invalid_json):
+    print("\n")
+    print("There were {} blank lines in the intermediate representation.".format(len(blank_lines)))
+    print("The blank lines were: {}".format(blank_lines))
+    print('---------------------------------------------------------------------------------------')
+    print("\n")
+    print("There were {} invalid json objects in the intermediate representation.".format(len(invalid_json)))
+    print('---------------------------------------------------------------------------------------')
+
+    if len(invalid_json) > 0:
+        print("Lines with invalid json: {}".format(invalid_json))
+    print("\n")
+
+    field_report(records)
+
+# compare incoming field value to post processing field value
 def compare(records):
     in_clusters, out_clusters = cluster_fields(records)
     values = []
@@ -127,10 +139,44 @@ def compare(records):
         f.write("{} of {} records have the {} field.\n".format(record_has_field_two_count, record_count, args.field_two))
         f.write("{} of {} records transformed.\n".format(records_changed, record_count))
 
+def report(records):
+
+    width, record_count, field_counts, = field_report(records)
+
+    record_count = len(records)
+
+    print('DLME resource report\n')
+    print('-' * (width+15) + '\n')
+    print('- {} of {} records had urls to thumbnail images.'.format(field_counts['agg_preview.wr_id'], record_count))
+    print('- {} of {} records had urls to resources.'.format(field_counts['agg_is_shown_at.wr_id'], record_count))
+    print('- {} of {} records had iiif manifests.'.format(field_counts['agg_is_shown_at.wr_is_referenced_by'], record_count))
+    print('\n')
+
+    print('DLME rights report\n')
+    print('-' * (width+15) + '\n')
+    print('- {} of {} records had a clearly expressed copyright status for the cultural heritage object.'.format(field_counts['cho_dc_rights'], record_count))
+    print('- {} of {} records had a clearly expressed copyright status for the web resource.'.format((field_counts['agg_is_shown_at.wr_edm_rights'] + field_counts['agg_is_shown_at.wr_dc_rights']), record_count))
+    print('- {} of {} records had clearly expressed aggregation rights.'.format((field_counts['agg_is_shown_at.agg_dc_rights'] + field_counts['agg_is_shown_at.agg_edm_rights']), record_count))
+    print('\n')
+
+    # print('DLME coverage report\n')
+    # print('-' * (width+15) + '\n')
+    # problem_field_count = 0
+    # coverage_threshold = 100
+    # for item, count in field_counts.items():
+    #     if round(count/len(records)*100) < coverage_threshold:
+    #         problem_field_count += 1
+    #         print('- {} did not meet recommended coverage. {} of {} records included this field.'.format(item, count, record_count))
+    # if problem_field_count == 0:
+    #     print('At least {}% of all fields were covered in the records.'.format(coverage_threshold))
+
+    print('\n')
+    print('''If you believe a mistake may have been made while mapping the above fields, please consult the crosswalk provided with this mapping report to ensure that the correct input field was mapped and report any issues to the DLME Data Manager, Jacob Hill (jtim@stanford.edu).''')
+
 ########## Functions for Debugging Transformations ##########
 
 
-# Use FIELD_MAP and args.field to determine which validation function to call
+# use FIELD_MAP and args.field to determine which validation function to call
 def records_missing_field(records):
     for record in records:
         if args.field_one in record:
@@ -138,7 +184,7 @@ def records_missing_field(records):
         else:
             print(record['dlme_source_file'])
 
-# In progree function for validating script
+# in progress function for validating script
 def validate_script(records):
     fields = []
     switcher = {
@@ -172,6 +218,33 @@ def validate_type(records):
                 type_counts.update({'other type' : 1})
     print(type_counts)
 
+# check a sample of thumbnails and report on quality
+def thumbnail_report(records):
+    thumbnail_urls = []
+    image_sizes = []
+    passed = 0
+    failed = 0
+    rec_size = 150
+    for record in records:
+        thumbnail_urls.append(record['agg_preview']['wr_id'])
+    if len(thumbnail_urls) > 10000:
+        s = sample(thumbnail_urls,(math.floor(len(thumbnail_urls)/100)))
+    elif len(thumbnail_urls) > 5000:
+        s = sample(thumbnail_urls,(math.floor(len(thumbnail_urls)/75)))
+    else:
+        s = sample(thumbnail_urls,(math.floor(len(thumbnail_urls)/500)))
+    for url in s:
+        image = Image.open(requests.get(url, stream=True).raw)
+        image_sizes.append(image.size)
+    for i in image_sizes:
+        if i[0] >= rec_size and i[1] >= rec_size:
+            passed+=1
+        else:
+            failed+=1
+    print('DLME thumnail image quality report\n')
+    print('-' * 70 + '\n')
+    print("{}% of thumbnail images met the minimum recommended width of {}x{}.".format((passed/len(image_sizes))*100, rec_size, rec_size))
+
 
 # print record value
 def get_values(records):
@@ -197,30 +270,57 @@ def find_untransformed(records):
             out_file.write('{}\n'.format(list(set(transformed) - set(untransformed))))
 
 
-# validate url
-def validate_url(records):
-    bad_url_counts = Counter()
+# validate urls
+def validate_urls(records):
+    invalid_url_counts = Counter()
     for record in records:
         if args.field_one in record:
             valid=validators.url(record[args.field_one]['wr_id'])
             if valid==True:
                 pass
             else:
-                bad_url_counts.update({'Bad urls' : 1})
+                invalid_url_counts.update({'Invalid urls' : 1})
                 print("id: {} \n url: {} \n".format(record['id'], record[args.field_one]['wr_id']))
 
+    print("There were {} invalid urls.".format(invalid_url_counts['Invalid urls']))
+
+# validate urls
+def resolve_urls(records):
+    unresolvable_url_counts = Counter()
+    unresolvabel_urls = {}
+    for count, record in enumerate(records, start=1):
+        if args.field_one in record:
+            try:
+                print("Checking {} of {}".format(count, len(records)))
+                status_code = urllib.request.urlopen(record[args.field_one]['wr_id']).getcode()
+                if status_code==200:
+                    pass
+                else:
+                    unresolvable_url_counts.update({'Unresolvable urls' : 1})
+                    print("id: {} \n url: {} \n".format(record['id'], record[args.field_one]['wr_id']))
+                    unresolvabel_urls[record['id']] = record[args.field_one]['wr_id']
+            except:
+                print('Url timeout')
+
     print("There were {} bad urls.".format(bad_url_counts['Bad urls']))
+    for k,v in unresolvabel_urls.items():
+        print(k, v)
+
 ########## Function Maps ##########
 
 # Function dispatcher to map stage arguments to function names
 FUNCTION_MAP = {"inspect": inspect,
                 "compare": compare,
+                "crosswalk": crosswalk,
                 "find_untransformed": find_untransformed,
                 "records_missing_field": records_missing_field,
                 "validate_script": validate_script,
                 "validate_type": validate_type,
                 "get_values": get_values,
-                "validate_url": validate_url}
+                "validate_urls": validate_urls,
+                "report": report,
+                "resolve_urls": resolve_urls,
+                "thumbnail_report": thumbnail_report}
 
 
 ########## Main Loop ##########
