@@ -159,16 +159,16 @@ def report(records):
     print('- {} of {} records had clearly expressed aggregation rights.'.format((field_counts['agg_is_shown_at.agg_dc_rights'] + field_counts['agg_is_shown_at.agg_edm_rights']), record_count))
     print('\n')
 
-    print('DLME coverage report\n')
-    print('-' * (width+15) + '\n')
-    problem_field_count = 0
-    coverage_threshold = 100
-    for item, count in field_counts.items():
-        if round(count/len(records)*100) < coverage_threshold:
-            problem_field_count += 1
-            print('- {} did not meet recommended coverage. {} of {} records included this field.'.format(item, count, record_count))
-    if problem_field_count == 0:
-        print('At least {}% of all fields were covered in the records.'.format(coverage_threshold))
+    # print('DLME coverage report\n')
+    # print('-' * (width+15) + '\n')
+    # problem_field_count = 0
+    # coverage_threshold = 100
+    # for item, count in field_counts.items():
+    #     if round(count/len(records)*100) < coverage_threshold:
+    #         problem_field_count += 1
+    #         print('- {} did not meet recommended coverage. {} of {} records included this field.'.format(item, count, record_count))
+    # if problem_field_count == 0:
+    #     print('At least {}% of all fields were covered in the records.'.format(coverage_threshold))
 
     print('\n')
     print('''If you believe a mistake may have been made while mapping the above fields, please consult the crosswalk provided with this mapping report to ensure that the correct input field was mapped and report any issues to the DLME Data Manager, Jacob Hill (jtim@stanford.edu).''')

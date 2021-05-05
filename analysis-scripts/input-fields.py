@@ -19,7 +19,6 @@ def main():
 
         # json files
         elif file.endswith('.json'):
-
             with open("{}{}".format(args.file[0], file)) as f:
                 data = json.load(f)
                 # Will catch nested key, value pairs to the third level
@@ -47,13 +46,13 @@ def main():
                     xml_elements_with_values.append(element.tag)
 
     # Print results
-    if args.file[0].endswith('.csv'):
-        print(set(csv_col_names_with_values))
-    elif args.file[0].endswith('.json'):
-        print(set(json_keys_with_values))
-    else:
-        for elem in set(xml_elements_with_values):
-            print(elem)
+    # if args.file[0].endswith('.csv'):
+    #     print(set(csv_col_names_with_values))
+    # elif args.file[0].endswith('.json'):
+    print(set(json_keys_with_values))
+    # else:
+    #     for elem in set(xml_elements_with_values):
+    #         print(elem)
 
 if __name__ == '__main__':
     # CLI client options.
