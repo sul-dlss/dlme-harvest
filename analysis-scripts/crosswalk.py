@@ -29,13 +29,17 @@ fields = ['cho_alternative',
           'cho_title',
           'cho_type']
 
-extract_macros = {'generate_edm_type': {'from_field': '.Classification or .ObjectName',
+extract_macros = {'extract_aub_description': {'from_field': '/dc:description',
+                                              'transforms': 'Ignores url values in the description field.'},
+                  'generate_edm_type': {'from_field': '.Classification or .ObjectName',
                                         'transforms': "Seperate values on ';', then downcase"},
                   'princeton_title_and_lang': {'from_field': '.title',
                                                'transforms': 'The script of the title was programatically determined.'},
                   'scw_has_type': {'from_field': '/*/mods:genre or /*/mods:typeOfResource or /*/mods:subject/mods:topic or /*/mods:extension/cdwalite:indexingMaterialsTechSet/'\
                                               'cdwalite:termMaterialsTech',
                                    'transforms': 'The output value was mapped to a value in a DLME controlled vocabulary.'},
+                  'xpath_title_or_desc': {'from_field': '/dc:title or /dc:description[3]',
+                                          'transforms': 'If no title found in /dc:title, map in truncated description.'},
                   'xpath_title_plus': {'from_field': 'the title field and a second field such as id or description',
                                        'transforms': 'The title field was merged with the truncated value from the second field.'}}
 
@@ -49,8 +53,7 @@ def main():
     # print("Incoming field ----------------------------------- DLME field --------------- Transforms")
     with open(args.file[0]) as f:
         lines = f.readlines()
-        print('/Users/jtim/Dropbox/DLSS/DLME/dlme-harvest/analysis-scripts/output/{}_crosswalk.csv'.format(args.file[0].split('/')[-1].strip('_config.rb')))
-        with open('/Users/jtim/Dropbox/DLSS/DLME/dlme-harvest/analysis-scripts/output/{}_crosswalk.csv'.format(args.file[0].split('/')[-1].strip('_config.rb')), mode='w') as out:
+        with open('/Users/jtim/Dropbox/DLSS/DLME/dlme-harvest/analysis-scripts/output/{}'.format(args.file[0].split('/')[-1].replace('_config.rb', '_crosswalk.csv')), mode='w') as out:
             out = csv.writer(out, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
             out.writerow(["Incoming Field", "", "DLME Field", "", "Transformations"])
 

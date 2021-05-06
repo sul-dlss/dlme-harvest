@@ -152,12 +152,14 @@ def report(records):
     print('- {} of {} records had iiif manifests.'.format(field_counts['agg_is_shown_at.wr_is_referenced_by'], record_count))
     print('\n')
 
+    thumbnail_report(records)
+    print('\n')
+
     print('DLME rights report\n')
     print('-' * (width+15) + '\n')
     print('- {} of {} records had a clearly expressed copyright status for the cultural heritage object.'.format(field_counts['cho_dc_rights'], record_count))
     print('- {} of {} records had a clearly expressed copyright status for the web resource.'.format((field_counts['agg_is_shown_at.wr_edm_rights'] + field_counts['agg_is_shown_at.wr_dc_rights']), record_count))
     print('- {} of {} records had clearly expressed aggregation rights.'.format((field_counts['agg_is_shown_at.agg_dc_rights'] + field_counts['agg_is_shown_at.agg_edm_rights']), record_count))
-    print('\n')
 
     # print('DLME coverage report\n')
     # print('-' * (width+15) + '\n')
@@ -170,8 +172,8 @@ def report(records):
     # if problem_field_count == 0:
     #     print('At least {}% of all fields were covered in the records.'.format(coverage_threshold))
 
-    print('\n')
-    print('''If you believe a mistake may have been made while mapping the above fields, please consult the crosswalk provided with this mapping report to ensure that the correct input field was mapped and report any issues to the DLME Data Manager, Jacob Hill (jtim@stanford.edu).''')
+    # print('\n')
+    # print('''If you believe a mistake may have been made while mapping the above fields, please consult the crosswalk provided with this mapping report to ensure that the correct input field was mapped and report any issues to the DLME Data Manager, Jacob Hill (jtim@stanford.edu).''')
 
 ########## Functions for Debugging Transformations ##########
 
@@ -222,29 +224,39 @@ def validate_type(records):
 def thumbnail_report(records):
     thumbnail_urls = []
     image_sizes = []
-    passed = 0
-    failed = 0
-    rec_size = 150
+    passed_req = 0
+    failed_req = 0
+    passed_rec = 0
+    failed_rec = 0
+    req_size = 200
+    rec_size = 400
     for record in records:
         thumbnail_urls.append(record['agg_preview']['wr_id'])
     if len(thumbnail_urls) > 10000:
         s = sample(thumbnail_urls,(math.floor(len(thumbnail_urls)/100)))
     elif len(thumbnail_urls) > 5000:
         s = sample(thumbnail_urls,(math.floor(len(thumbnail_urls)/75)))
+    elif len(thumbnail_urls) > 1000:
+        s = sample(thumbnail_urls,(math.floor(len(thumbnail_urls)/50)))
     else:
-        s = sample(thumbnail_urls,(math.floor(len(thumbnail_urls)/500)))
+        s = sample(thumbnail_urls,(math.floor(len(thumbnail_urls)/10)))
     for url in s:
         image = Image.open(requests.get(url, stream=True).raw)
         image_sizes.append(image.size)
     for i in image_sizes:
-        if i[0] >= rec_size and i[1] >= rec_size:
-            passed+=1
+        if i[0] >= req_size and i[1] >= req_size:
+            passed_req+=1
         else:
-            failed+=1
-    print('DLME thumnail image quality report\n')
+            failed_req+=1
+    for i in image_sizes:
+        if i[0] >= rec_size and i[1] >= rec_size:
+            passed_rec+=1
+        else:
+            failed_rec+=1
+    print('DLME thumbnail image quality report\n (a sample of thumbnail images were tested)')
     print('-' * 70 + '\n')
-    print("{}% of thumbnail images met the minimum recommended width of {}x{}.".format((passed/len(image_sizes))*100, rec_size, rec_size))
-
+    print("{}% of thumbnail images met the tier 2 recommended size of {}x{}.".format((passed_req/len(image_sizes))*100, req_size, req_size))
+    print("{}% of thumbnail images met the tier 3 recommended size of {}x{}.".format((passed_rec/len(image_sizes))*100, rec_size, rec_size))
 
 # print record value
 def get_values(records):
@@ -311,7 +323,6 @@ def resolve_urls(records):
 # Function dispatcher to map stage arguments to function names
 FUNCTION_MAP = {"inspect": inspect,
                 "compare": compare,
-                "crosswalk": crosswalk,
                 "find_untransformed": find_untransformed,
                 "records_missing_field": records_missing_field,
                 "validate_script": validate_script,
