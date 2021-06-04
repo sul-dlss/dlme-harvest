@@ -29,7 +29,9 @@ fields = ['cho_alternative',
           'cho_title',
           'cho_type']
 
-extract_macros = {'extract_aub_description': {'from_field': '/dc:description',
+extract_macros = {'cambridge_dimensions': {'from_field': '/tei:extent/tei:dimensions',
+                                           'transforms': 'Extracts height and width into formated string.'},
+                  'extract_aub_description': {'from_field': '/dc:description',
                                               'transforms': 'Ignores url values in the description field.'},
                   'generate_edm_type': {'from_field': '.Classification or .ObjectName',
                                         'transforms': "Seperate values on ';', then downcase"},
