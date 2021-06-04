@@ -35,7 +35,7 @@ def cluster_fields(records):
 # field report showing frequesncy of each field in records
 def field_report(records):
     data_provider = records[0]['agg_data_provider']['en'][0]
-    width = 50
+    width = 0
     field_count = 0
     title = ' DLME Data Mapping Report for {} '.format(data_provider)
     header_padding = '*'*int((((width-len(title)+15)/2)))
@@ -47,36 +47,56 @@ def field_report(records):
     print("\n")
 
     # merge all records into single counter object and print field report
-    print('All fields in DLME intermediate record\n')
+    print('\033[1mAll fields in DLME intermediate record\033[0m')
     print('-' * (width+15) + '\n')
-    field_report = Counter()
+    field_counter = Counter()
+    value_per_field_counter = Counter()
+    lang_counter = {}
     for record in records:
-        for item in record:
-            field_report.update({item : 1})
+        # Get field information
+        for field, metadata in record.items():
+            field_counter.update({field : 1})
+            if type(metadata) == dict:
+                for lang, values in metadata.items():
+                    if lang_counter.get(field):
+                        if lang_counter.get(field).get(lang):
+                            lang_counter[field][lang] += 1
+                        else:
+                            lang_counter[field][lang] = 1
+                    else:
+                        lang_counter.update({field: {lang: 1}})
+                    value_per_field_counter.update({field : len(values)})
+            else:
+                value_per_field_counter.update({field : len(metadata)})
         if 'agg_dc_rights' in record['agg_is_shown_at']:
-            field_report.update({'agg_is_shown_at.agg_dc_rights' : 1})
+            field_counter.update({'agg_is_shown_at.agg_dc_rights' : 1})
         if 'agg_edm_rights' in record['agg_is_shown_at']:
-            field_report.update({'agg_is_shown_at.agg_edm_rights' : 1})
+            field_counter.update({'agg_is_shown_at.agg_edm_rights' : 1})
         if 'wr_dc_rights' in record['agg_is_shown_at']:
-            field_report.update({'agg_is_shown_at.wr_dc_rights' : 1})
+            field_counter.update({'agg_is_shown_at.wr_dc_rights' : 1})
         if 'wr_edm_rights' in record['agg_is_shown_at']:
-            field_report.update({'agg_is_shown_at.wr_edm_rights' : 1})
+            field_counter.update({'agg_is_shown_at.wr_edm_rights' : 1})
         if 'wr_id' in record['agg_is_shown_at']:
-            field_report.update({'agg_is_shown_at.wr_id' : 1})
+            field_counter.update({'agg_is_shown_at.wr_id' : 1})
         if 'wr_id' in record['agg_preview']:
-            field_report.update({'agg_preview.wr_id' : 1})
+            field_counter.update({'agg_preview.wr_id' : 1})
         if 'wr_is_referenced_by' in record['agg_is_shown_at']:
-            field_report.update({'agg_is_shown_at.wr_is_referenced_by' : 1})
+            field_counter.update({'agg_is_shown_at.wr_is_referenced_by' : 1})
 
-    for item, count in field_report.items():
+    ignore_value_counts = ['agg_data_provider_collection', 'agg_preview', 'agg_is_shown_at', 'cho_date_range_hijri', 'cho_date_range_norm', 'transform_timestamp', 'transform_version', 'id']
+    for item, count in field_counter.items():
         print(item + ': ', end ="")
         padding = width - len(item) - len(str(count))
         for i in range(padding):
             print('-', end ="")
-        print("{} of {} ({}%)".format(count, len(records), round(count/len(records)*100)))
-    print('\n')
+        if value_per_field_counter.get(item) == None or item in ignore_value_counts or lang_counter.get(item) == None:
+            print("{} of {} ({}%)".format(count, len(records), round(count/len(records)*100)))
+        else:
+            print("{} of {} ({}%)".format(count, len(records), round(count/len(records)*100)))
+            print("     - Average number of values: {}".format(round(value_per_field_counter.get(item)/len(records), 2)))
+            print("     - Languages: {}".format(lang_counter.get(item)))
 
-    return width, len(records), field_report
+    return width, len(records), field_counter
 
 ########## Core Functions for each Stage ##########
 
@@ -145,21 +165,25 @@ def report(records):
 
     record_count = len(records)
 
-    print('DLME resource report\n')
+    print('\n\033[1mDLME resource report\033[0m')
     print('-' * (width+15) + '\n')
     print('- {} of {} records had urls to thumbnail images.'.format(field_counts['agg_preview.wr_id'], record_count))
     print('- {} of {} records had urls to resources.'.format(field_counts['agg_is_shown_at.wr_id'], record_count))
     print('- {} of {} records had iiif manifests.'.format(field_counts['agg_is_shown_at.wr_is_referenced_by'], record_count))
-    print('\n')
 
     thumbnail_report(records)
-    print('\n')
 
-    print('DLME rights report\n')
+    print('\033[1mDLME rights report\033[0m')
     print('-' * (width+15) + '\n')
     print('- {} of {} records had a clearly expressed copyright status for the cultural heritage object.'.format(field_counts['cho_dc_rights'], record_count))
-    print('- {} of {} records had a clearly expressed copyright status for the web resource.'.format((field_counts['agg_is_shown_at.wr_edm_rights'] + field_counts['agg_is_shown_at.wr_dc_rights']), record_count))
-    print('- {} of {} records had clearly expressed aggregation rights.'.format((field_counts['agg_is_shown_at.agg_dc_rights'] + field_counts['agg_is_shown_at.agg_edm_rights']), record_count))
+    wr_edm = field_counts['agg_is_shown_at.wr_edm_rights']
+    wr_dc = field_counts['agg_is_shown_at.wr_dc_rights']
+    if wr_edm > 0:
+        wr_count = wr_edm
+    else:
+        wr_count = wr_dc
+    print('- {} of {} records had a clearly expressed copyright status for the web resource.'.format(wr_count, record_count))
+    print('- {} of {} records had clearly expressed aggregation rights.'.format((field_counts['agg_edm_rights']), record_count))
 
     # print('DLME coverage report\n')
     # print('-' * (width+15) + '\n')
@@ -224,39 +248,36 @@ def validate_type(records):
 def thumbnail_report(records):
     thumbnail_urls = []
     image_sizes = []
-    passed_req = 0
-    failed_req = 0
     passed_rec = 0
     failed_rec = 0
-    req_size = 200
     rec_size = 400
     for record in records:
         thumbnail_urls.append(record['agg_preview']['wr_id'])
     if len(thumbnail_urls) > 10000:
-        s = sample(thumbnail_urls,(math.floor(len(thumbnail_urls)/100)))
-    elif len(thumbnail_urls) > 5000:
-        s = sample(thumbnail_urls,(math.floor(len(thumbnail_urls)/75)))
-    elif len(thumbnail_urls) > 1000:
-        s = sample(thumbnail_urls,(math.floor(len(thumbnail_urls)/50)))
+        s = sample(thumbnail_urls, 1000)
+    elif len(thumbnail_urls) < 1000 and len(thumbnail_urls) >= 100:
+        s = sample(thumbnail_urls, 100)
+    elif len(thumbnail_urls) < 100:
+        s = thumbnail_urls
     else:
         s = sample(thumbnail_urls,(math.floor(len(thumbnail_urls)/10)))
     for url in s:
         image = Image.open(requests.get(url, stream=True).raw)
         image_sizes.append(image.size)
     for i in image_sizes:
-        if i[0] >= req_size and i[1] >= req_size:
-            passed_req+=1
-        else:
-            failed_req+=1
-    for i in image_sizes:
         if i[0] >= rec_size and i[1] >= rec_size:
             passed_rec+=1
         else:
             failed_rec+=1
-    print('DLME thumbnail image quality report\n (a sample of thumbnail images were tested)')
+    print('\n\033[1mDLME thumbnail image quality report (a sample of {} thumbnail images were tested)\033[0m'.format(len(s)))
     print('-' * 70 + '\n')
-    print("{}% of thumbnail images met the tier 2 recommended size of {}x{}.".format((passed_req/len(image_sizes))*100, req_size, req_size))
-    print("{}% of thumbnail images met the tier 3 recommended size of {}x{}.".format((passed_rec/len(image_sizes))*100, rec_size, rec_size))
+    print("{}% of thumbnail images met the recommended size of {}x{}.".format(round((passed_rec/len(image_sizes))*100), rec_size, rec_size))
+    i_one = 0
+    i_two = 0
+    for i in image_sizes:
+        i_one += i[0]
+        i_two += i[1]
+    print("The average image size of the sample was {}x{}.\n".format(math.floor((i_one/len(image_sizes))), math.floor((i_two/len(image_sizes)))))
 
 # print record value
 def get_values(records):
