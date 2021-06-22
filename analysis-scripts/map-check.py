@@ -1,7 +1,8 @@
 #!/usr/bin/python
-import csv, glob, json, math, ndjson, os, requests, urllib.request, validators
+import csv, glob, json, math, ndjson, numpy, os, requests, urllib.request, validators, yaml
 from argparse import ArgumentParser
 from collections import Counter
+from pathlib import Path
 from PIL import Image
 from random import sample
 
@@ -282,13 +283,169 @@ def thumbnail_report(records):
 # print record value
 def get_values(records):
     # print to console
-    with open('out_file.txt', 'w') as out_file:
+    with open('output/out_file.txt', 'w') as out_file:
         for record in records:
             if args.field_one in record:
                 print(record[args.field_one])
                 out_file.write('{}\n'.format(record[args.field_one]))
             else:
                 pass
+
+# print unique values from a field formatted for inclusion in a translation map
+def unique_values(records):
+    values = []
+    # print to console
+    with open('output/out_file.yaml', 'w') as out_file:
+        for record in records:
+            if args.field_one in record:
+                try:
+                    for k,v in record[args.field_one].items():
+                        values.extend(v)
+                except:
+                    values.extend(record[args.field_one][0]['values'])
+            else:
+                pass
+        for v in numpy.unique(values):
+            print(v+':')
+            out_file.write(v+':\n')
+
+    return numpy.unique(values)
+
+def type_not_found(records):
+    # when cho_type arg passed, returns any value in cho_type not
+    # found in the type translation maps.
+    field_values = []
+    map_values = []
+    translation_maps = []
+
+    for record in records:
+        try:
+            if args.field_one in record:
+                for k,v in record[args.field_one].items():
+                    field_values.extend(v)
+        except:
+            field_values.extend(record[args.field_one][0]['values'])
+        else:
+            pass
+
+    for file in glob.glob('/Users/jtim/Dropbox/DLSS/DLME/dlme-transform/lib/translation_maps/*.yaml'):
+        if '_from_' in file:
+            translation_maps.append(file)
+
+    for i in translation_maps:
+        data = yaml.safe_load(open(i, 'r'))
+        for k, v in data.items():
+            map_values.append(k)
+
+    unique_values = (set([x.lower() for x in field_values]) - set([x.lower() for x in map_values]))
+    for i in sorted(unique_values):
+        print(i+':')
+
+    number_of_terms = len(unique_values)
+    print("{} terms found.".format(number_of_terms))
+
+    return unique_values, number_of_terms
+        
+def extend_has_types(records):
+    # Adds values found in cho_type field to translation map.
+    unique_values, number_of_terms = type_not_found(records)
+    has_types = yaml.safe_load(open('/Users/jtim/Dropbox/DLSS/DLME/dlme-transform/lib/translation_maps/has_type_from_contributor.yaml', 'r'))
+    merged = {**dict.fromkeys(unique_values, 0), **has_types}
+
+    if number_of_terms + len(has_types) == len(merged):
+        with open('/Users/jtim/Dropbox/DLSS/DLME/dlme-transform/lib/translation_maps/has_type_from_contributor_extended.yaml', 'w') as f:
+            yaml.dump(merged, f)
+    else:
+        print('Wrong number of items')
+
+def build_controlled_vocabulary():
+    # Builds controlled vocabularies from translation maps.
+    edm_type_en_translation_maps = []
+    edm_type_en_values = []
+    has_type_en_translation_maps = []
+    has_type_en_values = []
+
+    for file in glob.glob('/Users/jtim/Dropbox/DLSS/DLME/dlme-transform/lib/translation_maps/edm_type_from*.yaml'):
+        edm_type_en_translation_maps.append(file)
+
+    for file in glob.glob('/Users/jtim/Dropbox/DLSS/DLME/dlme-transform/lib/translation_maps/has_type_from*.yaml'):
+        has_type_en_translation_maps.append(file)
+
+    p = Path('/Users/jtim/Dropbox/DLSS/DLME/dlme-transform/lib/controlled_vocabularies')
+    p.mkdir(exist_ok=True)
+
+    if args.field_one == 'edm_type_en':
+        for i in edm_type_en_translation_maps:
+            data = yaml.safe_load(open(i, 'r'))
+            for k, v in data.items():
+                if type(v) == list:
+                    edm_type_en_values.extend(v)
+                elif type(v) == None:
+                    pass
+                else:
+                    edm_type_en_values.append(v)
+
+        with open('/Users/jtim/Dropbox/DLSS/DLME/dlme-transform/lib/controlled_vocabularies/edm_types.yaml', 'w') as out:
+            yaml.safe_dump(sorted(set(edm_type_en_values)), out, default_flow_style=False, allow_unicode=False)
+
+    if args.field_one == 'has_type_en':
+        for i in has_type_en_translation_maps:
+            data = yaml.safe_load(open(i, 'r'))
+            for k, v in data.items():
+                if type(v) == list:
+                    has_type_en_values.extend(v)
+                elif type(v) == str:
+                    has_type_en_values.append(v)
+                else:
+                    pass
+
+        with open('/Users/jtim/Dropbox/DLSS/DLME/dlme-transform/lib/controlled_vocabularies/has_types_en.yaml', 'w') as out:
+            yaml.safe_dump(sorted(set(has_type_en_values)), out, default_flow_style=False, allow_unicode=False)
+
+def check_translation_maps():
+    # Ensures that all values in the has_type translation maps are fully mapped
+    # to cho_edm_type and fully translated into Arabic.
+    ar_edm_types = []
+    ar_has_types = []
+    edm_keys = []
+    edm_values = []
+    has_type_values = []
+    ar_edm = yaml.safe_load(open('/Users/jtim/Dropbox/DLSS/DLME/dlme-transform/lib/translation_maps/edm_type_ar_from_en.yaml', 'r'))
+    for k, v in ar_edm.items():
+        ar_edm_types.append(k)
+    ar_has = yaml.safe_load(open('/Users/jtim/Dropbox/DLSS/DLME/dlme-transform/lib/translation_maps/has_type_ar_from_en.yaml', 'r'))
+    for k, v in ar_has.items():
+        ar_has_types.append(k)
+    edm = yaml.safe_load(open('/Users/jtim/Dropbox/DLSS/DLME/dlme-transform/lib/translation_maps/edm_type_from_has_type.yaml', 'r'))
+    for k, v in edm.items():
+        edm_keys.append(k)
+        if type(v) == str:
+            edm_values.append(v)
+        else:
+            edm_values.extend(v)
+    has_type = yaml.safe_load(open('/Users/jtim/Dropbox/DLSS/DLME/dlme-transform/lib/translation_maps/has_type_from_contributor.yaml', 'r'))
+    for k, v in has_type.items():
+        if type(v) == str:
+            has_type_values.append(v)
+        elif type(v) == list:
+            has_type_values.extend(v)
+        else:
+            pass
+
+    if len((set([x.lower() for x in edm_values]) - set([x.lower() for x in ar_edm_types]))) > 0:
+        print('edm_type_ar_from_en.yaml is missing the following keys:')
+        for i in (set([x.lower() for x in edm_values]) - set([x.lower() for x in ar_edm_types])):
+            print(i+':')
+
+    if len((set([x.lower() for x in has_type_values]) - set([x.lower() for x in ar_has_types]))) > 0:
+        print('has_type_ar_from_en.yaml is missing the following keys:')
+        for i in (set([x.lower() for x in has_type_values]) - set([x.lower() for x in ar_has_types])):
+            print(i+':')
+
+    if len((set([x.lower() for x in has_type_values]) - set([x.lower() for x in edm_keys]))) > 0:
+        print('edm_type_from_has_type.yaml is missing the following keys:')
+        for i in (set([x.lower() for x in has_type_values]) - set([x.lower() for x in edm_keys])):
+            print(i+':')
 
 def find_untransformed(records):
     with open('out_file.txt', 'w') as out_file:
@@ -301,7 +458,6 @@ def find_untransformed(records):
         if args.field_one in record:
             print(list(set(transformed) - set(untransformed)))
             out_file.write('{}\n'.format(list(set(transformed) - set(untransformed))))
-
 
 # validate urls
 def validate_urls(records):
@@ -342,18 +498,22 @@ def resolve_urls(records):
 ########## Function Maps ##########
 
 # Function dispatcher to map stage arguments to function names
-FUNCTION_MAP = {"inspect": inspect,
+FUNCTION_MAP = {"build_controlled_vocabulary": build_controlled_vocabulary,
+                "check_translation_maps": check_translation_maps,
                 "compare": compare,
+                "extend_has_types": extend_has_types,
                 "find_untransformed": find_untransformed,
-                "records_missing_field": records_missing_field,
-                "validate_script": validate_script,
-                "validate_type": validate_type,
+                "inspect": inspect,
                 "get_values": get_values,
-                "validate_urls": validate_urls,
+                "records_missing_field": records_missing_field,
                 "report": report,
                 "resolve_urls": resolve_urls,
-                "thumbnail_report": thumbnail_report}
-
+                "thumbnail_report": thumbnail_report,
+                "type_not_found": type_not_found,
+                "unique_values": unique_values,
+                "validate_script": validate_script,
+                "validate_type": validate_type,
+                "validate_urls": validate_urls}
 
 ########## Main Loop ##########
 
@@ -383,7 +543,10 @@ def main():
         if args.function == 'inspect':
             func(json_objects, blank_lines, invalid_json)
         else:
-            func(json_objects)
+            try:
+                func(json_objects)
+            except:
+                func()
 
 if __name__ == "__main__":
     # CLI client options.

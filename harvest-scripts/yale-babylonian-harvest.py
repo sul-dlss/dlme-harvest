@@ -54,21 +54,21 @@ def main():
     # bad_countries = ['USA', 'Mexico', 'Canada', 'Ecuador', 'Honduras', 'China', 'Malaysia', 'Peru', 'Korea', 'Italy', 'Guatemala', 'Greece']
 
     # Check countries again to make sure no countries are missing from the above list
-    # countries = combined_csv['geographic_country'].unique()
-    # for c in countries:
-    #     print(c)
+    countries = combined_csv['format'].sort_values().unique()
+    for c in countries:
+        print(c+': Museum Object')
 
     # combined_csv = combined_csv[~combined_csv['geographic_country'].isin(bad_countries)]
 
-    for index, row in combined_csv.iterrows():
-        if row['iiif_id'] == 'time out':
-            get_image_from_manifest(get_iiif_id(row['callnumber']), row['callnumber'])
+    # for index, row in combined_csv.iterrows():
+    #     if row['iiif_id'] == 'time out':
+    #         get_image_from_manifest(get_iiif_id(row['callnumber']), row['callnumber'])
 
     # combined_csv = combined_csv.drop_duplicates(subset="occurrence_id", keep='first', inplace=False)
 
     # combined_csv['iiif_id'] = combined_csv.apply(lambda row : get_iiif_id(row['callnumber']), axis = 1)
 
-    combined_csv.to_csv( "output/yale/babylonian/data/yale-babylonian.csv", index=False, encoding='utf-8-sig')
+    # combined_csv.to_csv( "output/yale/babylonian/data/yale-babylonian.csv", index=False, encoding='utf-8-sig')
 
 if __name__ == "__main__":
     main()

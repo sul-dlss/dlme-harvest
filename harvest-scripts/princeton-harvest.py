@@ -2,8 +2,8 @@ import io, json, os, re, urllib.request
 
 # Urls to the collection level iiif manifests for the Movie Posters, the Yemeni Digital Manuscript Initiative and Prinecton Islamic Manuscript collections
 collection_urls = {'princeton-mss': 'https://figgy.princeton.edu/collections/52abe8f7-e2a1-46e9-9d13-3dc4fbc0bf0a/manifest',
-                   'princeton-ymdi': 'https://figgy.princeton.edu/collections/eff75507-11bf-486b-b422-8fe29638b060/manifest'}
-# 'princeton-movie-posters': 'https://figgy.princeton.edu/collections/2ce536fa-8c6e-4f1d-b411-29a28fe188d5/manifest',
+                   'princeton-ymdi': 'https://figgy.princeton.edu/collections/eff75507-11bf-486b-b422-8fe29638b060/manifest',
+                   'princeton-movie-posters': 'https://figgy.princeton.edu/collections/2ce536fa-8c6e-4f1d-b411-29a28fe188d5/manifest'}
 
 def get_record_data(record_manifest_url):
     data = {}
