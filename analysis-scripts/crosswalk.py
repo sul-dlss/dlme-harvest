@@ -35,6 +35,8 @@ extract_macros = {'cambridge_dimensions': {'from_field': '/tei:extent/tei:dimens
                                               'transforms': 'Ignores url values in the description field.'},
                   'generate_edm_type': {'from_field': '.Classification or .ObjectName',
                                         'transforms': "Seperate values on ';', then downcase"},
+                  'json_title_plus':{'from_field': '.title and one other field',
+                                        'transforms': 'The title field was merged with the truncated value from the second field.'},
                   'princeton_title_and_lang': {'from_field': '.title',
                                                'transforms': 'The script of the title was programatically determined.'},
                   'scw_has_type': {'from_field': '/*/mods:genre or /*/mods:typeOfResource or /*/mods:subject/mods:topic or /*/mods:extension/cdwalite:indexingMaterialsTechSet/'\

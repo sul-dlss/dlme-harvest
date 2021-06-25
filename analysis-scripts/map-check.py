@@ -35,6 +35,7 @@ def cluster_fields(records):
 
 # field report showing frequesncy of each field in records
 def field_report(records):
+    ignore_fields = ['id', 'transform_version', 'transform_timestamp', 'dlme_source_file', 'agg_is_shown_at', 'agg_preview']
     data_provider = records[0]['agg_data_provider']['en'][0]
     width = 0
     field_count = 0
@@ -86,16 +87,17 @@ def field_report(records):
 
     ignore_value_counts = ['agg_data_provider_collection', 'agg_preview', 'agg_is_shown_at', 'cho_date_range_hijri', 'cho_date_range_norm', 'transform_timestamp', 'transform_version', 'id']
     for item, count in field_counter.items():
-        print(item + ': ', end ="")
-        padding = width - len(item) - len(str(count))
-        for i in range(padding):
-            print('-', end ="")
-        if value_per_field_counter.get(item) == None or item in ignore_value_counts or lang_counter.get(item) == None:
-            print("{} of {} ({}%)".format(count, len(records), round(count/len(records)*100)))
-        else:
-            print("{} of {} ({}%)".format(count, len(records), round(count/len(records)*100)))
-            print("     - Average number of values: {}".format(round(value_per_field_counter.get(item)/len(records), 2)))
-            print("     - Languages: {}".format(lang_counter.get(item)))
+        if item not in ignore_fields:
+            print(item + ': ', end ="")
+            padding = width - len(item) - len(str(count))
+            for i in range(padding):
+                print('-', end ="")
+            if value_per_field_counter.get(item) == None or item in ignore_value_counts or lang_counter.get(item) == None:
+                print("{} of {} ({}%)".format(count, len(records), round(count/len(records)*100)))
+            else:
+                print("{} of {} ({}%)".format(count, len(records), round(count/len(records)*100)))
+                print("     - Average number of values: {}".format(round(value_per_field_counter.get(item)/len(records), 2)))
+                print("     - Languages: {}".format(lang_counter.get(item)))
 
     return width, len(records), field_counter
 
@@ -162,7 +164,7 @@ def compare(records):
 
 def report(records):
 
-    width, record_count, field_counts, = field_report(records)
+    width, record_count, field_counts = field_report(records)
 
     record_count = len(records)
 
@@ -172,7 +174,7 @@ def report(records):
     print('- {} of {} records had urls to resources.'.format(field_counts['agg_is_shown_at.wr_id'], record_count))
     print('- {} of {} records had iiif manifests.'.format(field_counts['agg_is_shown_at.wr_is_referenced_by'], record_count))
 
-    thumbnail_report(records)
+    # thumbnail_report(records)
 
     print('\033[1mDLME rights report\033[0m')
     print('-' * (width+15) + '\n')
@@ -265,11 +267,22 @@ def thumbnail_report(records):
     for url in s:
         image = Image.open(requests.get(url, stream=True).raw)
         image_sizes.append(image.size)
-    for i in image_sizes:
-        if i[0] >= rec_size and i[1] >= rec_size:
-            passed_rec+=1
-        else:
-            failed_rec+=1
+        # This portion is part of my test code
+        # byteImgIO = io.BytesIO()
+        # byteImg = Image.open("output/images/image.png")
+        # byteImg.save(byteImgIO, "PNG")
+        # byteImgIO.seek(0)
+        # byteImg = byteImgIO.read()
+        #
+        # # Non test code
+        # dataBytesIO = io.BytesIO(byteImg)
+        # Image.open(dataBytesIO)
+
+        for i in image_sizes:
+            if i[0] >= rec_size and i[1] >= rec_size:
+                passed_rec+=1
+            else:
+                failed_rec+=1
     print('\n\033[1mDLME thumbnail image quality report (a sample of {} thumbnail images were tested)\033[0m'.format(len(s)))
     print('-' * 70 + '\n')
     print("{}% of thumbnail images met the recommended size of {}x{}.".format(round((passed_rec/len(image_sizes))*100), rec_size, rec_size))
@@ -299,8 +312,11 @@ def unique_values(records):
         for record in records:
             if args.field_one in record:
                 try:
-                    for k,v in record[args.field_one].items():
-                        values.extend(v)
+                    if type(record[args.field_one]) == dict:
+                        for k,v in record[args.field_one].items():
+                            values.extend(v)
+                    else:
+                        values.extend(record[args.field_one])
                 except:
                     values.extend(record[args.field_one][0]['values'])
             else:
@@ -311,7 +327,7 @@ def unique_values(records):
 
     return numpy.unique(values)
 
-def type_not_found(records):
+def not_found(records):
     # when cho_type arg passed, returns any value in cho_type not
     # found in the type translation maps.
     field_values = []
@@ -328,9 +344,19 @@ def type_not_found(records):
         else:
             pass
 
-    for file in glob.glob('/Users/jtim/Dropbox/DLSS/DLME/dlme-transform/lib/translation_maps/*.yaml'):
-        if '_from_' in file:
-            translation_maps.append(file)
+    if args.field_one == 'cho_medium':
+        translation_maps.append('/Users/jtim/Dropbox/DLSS/DLME/dlme-transform/lib/translation_maps/getty_aat_materials.yaml')
+
+    elif args.field_one == 'cho_type':
+        for file in glob.glob('/Users/jtim/Dropbox/DLSS/DLME/dlme-transform/lib/translation_maps/*.yaml'):
+            if '_from_' in file:
+                translation_maps.append(file)
+
+    elif args.field_one == 'cho_spatial':
+        translation_maps.append('/Users/jtim/Dropbox/DLSS/DLME/dlme-transform/lib/translation_maps/spatial_from_contributor.yaml')
+
+    elif args.field_one == 'cho_temporal':
+        translation_maps.append('/Users/jtim/Dropbox/DLSS/DLME/dlme-transform/lib/translation_maps/temporal_from_contributor.yaml')
 
     for i in translation_maps:
         data = yaml.safe_load(open(i, 'r'))
@@ -345,18 +371,32 @@ def type_not_found(records):
     print("{} terms found.".format(number_of_terms))
 
     return unique_values, number_of_terms
-        
-def extend_has_types(records):
-    # Adds values found in cho_type field to translation map.
-    unique_values, number_of_terms = type_not_found(records)
-    has_types = yaml.safe_load(open('/Users/jtim/Dropbox/DLSS/DLME/dlme-transform/lib/translation_maps/has_type_from_contributor.yaml', 'r'))
-    merged = {**dict.fromkeys(unique_values, 0), **has_types}
 
-    if number_of_terms + len(has_types) == len(merged):
-        with open('/Users/jtim/Dropbox/DLSS/DLME/dlme-transform/lib/translation_maps/has_type_from_contributor_extended.yaml', 'w') as f:
-            yaml.dump(merged, f)
-    else:
-        print('Wrong number of items')
+def extend_map(records):
+    if args.field_one == 'cho_has_type':
+        # Adds values found in cho_type field to translation map.
+        unique_values, number_of_terms = not_found(records)
+        has_types = yaml.safe_load(open('/Users/jtim/Dropbox/DLSS/DLME/dlme-transform/lib/translation_maps/has_type_from_contributor.yaml', 'r'))
+        merged = {**dict.fromkeys(unique_values, 0), **has_types}
+
+        if number_of_terms + len(has_types) == len(merged):
+            with open('/Users/jtim/Dropbox/DLSS/DLME/dlme-transform/lib/translation_maps/has_type_from_contributor_extended.yaml', 'w') as f:
+                yaml.safe_dump(merged, f, default_flow_style=False, allow_unicode=False)
+
+        else:
+            print('Wrong number of items')
+
+    elif args.field_one == 'cho_temporal':
+        # Adds values found in cho_type field to translation map.
+        unique_values, number_of_terms = not_found(records)
+        temporal = yaml.safe_load(open('/Users/jtim/Dropbox/DLSS/DLME/dlme-transform/lib/translation_maps/temporal_from_contributor.yaml', 'r'))
+        merged = {**dict.fromkeys(unique_values, 0), **temporal}
+
+        if number_of_terms + len(temporal) == len(merged):
+            with open('/Users/jtim/Dropbox/DLSS/DLME/dlme-transform/lib/translation_maps/temporal_from_contributor_extended.yaml', 'w') as f:
+                yaml.safe_dump(merged, f, default_flow_style=False, allow_unicode=False)
+        else:
+            print('Wrong number of items')
 
 def build_controlled_vocabulary():
     # Builds controlled vocabularies from translation maps.
@@ -501,7 +541,7 @@ def resolve_urls(records):
 FUNCTION_MAP = {"build_controlled_vocabulary": build_controlled_vocabulary,
                 "check_translation_maps": check_translation_maps,
                 "compare": compare,
-                "extend_has_types": extend_has_types,
+                "extend_map": extend_map,
                 "find_untransformed": find_untransformed,
                 "inspect": inspect,
                 "get_values": get_values,
@@ -509,7 +549,7 @@ FUNCTION_MAP = {"build_controlled_vocabulary": build_controlled_vocabulary,
                 "report": report,
                 "resolve_urls": resolve_urls,
                 "thumbnail_report": thumbnail_report,
-                "type_not_found": type_not_found,
+                "not_found": not_found,
                 "unique_values": unique_values,
                 "validate_script": validate_script,
                 "validate_type": validate_type,
