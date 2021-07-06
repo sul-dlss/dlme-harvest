@@ -450,6 +450,13 @@ def check_translation_maps():
     edm_keys = []
     edm_values = []
     has_type_values = []
+    material_values = []
+    material_values_ar = []
+    spatial_values = []
+    spatial_values_ar = []
+    temporal_values = []
+    temporal_values_ar = []
+
     ar_edm = yaml.safe_load(open('/Users/jtim/Dropbox/DLSS/DLME/dlme-transform/lib/translation_maps/edm_type_ar_from_en.yaml', 'r'))
     for k, v in ar_edm.items():
         ar_edm_types.append(k)
@@ -472,6 +479,42 @@ def check_translation_maps():
         else:
             pass
 
+    material = yaml.safe_load(open('/Users/jtim/Dropbox/DLSS/DLME/dlme-transform/lib/translation_maps/getty_aat_material_from_contributor.yaml', 'r'))
+    for k, v in material.items():
+        if type(v) == str:
+            material_values.append(v)
+        elif type(v) == list:
+            material_values.extend(v)
+        else:
+            pass
+    material_ar = yaml.safe_load(open('/Users/jtim/Dropbox/DLSS/DLME/dlme-transform/lib/translation_maps/getty_aat_material_ar_from_en.yaml', 'r'))
+    for k, v in material_ar.items():
+        material_values_ar.append(k)
+
+    spatial = yaml.safe_load(open('/Users/jtim/Dropbox/DLSS/DLME/dlme-transform/lib/translation_maps/spatial_from_contributor.yaml', 'r'))
+    for k, v in spatial.items():
+        if type(v) == str:
+            spatial_values.append(v)
+        elif type(v) == list:
+            spatial_values.extend(v)
+        else:
+            pass
+    spatial_ar = yaml.safe_load(open('/Users/jtim/Dropbox/DLSS/DLME/dlme-transform/lib/translation_maps/spatial_ar_from_en.yaml', 'r'))
+    for k, v in spatial_ar.items():
+        spatial_values_ar.append(k)
+
+    temporal = yaml.safe_load(open('/Users/jtim/Dropbox/DLSS/DLME/dlme-transform/lib/translation_maps/temporal_from_contributor.yaml', 'r'))
+    for k, v in temporal.items():
+        if type(v) == str:
+            temporal_values.append(v)
+        elif type(v) == list:
+            temporal_values.extend(v)
+        else:
+            pass
+    temporal_ar = yaml.safe_load(open('/Users/jtim/Dropbox/DLSS/DLME/dlme-transform/lib/translation_maps/temporal_ar_from_en.yaml', 'r'))
+    for k, v in temporal_ar.items():
+        temporal_values_ar.append(k)
+
     if len((set([x.lower() for x in edm_values]) - set([x.lower() for x in ar_edm_types]))) > 0:
         print('edm_type_ar_from_en.yaml is missing the following keys:')
         for i in (set([x.lower() for x in edm_values]) - set([x.lower() for x in ar_edm_types])):
@@ -485,6 +528,23 @@ def check_translation_maps():
     if len((set([x.lower() for x in has_type_values]) - set([x.lower() for x in edm_keys]))) > 0:
         print('edm_type_from_has_type.yaml is missing the following keys:')
         for i in (set([x.lower() for x in has_type_values]) - set([x.lower() for x in edm_keys])):
+            print(i+':')
+
+    if len((set([x.lower() for x in spatial_values]) - set([x.lower() for x in spatial_values_ar]))) > 0:
+        print('spatial_ar_from_en.yaml is missing the following keys:')
+        for i in (set([x.lower() for x in spatial_values]) - set([x.lower() for x in spatial_values_ar])):
+            print(i+':')
+
+    if len((set([x for x in temporal_values]) - set([x for x in temporal_values_ar]))) > 0:
+        print('temporal_ar_from_en.yaml is missing the following keys:')
+        new_list = sorted(list((set([x for x in temporal_values]) - set([x for x in temporal_values_ar]))))
+        for i in new_list:
+            print(i+':')
+
+    if len((set([x for x in material_values]) - set([x for x in material_values_ar]))) > 0:
+        print('getty_aat_material_ar_from_en.yaml is missing the following keys:')
+        new_list = sorted(list((set([x for x in material_values]) - set([x for x in material_values_ar]))))
+        for i in new_list:
             print(i+':')
 
 def find_untransformed(records):
