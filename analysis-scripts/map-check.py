@@ -450,6 +450,8 @@ def check_translation_maps():
     edm_keys = []
     edm_values = []
     has_type_values = []
+    material_values = []
+    material_values_ar = []
     spatial_values = []
     spatial_values_ar = []
     temporal_values = []
@@ -476,6 +478,18 @@ def check_translation_maps():
             has_type_values.extend(v)
         else:
             pass
+
+    material = yaml.safe_load(open('/Users/jtim/Dropbox/DLSS/DLME/dlme-transform/lib/translation_maps/getty_aat_material_from_contributor.yaml', 'r'))
+    for k, v in material.items():
+        if type(v) == str:
+            material_values.append(v)
+        elif type(v) == list:
+            material_values.extend(v)
+        else:
+            pass
+    material_ar = yaml.safe_load(open('/Users/jtim/Dropbox/DLSS/DLME/dlme-transform/lib/translation_maps/getty_aat_material_ar_from_en.yaml', 'r'))
+    for k, v in material_ar.items():
+        material_values_ar.append(k)
 
     spatial = yaml.safe_load(open('/Users/jtim/Dropbox/DLSS/DLME/dlme-transform/lib/translation_maps/spatial_from_contributor.yaml', 'r'))
     for k, v in spatial.items():
@@ -524,6 +538,12 @@ def check_translation_maps():
     if len((set([x for x in temporal_values]) - set([x for x in temporal_values_ar]))) > 0:
         print('temporal_ar_from_en.yaml is missing the following keys:')
         new_list = sorted(list((set([x for x in temporal_values]) - set([x for x in temporal_values_ar]))))
+        for i in new_list:
+            print(i+':')
+
+    if len((set([x for x in material_values]) - set([x for x in material_values_ar]))) > 0:
+        print('getty_aat_material_ar_from_en.yaml is missing the following keys:')
+        new_list = sorted(list((set([x for x in material_values]) - set([x for x in material_values_ar]))))
         for i in new_list:
             print(i+':')
 
