@@ -400,16 +400,36 @@ def extend_map(records):
 
 def build_controlled_vocabulary():
     # Builds controlled vocabularies from translation maps.
+    edm_rights_en_translation_maps = []
+    edm_rights_en_values = []
     edm_type_en_translation_maps = []
     edm_type_en_values = []
     has_type_en_translation_maps = []
     has_type_en_values = []
+    material_en_translation_maps = []
+    material_en_values = []
+    spatial_en_translation_maps = []
+    spatial_en_values = []
+    temporal_en_translation_maps = []
+    temporal_en_values = []
+
+    for file in glob.glob('/Users/jtim/Dropbox/DLSS/DLME/dlme-transform/lib/translation_maps/edm_rights*.yaml'):
+        edm_rights_en_translation_maps.append(file)
 
     for file in glob.glob('/Users/jtim/Dropbox/DLSS/DLME/dlme-transform/lib/translation_maps/edm_type_from*.yaml'):
         edm_type_en_translation_maps.append(file)
 
     for file in glob.glob('/Users/jtim/Dropbox/DLSS/DLME/dlme-transform/lib/translation_maps/has_type_from*.yaml'):
         has_type_en_translation_maps.append(file)
+
+    for file in glob.glob('/Users/jtim/Dropbox/DLSS/DLME/dlme-transform/lib/translation_maps/getty_aat_material_from*.yaml'):
+        material_en_translation_maps.append(file)
+
+    for file in glob.glob('/Users/jtim/Dropbox/DLSS/DLME/dlme-transform/lib/translation_maps/spatial_from*.yaml'):
+        spatial_en_translation_maps.append(file)
+
+    for file in glob.glob('/Users/jtim/Dropbox/DLSS/DLME/dlme-transform/lib/translation_maps/temporal_from*.yaml'):
+        temporal_en_translation_maps.append(file)
 
     p = Path('/Users/jtim/Dropbox/DLSS/DLME/dlme-transform/lib/controlled_vocabularies')
     p.mkdir(exist_ok=True)
@@ -425,7 +445,7 @@ def build_controlled_vocabulary():
                 else:
                     edm_type_en_values.append(v)
 
-        with open('/Users/jtim/Dropbox/DLSS/DLME/dlme-transform/lib/controlled_vocabularies/edm_types.yaml', 'w') as out:
+        with open('/Users/jtim/Dropbox/DLSS/DLME/dlme-transform/lib/controlled_vocabularies/edm_type_en.yaml', 'w') as out:
             yaml.safe_dump(sorted(set(edm_type_en_values)), out, default_flow_style=False, allow_unicode=False)
 
     if args.field_one == 'has_type_en':
@@ -439,8 +459,67 @@ def build_controlled_vocabulary():
                 else:
                     pass
 
-        with open('/Users/jtim/Dropbox/DLSS/DLME/dlme-transform/lib/controlled_vocabularies/has_types_en.yaml', 'w') as out:
+        with open('/Users/jtim/Dropbox/DLSS/DLME/dlme-transform/lib/controlled_vocabularies/has_type_en.yaml', 'w') as out:
             yaml.safe_dump(sorted(set(has_type_en_values)), out, default_flow_style=False, allow_unicode=False)
+
+    if args.field_one == 'material_en':
+        for i in material_en_translation_maps:
+            data = yaml.safe_load(open(i, 'r'))
+            for k, v in data.items():
+                if type(v) == list:
+                    material_en_values.extend(v)
+                elif type(v) == str:
+                    material_en_values.append(v)
+                else:
+                    pass
+
+        with open('/Users/jtim/Dropbox/DLSS/DLME/dlme-transform/lib/controlled_vocabularies/getty_aat_material_en.yaml', 'w') as out:
+            yaml.safe_dump(sorted(set(material_en_values)), out, default_flow_style=False, allow_unicode=False)
+
+    if args.field_one == 'spatial_en':
+        for i in spatial_en_translation_maps:
+            data = yaml.safe_load(open(i, 'r'))
+            for k, v in data.items():
+                if type(v) == list:
+                    spatial_en_values.extend(v)
+                elif type(v) == str:
+                    spatial_en_values.append(v)
+                else:
+                    pass
+
+        with open('/Users/jtim/Dropbox/DLSS/DLME/dlme-transform/lib/controlled_vocabularies/spatial_en.yaml', 'w') as out:
+            yaml.safe_dump(sorted(set(spatial_en_values)), out, default_flow_style=False, allow_unicode=False)
+
+    if args.field_one == 'temporal_en':
+        for i in temporal_en_translation_maps:
+            data = yaml.safe_load(open(i, 'r'))
+            for k, v in data.items():
+                if type(v) == list:
+                    temporal_en_values.extend(v)
+                elif type(v) == str:
+                    temporal_en_values.append(v)
+                else:
+                    pass
+
+        with open('/Users/jtim/Dropbox/DLSS/DLME/dlme-transform/lib/controlled_vocabularies/temporal_en.yaml', 'w') as out:
+            yaml.safe_dump(sorted(set(temporal_en_values)), out, default_flow_style=False, allow_unicode=False)
+
+    if args.field_one == 'edm_rights_en':
+        for i in edm_rights_en_translation_maps:
+            data = yaml.safe_load(open(i, 'r'))
+            for k, v in data.items():
+                if type(v) == list:
+                    edm_rights_en_values.extend(v)
+                elif type(v) == str:
+                    edm_rights_en_values.append(v)
+                else:
+                    pass
+
+        with open('/Users/jtim/Dropbox/DLSS/DLME/dlme-transform/lib/controlled_vocabularies/edm_rights_en.yaml', 'w') as out:
+            yaml.safe_dump(sorted(set(edm_rights_en_values)), out, default_flow_style=False, allow_unicode=False)
+
+
+
 
 def check_translation_maps():
     # Ensures that all values in the has_type translation maps are fully mapped
