@@ -9,7 +9,10 @@ import requests
 Path("output/bnf").mkdir(parents=True, exist_ok=True)
 
 # Set up logging.
+logging.basicConfig()
+logging.root.setLevel(logging.NOTSET)
 FORMAT = '%(asctime)s:%(name)s:%(levelname)s - %(message)s'
+logging.getLogger("urllib3").setLevel(logging.WARNING)
 logging.basicConfig(filename='output/bnf/harvest.log', format=FORMAT, level=logging.INFO)
 
 # Add data set url from web application UI and a name for the collection.
@@ -41,8 +44,7 @@ def main():
     for key, value in BNF_DATA.items():
         page=1
         start_record=1
-        print('Starting harvest of {}'.format(key))
-        logging.info('''%s - Starting harvest of %s''', datetime.now().strftime\
+        logging.info('''\t%s - Starting harvest of %s.''', datetime.now().strftime\
         ("%Y:%m:%d %H:%M:%S"), key)
 
         req = requests.get(base_url_to_xml(value.format(start_record, page)), allow_redirects=False)
@@ -50,8 +52,7 @@ def main():
         records_available = int(tree.find('srw:numberOfRecords', NS).text)
 
         # Get number of records.
-        print('\tNumber of records: {}'.format(records_available))
-        logging.info('%s - Number of records: %i', datetime.now().\
+        logging.info('\t\t%s - Number of records: %i', datetime.now().\
         strftime("%Y:%m:%d %H:%M:%S"), records_available)
 
         Path("output/bnf/{}".format(key.lower())).mkdir(parents=True, exist_ok=True)
@@ -75,12 +76,10 @@ def main():
             start_record+=50
 
         # Check that the number of records harvested matches what the server says are available.
-        print('\tNumber of records harvested: {}'.format(len(glob.glob('output/bnf/{}/*.xml'.\
-            format(key.lower())))))
         try:
             assert len(glob.glob('output/bnf/{}/*.xml'.format(key.lower()))) == records_available
         except AssertionError as err:
-            logging.exception('The value in the %s numberOfRecords element was %i but %i' \
+            logging.exception('\t\tThe value in the %s numberOfRecords element was %i but %i' \
                               'records were harvested.', key, records_available, len(glob.glob\
                               ('output/bnf/{}/*.xml'.format(key.lower()))))
             raise err
