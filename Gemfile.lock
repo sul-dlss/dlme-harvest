@@ -3,7 +3,7 @@ GEM
   specs:
     airbrussh (1.4.0)
       sshkit (>= 1.6.1, != 1.7.0)
-    ast (2.4.0)
+    ast (2.4.2)
     bundler-audit (0.6.1)
       bundler (>= 1.2.0, < 3)
       thor (~> 0.18)
@@ -32,28 +32,33 @@ GEM
       capistrano-shared_configs
     i18n (1.7.0)
       concurrent-ruby (~> 1.0)
-    jaro_winkler (1.5.3)
     net-scp (2.0.0)
       net-ssh (>= 2.6.5, < 6.0.0)
     net-ssh (5.2.0)
-    parallel (1.18.0)
-    parser (2.6.5.0)
-      ast (~> 2.4.0)
+    parallel (1.21.0)
+    parser (3.1.0.0)
+      ast (~> 2.4.1)
     rainbow (3.0.0)
     rake (13.0.0)
-    rubocop (0.74.0)
-      jaro_winkler (~> 1.5.1)
+    regexp_parser (2.2.0)
+    rexml (3.2.5)
+    rubocop (1.24.1)
       parallel (~> 1.10)
-      parser (>= 2.6)
+      parser (>= 3.0.0.0)
       rainbow (>= 2.2.2, < 4.0)
+      regexp_parser (>= 1.8, < 3.0)
+      rexml
+      rubocop-ast (>= 1.15.1, < 2.0)
       ruby-progressbar (~> 1.7)
-      unicode-display_width (>= 1.4.0, < 1.7)
-    ruby-progressbar (1.10.1)
+      unicode-display_width (>= 1.4.0, < 3.0)
+    rubocop-ast (1.15.1)
+      parser (>= 3.0.1.1)
+    ruby-progressbar (1.11.0)
     sshkit (1.20.0)
       net-scp (>= 1.1.2)
       net-ssh (>= 2.8.0)
     thor (0.20.3)
-    unicode-display_width (1.6.0)
+    unicode-display_width (2.1.0)
 
 PLATFORMS
   ruby
@@ -65,7 +70,7 @@ DEPENDENCIES
   capistrano-rvm
   dlss-capistrano
   rake
-  rubocop (~> 0.74.0)
+  rubocop (~> 1.0)
 
 BUNDLED WITH
-   2.0.2
+   2.2.32
