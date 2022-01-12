@@ -80,8 +80,8 @@ def field_report(records):
             field_counter.update({'agg_is_shown_at.wr_edm_rights' : 1})
         if 'wr_id' in record['agg_is_shown_at']:
             field_counter.update({'agg_is_shown_at.wr_id' : 1})
-        if 'wr_id' in record['agg_preview']:
-            field_counter.update({'agg_preview.wr_id' : 1})
+        # if 'wr_id' in record['agg_preview']:
+        #     field_counter.update({'agg_preview.wr_id' : 1})
         if 'wr_is_referenced_by' in record['agg_is_shown_at']:
             field_counter.update({'agg_is_shown_at.wr_is_referenced_by' : 1})
 
@@ -519,7 +519,20 @@ def build_controlled_vocabulary():
             yaml.safe_dump(sorted(set(edm_rights_en_values)), out, default_flow_style=False, allow_unicode=False)
 
 
-
+def check_type_to_has_type(records):
+    has_type_values = []
+    has_type = yaml.safe_load(open('/Users/jtim/Dropbox/DLSS/DLME/dlme-transform/lib/translation_maps/has_type_from_contributor.yaml', 'r'))
+    for k, v in has_type.items():
+        if type(k) == str:
+            has_type_values.append(k)
+        elif type(k) == list:
+            has_type_values.extend(k)
+        else:
+            pass
+    for record in records:
+        for value in record['cho_type']['en']:
+            if value.lower() not in has_type_values:
+                print(value.lower())
 
 def check_translation_maps():
     # Ensures that all values in the has_type translation maps are fully mapped
@@ -679,6 +692,7 @@ def resolve_urls(records):
 # Function dispatcher to map stage arguments to function names
 FUNCTION_MAP = {"build_controlled_vocabulary": build_controlled_vocabulary,
                 "check_translation_maps": check_translation_maps,
+                "check_type_to_has_type": check_type_to_has_type,
                 "compare": compare,
                 "extend_map": extend_map,
                 "find_untransformed": find_untransformed,
