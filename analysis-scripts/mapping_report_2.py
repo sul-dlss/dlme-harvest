@@ -37,7 +37,7 @@ fields = ['cho_alternative',
           'cho_title',
           'cho_type']
 
-extract_macros = {'cambridge_dimensions': {'from_field': '/tei:extent/tei:dimensions',
+EXTRACT_MACROS = {'cambridge_dimensions': {'from_field': '/tei:extent/tei:dimensions',
                                            'transforms': 'Extracts height and width into formated string.'},
                   'extract_aub_description': {'from_field': '/dc:description',
                                               'transforms': 'Ignores url values in the description field.'},
@@ -55,7 +55,7 @@ extract_macros = {'cambridge_dimensions': {'from_field': '/tei:extent/tei:dimens
                   'xpath_title_plus': {'from_field': 'the title field and a second field such as id or description',
                                        'transforms': 'The title field was merged with the truncated value from the second field.'}}
 
-modify_macros = {'prepend': 'A literal value was prepended to provide context or to satisfy a consistent pattern requirement.',
+MODIFY_MACROS = {'prepend': 'A literal value was prepended to provide context or to satisfy a consistent pattern requirement.',
                  'translation_map': 'The output value was mapped to a value in a DLME controlled vocabulary.'}
 
 def thumbnail_report(image_sizes_list):
@@ -70,8 +70,7 @@ def thumbnail_report(image_sizes_list):
         else:
             failed_rec+=1
 
-    # return f'{round((passed_rec/len(image_sizes_list))*100)}% of the {len(image_sizes_list)} thumbnail images sampled had a width or height of {REC_SIZE} or greater.'
-    return "filler"
+    return f'{round((passed_rec/len(image_sizes_list))*100)}% of the {len(image_sizes_list)} thumbnail images sampled had a width or height of {REC_SIZE} or greater.'
 
 def image_size(response):
     '''Takes an http response and returns an image size.'''
@@ -144,36 +143,35 @@ def main():
                         counts[field].update({'values' : len(metadata)})
 
             # Resolve resource url
-            # validate_url(record['agg_is_shown_at']['wr_id']) # will fail if invalid url
-            # try:
-            #     resource = requests.get(record['agg_is_shown_at']['wr_id'], stream=True)
-            #     if not resolve_url(resource):
-            #         unresolvable_resources.append(f"Identifier {record['id']} from DLME file {record['dlme_source_file']}: {record['agg_is_shown_at']['wr_id']}")
-            # except:
-            #     unresolvable_resources.append(f"Identifier {record['id']} from DLME file {record['dlme_source_file']}: {record['agg_is_shown_at']['wr_id']}")
+            validate_url(record['agg_is_shown_at']['wr_id']) # will fail if invalid url
+            try:
+                resource = requests.get(record['agg_is_shown_at']['wr_id'], stream=True)
+                if not resolve_url(resource):
+                    unresolvable_resources.append(f"Identifier {record['id']} from DLME file {record['dlme_source_file']}: {record['agg_is_shown_at']['wr_id']}")
+            except:
+                unresolvable_resources.append(f"Identifier {record['id']} from DLME file {record['dlme_source_file']}: {record['agg_is_shown_at']['wr_id']}")
 
             # Resolve thumbnail url, get size for sample of images or all
             # depending on number of records in dataset
-            # validate_url(record['agg_preview']['wr_id']) # will fail if invalid url
-            # try:
-            #     thumbnail = requests.get(record['agg_preview']['wr_id'], stream=True)
-            #     if not resolve_url(thumbnail):
-            #         unresolvable_thumbnails.append(f"Identifier {record['id']} from DLME file {record['dlme_source_file']}: {record['agg_preview']['wr_id']}")
-            # except:
-            #     unresolvable_thumbnails.append(f"Identifier {record['id']} from DLME file {record['dlme_source_file']}: {record['agg_preview']['wr_id']}")
+            validate_url(record['agg_preview']['wr_id']) # will fail if invalid url
+            try:
+                thumbnail = requests.get(record['agg_preview']['wr_id'], stream=True)
+                if not resolve_url(thumbnail):
+                    unresolvable_thumbnails.append(f"Identifier {record['id']} from DLME file {record['dlme_source_file']}: {record['agg_preview']['wr_id']}")
+            except:
+                unresolvable_thumbnails.append(f"Identifier {record['id']} from DLME file {record['dlme_source_file']}: {record['agg_preview']['wr_id']}")
 
-
-            # if len(records) > 5000:
-            #     if count%20==0:
-            #         thumbnail_image_sizes.append(image_size(thumbnail))
-            # elif len(records) > 500:
-            #     if count%10==0:
-            #         thumbnail_image_sizes.append(image_size(thumbnail))
-            # if len(records) > 100:
-            #     if count%2==0:
-            #         thumbnail_image_sizes.append(image_size(thumbnail))
-            # else:
-            #     thumbnail_image_sizes.append(image_size(thumbnail))
+            if len(records) > 5000:
+                if count%20==0:
+                    thumbnail_image_sizes.append(image_size(thumbnail))
+            elif len(records) > 500:
+                if count%10==0:
+                    thumbnail_image_sizes.append(image_size(thumbnail))
+            if len(records) > 100:
+                if count%2==0:
+                    thumbnail_image_sizes.append(image_size(thumbnail))
+            else:
+                thumbnail_image_sizes.append(image_size(thumbnail))
 
     doc = dominate.document(title='DLME Metadata Report')
 
@@ -200,7 +198,8 @@ def main():
      """)
 
     with doc:
-        h1(f'DLME Metadata Report for {provider}, {collection} ({date.today()})')
+        h1(f'DLME Metadata Report for {provider}')
+        h2(f'{collection} ({date.today()})')
 
         with div():
             attr(cls='body')
@@ -286,43 +285,43 @@ def main():
             attr(cls='report')
             h2('Metadata Crosswalk')
 
-            with table(style = "border:2px solid black", border = 0):
-                header = tr(style = "border:2px solid black")
-                header.add(td('Incoming Field', style = "border:2px solid black"))
-                header.add(td(style = "border:2px solid black"))
-                header.add(td('DLME Field', style = "border:2px solid black"))
-                header.add(td(style = "border:2px solid black"))
-                header.add(td('Transformations', style = "border:2px solid black"))
+            with table(style = "border-collapse: collapse"):
+                header = tr(style = "border:1px solid black")
+                header.add(td('Incoming Field', style = "font-weight: bold"))
+                header.add(td(style = "padding: 0 15px;"))
+                header.add(td('DLME Field', style = "padding: 0 15px; font-weight: bold"))
+                header.add(td(style = "padding: 0 15px;"))
+                header.add(td('Transformations', style = "padding: 0 15px; font-weight: bold"))
 
                 # crosswalk code
-                # with open(args.config) as f:
-                #     lines = f.readlines()
-                #     for line in lines:
-                #         for field in fields:
-                #             if 'to_field' in line:
-                #                 if field in line:
-                #                     to_field = line.split(',')[0].strip('to_field ')
-                #                     transforms = []
-                #                     from_field = None
-                #                     for k,v in extract_macros.items():
-                #                         if k in line:
-                #                             from_field = extract_macros.get(k).get('from_field')
-                #                             transforms.append(extract_macros.get(k).get('transforms'))
-                #                     # if no keys found in extract_macros
-                #                     if from_field == None:
-                #                         if 'literal(' in line:
-                #                             from_field = "Assigned literal value: '{}'".format(line.split('literal(')[-1].split('),')[0])
-                #                         else:
-                #                             from_field = line.split('(')[1].split(')')[0].strip("'")
-                #                     for k,v in modify_macros.items():
-                #                         if k in line:
-                #                             transforms.append(modify_macros.get(k))
-                #                     with(tr):
-                #                         td(from_field)
-                #                         td(">>")
-                #                         td(to_field)
-                #                         td(">>")
-                #                         td(' '.join(transforms))
+                with open(args.config) as f:
+                    lines = f.readlines()
+                    for line in lines:
+                        for field in fields:
+                            if 'to_field' in line:
+                                if field in line:
+                                    to_field = line.split(',')[0].strip('to_field ')
+                                    transforms = []
+                                    from_field = None
+                                    for k,v in EXTRACT_MACROS.items():
+                                        if k in line:
+                                            from_field = EXTRACT_MACROS.get(k).get('from_field')
+                                            transforms.append(EXTRACT_MACROS.get(k).get('transforms'))
+                                    # if no keys found in EXTRACT_MACROS
+                                    if from_field == None:
+                                        if 'literal(' in line:
+                                            from_field = "Assigned literal value: '{}'".format(line.split('literal(')[-1].split('),')[0])
+                                        else:
+                                            from_field = line.split('(')[1].split(')')[0].strip("'")
+                                    for k,v in MODIFY_MACROS.items():
+                                        if k in line:
+                                            transforms.append(MODIFY_MACROS.get(k))
+                                    row = tr(style = "border:1px solid black")
+                                    row.add(td(from_field))
+                                    row.add(td('>>', style = "padding: 0 15px;"))
+                                    row.add(td(to_field, style = "padding: 0 15px;"))
+                                    row.add(td('>>', style = "padding: 0 15px;"))
+                                    row.add(td(' '.join(transforms), style = "padding: 0 15px;"))
 
     report = open(f'report_{provider}_{date.today()}.html', 'a')
     report.write(doc.render())
