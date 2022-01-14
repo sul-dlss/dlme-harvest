@@ -10,6 +10,54 @@ from PIL import Image
 import requests
 import validators
 
+# Constants for crosswalk
+fields = ['cho_alternative',
+          'cho_contributor',
+          'cho_creator',
+          'cho_date ',
+          'cho_dc_rights',
+          'cho_description',
+          'cho_edm_type',
+          'cho_extent',
+          'cho_format',
+          'cho_has_part',
+          'cho_has_type',
+          'cho_identifier',
+          'cho_is_part_of',
+          'cho_language',
+          'cho_medium',
+          'cho_provenance',
+          'cho_publisher',
+          'cho_relation',
+          'cho_same_as',
+          'cho_source',
+          'cho_spatial',
+          'cho_subject',
+          'cho_temporal',
+          'cho_title',
+          'cho_type']
+
+EXTRACT_MACROS = {'cambridge_dimensions': {'from_field': '/tei:extent/tei:dimensions',
+                                           'transforms': 'Extracts height and width into formated string.'},
+                  'extract_aub_description': {'from_field': '/dc:description',
+                                              'transforms': 'Ignores url values in the description field.'},
+                  'generate_edm_type': {'from_field': '.Classification or .ObjectName',
+                                        'transforms': "Seperate values on ';', then downcase"},
+                  'json_title_plus':{'from_field': '.title and one other field',
+                                        'transforms': 'The title field was merged with the truncated value from the second field.'},
+                  'princeton_title_and_lang': {'from_field': '.title',
+                                               'transforms': 'The script of the title was programatically determined.'},
+                  'scw_has_type': {'from_field': '/*/mods:genre or /*/mods:typeOfResource or /*/mods:subject/mods:topic or /*/mods:extension/cdwalite:indexingMaterialsTechSet/'\
+                                              'cdwalite:termMaterialsTech',
+                                   'transforms': 'The output value was mapped to a value in a DLME controlled vocabulary.'},
+                  'xpath_title_or_desc': {'from_field': '/dc:title or /dc:description[3]',
+                                          'transforms': 'If no title found in /dc:title, map in truncated description.'},
+                  'xpath_title_plus': {'from_field': 'the title field and a second field such as id or description',
+                                       'transforms': 'The title field was merged with the truncated value from the second field.'}}
+
+MODIFY_MACROS = {'prepend': 'A literal value was prepended to provide context or to satisfy a consistent pattern requirement.',
+                 'translation_map': 'The output value was mapped to a value in a DLME controlled vocabulary.'}
+
 def thumbnail_report(image_sizes_list):
     '''Takes a list of tuples as input and outputs a thumbnail image size report.'''
     passed_rec = 0
@@ -113,7 +161,6 @@ def main():
             except:
                 unresolvable_thumbnails.append(f"Identifier {record['id']} from DLME file {record['dlme_source_file']}: {record['agg_preview']['wr_id']}")
 
-
             if len(records) > 5000:
                 if count%20==0:
                     thumbnail_image_sizes.append(image_size(thumbnail))
@@ -151,7 +198,8 @@ def main():
      """)
 
     with doc:
-        h1(f'DLME Metadata Report for {provider}, {collection} ({date.today()})')
+        h1(f'DLME Metadata Report for {provider}')
+        h2(f'{collection} ({date.today()})')
 
         with div():
             attr(cls='body')
@@ -237,6 +285,44 @@ def main():
             attr(cls='report')
             h2('Metadata Crosswalk')
 
+            with table(style = "border-collapse: collapse"):
+                header = tr(style = "border:1px solid black")
+                header.add(td('Incoming Field', style = "font-weight: bold"))
+                header.add(td(style = "padding: 0 15px;"))
+                header.add(td('DLME Field', style = "padding: 0 15px; font-weight: bold"))
+                header.add(td(style = "padding: 0 15px;"))
+                header.add(td('Transformations', style = "padding: 0 15px; font-weight: bold"))
+
+                # crosswalk code
+                with open(args.config) as f:
+                    lines = f.readlines()
+                    for line in lines:
+                        for field in fields:
+                            if 'to_field' in line:
+                                if field in line:
+                                    to_field = line.split(',')[0].strip('to_field ')
+                                    transforms = []
+                                    from_field = None
+                                    for k,v in EXTRACT_MACROS.items():
+                                        if k in line:
+                                            from_field = EXTRACT_MACROS.get(k).get('from_field')
+                                            transforms.append(EXTRACT_MACROS.get(k).get('transforms'))
+                                    # if no keys found in EXTRACT_MACROS
+                                    if from_field == None:
+                                        if 'literal(' in line:
+                                            from_field = "Assigned literal value: '{}'".format(line.split('literal(')[-1].split('),')[0])
+                                        else:
+                                            from_field = line.split('(')[1].split(')')[0].strip("'")
+                                    for k,v in MODIFY_MACROS.items():
+                                        if k in line:
+                                            transforms.append(MODIFY_MACROS.get(k))
+                                    row = tr(style = "border:1px solid black")
+                                    row.add(td(from_field))
+                                    row.add(td('>>', style = "padding: 0 15px;"))
+                                    row.add(td(to_field, style = "padding: 0 15px;"))
+                                    row.add(td('>>', style = "padding: 0 15px;"))
+                                    row.add(td(' '.join(transforms), style = "padding: 0 15px;"))
+
     report = open(f'report_{provider}_{date.today()}.html', 'a')
     report.write(doc.render())
 
@@ -247,5 +333,9 @@ if __name__ == '__main__':
         "input",
         nargs="?",
         help="What is the file path to the intermediate representation?")
+    parser.add_argument(
+        'config',
+        nargs='?',
+        help='Which config file was used to transform the incoming records?')
     args = parser.parse_args()
     main()
