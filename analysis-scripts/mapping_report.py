@@ -6,6 +6,8 @@ from datetime import date
 from PIL import Image
 import requests
 import validators
+import io
+
 
 def thumbnail_report(image_sizes_list):
     '''Takes a list of tuples as input and outputs a thumbnail image size report.'''
@@ -25,7 +27,8 @@ def image_size(response):
     '''Takes an http response and returns an image size.'''
     if not isinstance(response, requests.models.Response):
         raise TypeError('The parameter passed to the image_size function is not an http response.')
-    size = Image.open(response.raw).size
+    size = Image.open(io.BytesIO(response.content)).size
+
     return size
 
 # validate urls

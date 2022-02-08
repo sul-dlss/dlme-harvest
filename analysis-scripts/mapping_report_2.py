@@ -323,7 +323,7 @@ def main():
                                     row.add(td('>>', style = "padding: 0 15px;"))
                                     row.add(td(' '.join(transforms), style = "padding: 0 15px;"))
 
-    report = open(f'report_{provider}_{date.today()}.html', 'a')
+    report = open(f'output/report_{provider}_{date.today()}.html', 'a')
     report.write(doc.render())
 
 if __name__ == '__main__':
