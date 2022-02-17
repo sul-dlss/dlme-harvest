@@ -1,0 +1,5 @@
+------------------------------------
+Summary:
+801 of 801 records have the cho_title field.
+0 of 801 records have the path_to_file field.
+0 of 801 records transformed.
