@@ -1,0 +1,103 @@
+JSON VALIDATION
+
+There were 32 blank lines in the intermediate representation.
+
+The blank lines were: [1222, 3021, 3224, 3532, 3837, 11882, 11909, 11919, 11921, 11922, 11930, 11932, 11933, 11940, 11945, 11976, 11984, 11987, 11990, 12211, 12213, 13502, 13503, 13513, 13636, 13696, 13748, 13760, 13798, 13862, 13867, 13897]
+
+There were 0 invalid json objects in the intermediate representation.
+
+---------------------------------------------------------------------------------------
+
+FIELD MAPPING VALIDATION
+
+The following fields have not been mapped:
+
+	-agg_is_shown_by
+
+	-cho_alternate
+
+	-cho_extent
+
+	-cho_format
+
+	-cho_has_part
+
+	-cho_is_part_of
+
+	-cho_medium
+
+	-cho_provenance
+
+	-cho_relation
+
+	-cho_same_as
+
+	-cho_spatial
+
+	-cho_temporal
+
+---------------------------------------------------------------------------------------
+
+DATE NORMALIZATION
+
+There were 0 unnormalized dates:
+
+There were 0 Gregorian dates that were not converted to the Hijri calendar.
+
+---------------------------------------------------------------------------------------
+
+LANGUAGE NORMALIZATION AND TRANSLATION
+
+All language values have been normalized.
+
+All language values have been translated.
+
+---------------------------------------------------------------------------------------
+
+TYPE NORMALIZATION AND TRANSLATION
+
+
+All EDM type values have been normalized.
+
+All EDM type values have been translated.
+
+All has type values have been normalized.
+
+All has type values have been translated.
+
+All type facet values have been translated.
+
+---------------------------------------------------------------------------------------
+
+URL VALIDATION
+
+There were 0 invalid thumbnail urls.
+
+There were 0 invalid resource urls.
+
+There were 0 invalid thumbnail urls.
+
+There were 0 invalid resource urls.
+
+---------------------------------------------------------------------------------------
+
+BCP47 LANG CODE VALIDATION
+
+All lang tags seem to have the correct script.
+
+---------------------------------------------------------------------------------------
+
+CERa
+
+https://dev.dlmenetwork.org/library/catalog/p15795coll11%2F1280
+
+https://cdm15795.contentdm.oclc.org/iiif/info/p15795coll11/1280/manifest.json
+
+not a lot of redundancy in AWS
+
+
+
+[''ضصثقفغعهخحمنتالبيسشظطذدز‪',‬ر‪','‬و‪'‬]
+
+refactor source post harvester so that it takes args and method name from collection.get... and python callable is source_post_harvester
+

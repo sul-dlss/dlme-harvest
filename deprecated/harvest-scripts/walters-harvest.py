@@ -1,13 +1,14 @@
 #!/usr/bin/python
 import json, io, os, requests, urllib
 
+other_cultures = []
 def main():
     directory = "output/walters-art-museum/data/"
     os.makedirs(os.path.dirname(directory), exist_ok=True)
     file_count = 1
     page = 1
     next = True
-    cultures = ['Achaemenid', 'Akkadian', 'Assyrian', 'Babylonian', 'Canaanite', 'Coptic', 'Egypt', 'Egyptian', 'Egyptian-Islamic', 'Eblaite or Akkadia', 'Hittite', 'Iranian', 'Iranian-Islamic', 'Islamic', 'Islamic; Persian', 'Kassite', 'Isin Larsa; Old Babylonian', 'Mesopotamian', 'Neo-Sumerian', 'Neo-Sumerian?', 'Nubian', 'Old Babylonian', 'Old-Babylonian', 'Ottoman-Islamic', 'Phoenician', 'Phoenician?', 'post-Akkadian; Ur III', 'Sasanian', 'Sumerian', 'Zaydi Muslim']
+    cultures = ['Achaemenid', 'Akkadian', 'Aramean', 'Assyrian', 'Babylonian', 'Canaanite', 'Coptic', 'Egypt', 'Egyptian', 'Egyptian-Islamic', 'Eblaite or Akkadia', 'Hittite', 'Iranian', 'Iranian-Islamic', 'Islamic', 'Islamic; Persian', 'Kassite', 'Isin Larsa; Old Babylonian', 'Mesopotamian', 'Neo-Sumerian', 'Neo-Sumerian?', 'Nubian', 'Neo-Babylonian (?); Assyrian (?)', 'Old Babylonian', 'Old-Babylonian', 'Ottoman-Islamic', 'Persian', 'Phoenician', 'Phoenician?', 'Phoenician (?)', 'post-Akkadian; Ur III', 'Sasanian', 'Syrian', 'Syro-Palestine', 'Sumerian', 'Yemeni', 'Zaydi Muslim']
     while next == True:
         response = urllib.request.urlopen('http://api.thewalters.org/v1/objects.json?apikey=nlyO2MGAtLM1R8tP9AEYsM1lBgOcsPOs5v4oPimXWzEYzaebZuyYnUFRjDDMxdIT&Page={}&PageSize=200'.format(page)).read()
         data = json.loads(response)
@@ -20,7 +21,11 @@ def main():
                 with io.open(filename, 'w') as out_file:
                     json.dump(i, out_file, ensure_ascii=False)
             elif i.get('Culture') != None:
-                print(i.get('Culture'))
+                other_cultures.append(i.get('Culture'))
+
+    print('These cultures were not harvested:')
+    for i in set(other_cultures):
+        print(i)
 
 if __name__ == "__main__":
     main()
