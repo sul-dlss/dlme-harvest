@@ -106,7 +106,7 @@ def main():
     '''Captures all field value counts in counter object and writes report to html file.'''
     DATE_ARRAY_FIELDS = ['cho_date_range_hijri', 'cho_date_range_norm']
     IGNORE_FIELDS = ['agg_data_provider', 'agg_data_provider_collection', 'agg_data_provider_country',
-                     'agg_provider', 'agg_provider_country', 'cho_type_facet', 'dlme_collection',
+                     'agg_provider', 'agg_provider_country', 'cho_type_facet', 'agg_data_provider_collection',
                      'dlme_source_file', 'id', 'transform_version', 'transform_timestamp']
 
     IGNORE_VALUES = ['wr_dc_rights', 'wr_edm_rights', 'wr_is_referenced_by', 'fields_covered']
@@ -122,7 +122,7 @@ def main():
     with open(args.input, 'r') as file:
         records = file.readlines()
         provider = json.loads(records[0])['agg_data_provider']['en'][0]
-        collection = json.loads(records[0])['dlme_collection']['en'][0]
+        collection = json.loads(records[0])['agg_data_provider_collection']['en'][0]
         record_count = len(records)
 
         # get counts for fields, values, languages
